@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mosaic-tx"
+version = "0.1.0"
+description = "Auditable cell-state-aware intervention prioritization for transplant research"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "MOSAIC-Tx contributors"}]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+]
+
+[project.scripts]
+mosaic-tx = "mosaic_tx.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["mosaic_tx*"]
+
