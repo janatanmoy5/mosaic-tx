@@ -54,6 +54,15 @@ python -m mosaic_tx.cli rank \
 python -m unittest discover -s tests -v
 ```
 
+## Build the public discovery dataset
+
+```bash
+python scripts/build_public_data.py --dataset GSE50084
+```
+
+This downloads the official GSE50084 processed matrix, verifies its pinned checksum, and compiles
+validated sample and expression tables under gitignored `data/`. See `docs/public_data_pipeline.md`.
+
 The demo data and candidate names are fictional. A higher `priority_score` indicates stronger
 predicted reversal after safety penalties; `coverage` reveals how much of the measured disease
 state was actually evaluated.

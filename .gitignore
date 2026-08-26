@@ -10,6 +10,7 @@ results/*
 !results/.gitkeep
 data/controlled/
 data/raw/
+data/processed/
 *.pem
 *.key
 .env

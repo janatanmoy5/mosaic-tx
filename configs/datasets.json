@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "datasets": {
+    "GSE50084": {
+      "role": "discovery_bulk_expression",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE50nnn/GSE50084/matrix/GSE50084_series_matrix.txt.gz",
+      "sha256": "b635a99d80c42aed824e4edc43ec755b088d5aaed85687d697726af37b496b92",
+      "expected_samples": 115,
+      "platform": "GPL6244"
+    },
+    "GSE36059": {"role": "planned_external_validation", "status": "registered_not_built", "expected_samples": 411, "platform": "GPL570"},
+    "GSE228300": {"role": "planned_mechanistic_reference", "status": "registered_not_training", "expected_samples": 3, "platform": "GPL20795"}
+  }
+}
