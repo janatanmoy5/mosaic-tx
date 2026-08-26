@@ -5,4 +5,5 @@ type: software
 version: 0.1.0
 date-released: 2026-08-26
 license: MIT
+repository-code: "https://github.com/janatanmoy5/mosaic-tx"
 abstract: "Cell-state-aware, safety-constrained intervention prioritization for transplant research."
