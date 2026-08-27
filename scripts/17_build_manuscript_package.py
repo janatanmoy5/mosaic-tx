@@ -35,6 +35,42 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
+def write_study_design_svg(path: Path) -> None:
+    """Generate Figure 1 deterministically from the declared cohort/estimand design."""
+    boxes = [
+        (45, "1. DSA-state discovery", "GSE50084 | 61 biopsies", "DSA- NR | DSA+ NR | DSA+ rejection", "Estimand: rejection among DSA+ grafts"),
+        (445, "2. Independent qualification", "GSE36059 | 381 biopsies", "281 NR | 35 TCMR | 65 ABMR", "Estimands: replication and specificity"),
+        (845, "3. Randomized response", "GSE275824 | 22 patients", "63 biopsies | baseline, W24, W52", "Estimand: felzartamab-placebo DID"),
+    ]
+    parts = [
+        '<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="600" viewBox="0 0 1250 600">',
+        '<rect width="1250" height="600" fill="white"/>',
+        '<style>text{font-family:Arial,Helvetica,sans-serif;fill:#18313b}.title{font-size:30px;font-weight:700}.sub{font-size:16px;fill:#4c626c}.head{font-size:20px;font-weight:700}.body{font-size:16px}.gate{font-size:15px;font-weight:700;fill:#8f3c3c}</style>',
+        '<text x="45" y="55" class="title">MOSAIC-Tx: prespecified cohorts, estimands, and decision gates</text>',
+        '<text x="45" y="85" class="sub">All labels are public-metadata-derived; cross-platform expression is never pooled</text>',
+    ]
+    fills = ("#eaf5f3", "#edf3f8", "#faf3e7")
+    strokes = ("#4d9c94", "#578ab5", "#b58335")
+    for i, (x, heading, cohort, groups, estimand) in enumerate(boxes):
+        parts.extend([
+            f'<rect x="{x}" y="135" rx="12" width="345" height="285" fill="{fills[i]}" stroke="{strokes[i]}" stroke-width="2"/>',
+            f'<text x="{x+25}" y="180" class="head">{heading}</text>',
+            f'<text x="{x+25}" y="225" class="body">{cohort}</text>',
+            f'<text x="{x+25}" y="270" class="body">{groups}</text>',
+            f'<text x="{x+25}" y="330" class="body">{estimand}</text>',
+            f'<text x="{x+25}" y="375" class="sub">Model: moderated effect + 95% CI + BH FDR</text>',
+        ])
+        if i < 2:
+            parts.append(f'<path d="M {x+350} 277 L {x+390} 277" stroke="#596b72" stroke-width="4"/><path d="M {x+390} 277 l -12 -8 v 16 z" fill="#596b72"/>')
+    parts.extend([
+        '<rect x="45" y="465" rx="10" width="1145" height="90" fill="#f4f7f8" stroke="#bdcbd1"/>',
+        '<text x="625" y="500" text-anchor="middle" class="head">Advance only if all evidence gates pass</text>',
+        '<text x="625" y="532" text-anchor="middle" class="gate">DSA discrimination | external replication | ABMR-vs-TCMR specificity | randomized response | patient-level cell localization</text>',
+        '</svg>',
+    ])
+    path.write_text("\n".join(parts) + "\n")
+
+
 def sample_manifest(root: Path) -> list[dict[str, object]]:
     """Normalize every accession while retaining source labels and analysis eligibility."""
     output: list[dict[str, object]] = []
@@ -154,8 +190,8 @@ def main() -> None:
     figures.mkdir(parents=True, exist_ok=True); tables.mkdir(parents=True, exist_ok=True)
 
     # Exactly three manuscript figures; older figures remain provenance artifacts outside this package.
+    write_study_design_svg(figures / "Figure_1_study_design.svg")
     figure_sources = {
-        "Figure_1_study_design.svg": root / "figures" / "fig1_study_design.svg",
         "Figure_2_primary_estimands.png": root / "results" / "pilot" / "figures" / "estimand_results_main.png",
         "Figure_2_primary_estimands.pdf": root / "results" / "pilot" / "figures" / "estimand_results_main.pdf",
         "Figure_3_sample_level_verification.png": root / "results" / "pilot" / "figures" / "dataset_results_main.png",
