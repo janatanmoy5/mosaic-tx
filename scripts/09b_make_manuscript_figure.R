@@ -154,8 +154,7 @@ ggsave(file.path(figure_dir, "main_figure_multicohort.pdf"), main_figure,
        width = 15.5, height = 11.5, device = "pdf")
 
 # Save every panel independently to support editorial rearrangement and supplementary figures.
-for (entry in list(A = p_a, B = p_b, C = p_c, D = p_d)) {
-  panel_name <- names(entry)
-  ggsave(file.path(figure_dir, paste0("main_panel_", panel_name, ".png")), entry[[1]],
-         width = 7.5, height = 5.5, dpi = 300, bg = "white")
-}
+ggsave(file.path(figure_dir, "main_panel_A.png"), plot = p_a, width = 7.5, height = 5.5, dpi = 300, bg = "white")
+ggsave(file.path(figure_dir, "main_panel_B.png"), plot = p_b, width = 7.5, height = 5.5, dpi = 300, bg = "white")
+ggsave(file.path(figure_dir, "main_panel_C.png"), plot = p_c, width = 7.5, height = 5.5, dpi = 300, bg = "white")
+ggsave(file.path(figure_dir, "main_panel_D.png"), plot = p_d, width = 7.5, height = 5.5, dpi = 300, bg = "white")
