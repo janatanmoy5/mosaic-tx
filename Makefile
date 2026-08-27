@@ -1,4 +1,4 @@
-.PHONY: data annotate bulk scores test check
+.PHONY: data annotate bulk scores pilot test check
 
 data:
 	python3 scripts/build_public_data.py --dataset GSE50084
@@ -17,6 +17,10 @@ bulk:
 
 scores:
 	Rscript scripts/06_published_score_trajectories.R data/processed/GSE275824/samples.csv results/bulk/GSE275824
+
+pilot:
+	Rscript scripts/08_build_robustness_atlas.R . results/pilot/atlas
+	Rscript scripts/09_make_pilot_figures.R results/pilot/atlas results/pilot/figures
 
 test:
 	python3 -m unittest discover -s tests -v

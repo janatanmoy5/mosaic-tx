@@ -1,4 +1,5 @@
 #!/usr/bin/env Rscript
+# Map array probes to gene symbols with the declared platform-specific Bioconductor annotation.
 suppressPackageStartupMessages({library(data.table);library(AnnotationDbi);library(jsonlite)})
 a<-commandArgs(trailingOnly=TRUE);if(length(a)!=4)stop("usage: matrix samples platform out")
 expr<-fread(a[1]);setnames(expr,1,"probe_id"); platform<-a[3]; out<-a[4];dir.create(out,recursive=TRUE,showWarnings=FALSE)

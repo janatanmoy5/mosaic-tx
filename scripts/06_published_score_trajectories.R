@@ -1,4 +1,5 @@
 #!/usr/bin/env Rscript
+# Model published ABMR, NK, IFN, and endothelial score trajectories with patient random intercepts.
 suppressPackageStartupMessages({library(data.table);library(nlme);library(jsonlite)})
 a<-commandArgs(trailingOnly=TRUE);if(length(a)!=2)stop("usage: samples.csv output_dir")
 s<-fread(a[1]);out<-a[2];dir.create(out,recursive=TRUE,showWarnings=FALSE)

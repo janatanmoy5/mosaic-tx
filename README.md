@@ -6,8 +6,7 @@
 MOSAIC-Tx is a public-data reanalysis of kidney-allograft antibody-mediated rejection (ABMR). It
 asks one biological question:
 
-> Can suppressible immune activity be separated from persistent tissue-injury programs across
-> DSA-positive states, rejection phenotypes, and longitudinal anti-CD38 treatment?
+> Which ABMR expression programs are reproducible, rejection-specific, cell-localizable, and sufficiently robust across reference definitions and treatment states to justify downstream drug-reversal analysis?
 
 This repository does not claim patient-specific treatment prediction, clinical validation, wet-lab
 validation, causal target discovery, or validated drug repurposing. It compiles published,
@@ -18,6 +17,8 @@ de-identified datasets and tests prespecified contrasts with reproducible statis
 ![Evidence-gated single-cell to therapeutics extension](figures/fig2_translational_extension.svg)
 
 ![DSA-to-graft-injury mechanistic backbone](figures/fig3_mechanism_chain.svg)
+
+![Executed pilot signature robustness atlas](figures/fig4_pilot_signature_robustness_atlas.png)
 
 ## Why this question is supported by available data
 
@@ -58,6 +59,23 @@ QSAR, docking and molecular dynamics are downstream gates—not assumed delivera
 6. [`docs/LIMITATIONS.md`](docs/LIMITATIONS.md) — claims the data cannot support
 7. [`docs/TRANSLATIONAL_EXTENSION.md`](docs/TRANSLATIONAL_EXTENSION.md) — single-cell, ML and drug gates
 8. [`docs/DRUG_QSAR_PROTOCOL.md`](docs/DRUG_QSAR_PROTOCOL.md) — chemical-data and QSAR requirements
+9. [`docs/PILOT_RESULTS.md`](docs/PILOT_RESULTS.md) — executed findings, null results, and claim boundaries
+10. [`docs/CODE_REVIEW.md`](docs/CODE_REVIEW.md) — script-by-script verification status and defects found
+11. [`docs/R01AI180118_ALIGNMENT.md`](docs/R01AI180118_ALIGNMENT.md) — contribution to the transplantation program without aim duplication
+
+## Execute the complete bulk pilot
+
+```bash
+make data
+make annotate
+make bulk
+make scores
+make pilot
+make check
+```
+
+The tracked pilot results were generated from the three public cohorts on the local Mac. Single-cell,
+ML, drug reversal, QSAR, docking and MD remain gated and are not represented as completed.
 
 ## Reproduce verified analyses
 

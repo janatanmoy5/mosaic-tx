@@ -1,4 +1,5 @@
 #!/usr/bin/env Rscript
+# Run prespecified GSE50084 biopsy contrasts, moderated differential expression, GSEA, and volcano plots.
 suppressPackageStartupMessages({library(data.table);library(limma);library(fgsea);library(msigdbr);library(ggplot2);library(jsonlite)})
 args<-commandArgs(trailingOnly=TRUE)
 if(length(args)!=3) stop("usage: 03_bulk_de_gsea.R <gene_expression.csv.gz> <samples.csv> <output_dir>")

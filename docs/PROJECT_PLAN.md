@@ -2,12 +2,15 @@
 
 ## Working title
 
-**Immune suppression without complete tissue resolution in antibody-mediated kidney-allograft injury: a multicohort public-data study**
+**Reference-robust and cell-state-aware qualification of molecular signatures for computational drug repositioning in antibody-mediated kidney-allograft rejection**
 
 ## Central question
 
-Do DSA exposure, active ABMR and post-treatment persistence reflect separable immune-effector and
-tissue-injury programs?
+Which ABMR expression programs are reproducible, rejection-specific, cell-localizable, and sufficiently robust across reference definitions and treatment states to justify downstream drug-reversal analysis?
+
+## Executed pilot status
+
+The current bulk pilot found reproducible rejection-associated NK, FCGR3A/Fc, cytotoxic, IFN/chemokine and endothelial modules across two cohorts, but no module was positively enriched in ABMR versus TCMR. Short-term felzartamab-associated reductions were detected for NK, cytotoxic and IFN/chemokine modules at week 24; no module retained an FDR-significant difference at week 52. These findings qualify rather than validate inputs for drug reversal. See `PILOT_RESULTS.md`.
 
 ## Biological model to test—not assume
 

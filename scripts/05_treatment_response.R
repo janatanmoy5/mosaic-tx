@@ -1,4 +1,5 @@
 #!/usr/bin/env Rscript
+# Estimate patient-blocked placebo-adjusted treatment effects at weeks 24 and 52 in GSE275824.
 suppressPackageStartupMessages({library(data.table);library(limma);library(fgsea);library(msigdbr);library(jsonlite)})
 a<-commandArgs(trailingOnly=TRUE);x<-fread(a[1]);s<-fread(a[2]);out<-a[3];dir.create(out,recursive=TRUE,showWarnings=FALSE)
 m<-as.matrix(x[,-1]);rownames(m)<-x$gene_symbol;idx<-match(s$sample_accession,colnames(m));if(anyNA(idx))stop("sample mismatch");m<-m[,idx]

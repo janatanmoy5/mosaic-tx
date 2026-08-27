@@ -1,4 +1,5 @@
 #!/usr/bin/env Rscript
+# Validate ABMR effects against non-rejecting allografts and TCMR in independent GSE36059 biopsies.
 suppressPackageStartupMessages({library(data.table);library(limma);library(fgsea);library(msigdbr);library(jsonlite)})
 a<-commandArgs(trailingOnly=TRUE);expr<-fread(a[1]);s<-fread(a[2]);out<-a[3];dir.create(out,recursive=TRUE,showWarnings=FALSE)
 m<-as.matrix(expr[,-1]);rownames(m)<-expr$gene_symbol;idx<-match(s$sample_accession,colnames(m));if(anyNA(idx))stop("sample mismatch");m<-m[,idx]

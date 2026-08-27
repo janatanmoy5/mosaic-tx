@@ -16,7 +16,6 @@ def main() -> None:
     args = ap.parse_args()
 
     import anndata as ad
-    import numpy as np
     import pandas as pd
     import scanpy as sc
     from scipy import sparse
