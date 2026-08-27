@@ -25,7 +25,7 @@ data, ex-vivo studies, animal validation or unpublished candidate compounds.
 
 ## Pilot value to the transplantation program
 
-The executed pilot shows why signature qualification is necessary. All major immune/endothelial
+The executed analysis shows why signature qualification is necessary. All major immune/endothelial
 modules replicated in ABMR versus non-rejection, but none was positively enriched in ABMR versus
 TCMR. A naive drug-reversal pipeline could therefore prioritize drugs against general rejection or
 inflammation rather than ABMR-specific biology.
@@ -63,4 +63,4 @@ with the UCSF team.
 Public-data work performed before collaboration remains fully documented. New analyses using UCSF
 data, unpublished grant outputs or candidate compounds require prior agreement on scope, governance,
 authorship, data security and publication review. No clinical recommendation will be made from this
-pilot.
+analysis.

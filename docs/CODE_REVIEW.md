@@ -15,10 +15,10 @@ does not mean a data workflow was executed.
 | `build_bulk_cohorts.py` | Dataset choices are explicit; delegates validation to tested library functions. Source is overly compressed and should be reformatted before a methods release. | Previously executed for GSE36059 and GSE275824. |
 | `02b_annotate_bioc.R` | Uses platform-specific Bioconductor mappings and averages duplicate probes. “First” mapping for multi-mapped probes is a sensitivity limitation. | Executed for all three bulk cohorts; annotation manifests present. |
 | `03_bulk_de_gsea.R` | Correct moderated two-group models and BH correction. GSE50084 lacks covariate adjustment and depends on historical labels. | Executed; DE, GSEA, volcanoes and manifest present. |
-| `04_external_validation.R` | Correctly tests ABMR versus non-rejection and separately versus TCMR. It does not establish ABMR specificity unless effect direction is evaluated. | Executed; the pilot atlas now enforces direction. |
+| `04_external_validation.R` | Correctly tests ABMR versus non-rejection and separately versus TCMR. It does not establish ABMR specificity unless effect direction is evaluated. | Executed; the analysis atlas now enforces direction. |
 | `05_treatment_response.R` | Patient blocking and placebo-adjusted difference-in-differences are appropriate. With 22 patients, estimates and intervals matter more than gene-level significance. | Executed at W24 and W52. |
 | `06_published_score_trajectories.R` | Patient random intercept and treatment-by-time interactions are appropriate; BH is applied across declared score/time tests. | Executed; six published scores evaluated. |
-| `07_score_mechanism_modules.py` | Correct within-cohort z-score construction and coverage audit. It requires the declared Python scientific environment. | Smoke-tested with synthetic expression; superseded for the pilot by script 08. |
+| `07_score_mechanism_modules.py` | Correct within-cohort z-score construction and coverage audit. It requires the declared Python scientific environment. | Smoke-tested with synthetic expression; superseded for the analysis by script 08. |
 | `08_build_robustness_atlas.R` | Fully annotated. Separates platforms, freezes modules, uses patient-blocked longitudinal models and direction-aware evidence grades. | Executed end to end on three cohorts; manifest and tables present. |
 | `14_validate_pipeline_outputs.py` | Fails on missing, empty, malformed, or dimensionally incomplete cohort/analysis/figure outputs. | Executed after the full pipeline; passed. |
 | `run_three_dataset_pipeline.sh` | Fail-fast orchestrator with dependency checks, logging, stage execution, validation, and output checksums. | Complete acquisition-to-figure run executed successfully. |
@@ -41,7 +41,7 @@ does not mean a data workflow was executed.
 
 ## Defects found by real execution
 
-1. The first pilot run referenced a factor-dependent coefficient name; execution stopped. The code
+1. The first analysis run referenced a factor-dependent coefficient name; execution stopped. The code
    now uses the invariant second coefficient in a two-group design.
 2. The first figure run assumed a non-existent `SE` column and a Cairo/X11 PDF device. Confidence
    intervals now use the moderated effect/t statistic and the native PDF device.

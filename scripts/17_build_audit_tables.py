@@ -107,7 +107,7 @@ def estimand_table(root: Path) -> list[dict[str, object]]:
         "tissue_injury_repair": "Tissue injury/repair",
     }
     output = []
-    for record in rows(root / "results" / "pilot" / "atlas" / "module_effects.csv"):
+    for record in rows(root / "results" / "atlas" / "module_effects.csv"):
         if record["module"] not in labels:
             continue
         effect, statistic = float(record["logFC"]), float(record["t"])
@@ -136,7 +136,7 @@ def estimand_table(root: Path) -> list[dict[str, object]]:
 def module_table(root: Path) -> list[dict[str, object]]:
     """Join frozen gene definitions to observed coverage on each platform."""
     config = json.loads((root / "configs" / "mechanism_modules.json").read_text())
-    coverage = rows(root / "results" / "pilot" / "atlas" / "module_coverage.csv")
+    coverage = rows(root / "results" / "atlas" / "module_coverage.csv")
     return [{"dataset": x["dataset"], "module": x["module"],
              "declared_genes": ";".join(config["modules"][x["module"]]["genes"]),
              "n_declared": x["declared_genes"], "n_observed": x["observed_genes"],
@@ -147,7 +147,7 @@ def module_table(root: Path) -> list[dict[str, object]]:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", type=Path, default=Path("."))
-    parser.add_argument("--output", type=Path, default=Path("results/pilot/tables"))
+    parser.add_argument("--output", type=Path, default=Path("results/tables"))
     args = parser.parse_args(); root = args.root.resolve(); out = (root / args.output).resolve()
     tables = out
     tables.mkdir(parents=True, exist_ok=True)

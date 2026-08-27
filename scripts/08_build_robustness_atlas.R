@@ -1,6 +1,6 @@
 #!/usr/bin/env Rscript
 
-# Purpose: construct the public-data ABMR signature robustness atlas used by the pilot study.
+# Purpose: construct the public-data ABMR signature robustness atlas used by the three-cohort study.
 # Scientific unit: a biopsy/sample for cross-sectional cohorts and a patient for longitudinal models.
 # Important: module scores are relative within each cohort and are never pooled across platforms.
 

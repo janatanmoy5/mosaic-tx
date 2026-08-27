@@ -1,11 +1,11 @@
-# Executed pilot: ABMR signature robustness and transportability atlas
+# Executed analysis: ABMR signature robustness and transportability atlas
 
 ## Status
 
-The bulk pilot was executed on the local Mac using the processed public matrices for GSE50084,
+The bulk analysis was executed on the local Mac using the processed public matrices for GSE50084,
 GSE36059 and GSE275824. The run comprised 589 expression profiles in total, including 22 patients
 with serial randomized-treatment biopsies. The complete effect table, module coverage, evidence
-grades, run manifest and rendered figures are stored under `results/pilot/`.
+grades, run manifest and rendered figures are stored under `results/`.
 
 This analysis is a stress test of molecular inputs for drug repositioning. It is not an independent
 drug-discovery claim and does not duplicate the experimental aims of R01AI180118.
@@ -52,11 +52,11 @@ contrast.
 - At week 52, none of the nine modules has an FDR-significant treatment difference. This is compatible
   with loss of the short-term immune effect, but it is not proof of recurrence in individual patients.
 - Endothelial activation is directionally reduced at weeks 24 and 52 but is not statistically resolved.
-  The pilot therefore cannot claim persistent endothelial injury or equivalence between arms.
+  The analysis therefore cannot claim persistent endothelial injury or equivalence between arms.
 
 ## What can be presented
 
-The appropriate pilot message is:
+The appropriate analysis message is:
 
 > Cross-cohort transcriptomic modules robustly capture rejection-associated immune and endothelial
 > activity, but fail ABMR-versus-TCMR specificity. Short-term CD38-directed treatment preferentially

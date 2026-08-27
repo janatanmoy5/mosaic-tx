@@ -48,6 +48,7 @@ QSAR, docking and molecular dynamics are downstream gates—not assumed delivera
 ## Start here
 
 1. [`docs/STUDY_BLUEPRINT.md`](docs/STUDY_BLUEPRINT.md) — biological question, estimands, statistical models, figure-to-claim contract, and decision gates
+2. [`docs/DATASET_COMPARISON.md`](docs/DATASET_COMPARISON.md) — bulk-versus-single-cell scope, three-GEO comparison, and steps for adding another cohort
 2. [`docs/PROJECT_PLAN.md`](docs/PROJECT_PLAN.md) — question, hypotheses, aims and success criteria
 2. [`docs/FEASIBILITY_AUDIT.md`](docs/FEASIBILITY_AUDIT.md) — what is practical on this Mac and what is not
 3. [`docs/ANALYSIS_SPECIFICATION.md`](docs/ANALYSIS_SPECIFICATION.md) — frozen contrasts and statistics
@@ -56,7 +57,7 @@ QSAR, docking and molecular dynamics are downstream gates—not assumed delivera
 6. [`docs/LIMITATIONS.md`](docs/LIMITATIONS.md) — claims the data cannot support
 7. [`docs/TRANSLATIONAL_EXTENSION.md`](docs/TRANSLATIONAL_EXTENSION.md) — single-cell, ML and drug gates
 8. [`docs/DRUG_QSAR_PROTOCOL.md`](docs/DRUG_QSAR_PROTOCOL.md) — chemical-data and QSAR requirements
-9. [`docs/PILOT_RESULTS.md`](docs/PILOT_RESULTS.md) — executed findings, null results, and claim boundaries
+9. [`docs/RESULTS.md`](docs/RESULTS.md) — executed findings, null results, and claim boundaries
 10. [`docs/CODE_REVIEW.md`](docs/CODE_REVIEW.md) — script-by-script verification status and defects found
 11. [`docs/R01AI180118_ALIGNMENT.md`](docs/R01AI180118_ALIGNMENT.md) — contribution to the transplantation program without aim duplication
 12. [`docs/PIPELINE_EXECUTION.md`](docs/PIPELINE_EXECUTION.md) — successful one-command run, outputs, checksums, and warnings
@@ -71,7 +72,7 @@ bash scripts/run_three_dataset_pipeline.sh
 
 The script executes acquisition and checksum verification, platform annotation, all declared statistical models, GSEA, module scoring, inferential figures, sample-level verification, tests, artifact validation, and manuscript packaging in order. It stops immediately if any stage fails.
 
-Primary plots are written to `results/pilot/figures/`; audit tables are written to `results/pilot/tables/`. `Table_S1_sample_labels.csv` contains all 589 public profiles with accession, original title, analysis label, inclusion status, treatment/timepoint where applicable, and the reason for inclusion or exclusion.
+Primary plots are written to `results/figures/`; audit tables are written to `results/tables/`. `Table_S1_sample_labels.csv` contains all 589 public profiles with accession, original title, analysis label, inclusion status, treatment/timepoint where applicable, and the reason for inclusion or exclusion.
 
 Equivalent stage-by-stage execution:
 
@@ -80,11 +81,11 @@ make data
 make annotate
 make bulk
 make scores
-make pilot
+make atlas
 make check
 ```
 
-The tracked pilot results were generated from the three public cohorts on the local Mac. Single-cell,
+The tracked analysis results were generated from the three public cohorts on the local Mac. Single-cell,
 ML, drug reversal, QSAR, docking and MD remain gated and are not represented as completed.
 
 ## Reproduce verified analyses

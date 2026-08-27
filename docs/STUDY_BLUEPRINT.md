@@ -57,7 +57,7 @@ from NK cells or monocytes; cell-specific claims require donor-level single-cell
 5. **Supplementary QC:** PCA and individual distributions. These diagnose cohort structure; they do
    not establish the biological conclusion.
 
-## Current conclusion permitted by the executed pilot
+## Current conclusion permitted by the executed analysis
 
 The data support reproducible immune-effector and endothelial activation in rejection relative to
 non-rejection. They do not currently support ABMR specificity: the ABMR-versus-TCMR comparison is

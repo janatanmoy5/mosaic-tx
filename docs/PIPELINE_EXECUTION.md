@@ -40,14 +40,14 @@ the exact three-dataset manifest, and both raster and vector manuscript figures.
 
 ## Main outputs
 
-- `results/pilot/atlas/module_effects.csv`
-- `results/pilot/atlas/robustness_atlas.csv`
-- `results/pilot/atlas/module_coverage.csv`
-- `results/pilot/atlas/run_manifest.json`
-- `results/pilot/figures/estimand_results_main.pdf`
-- `results/pilot/figures/dataset_results_main.pdf`
-- `results/pilot/tables/Table_S1_sample_labels.csv`
-- `results/pilot/output_checksums.sha256`
+- `results/atlas/module_effects.csv`
+- `results/atlas/robustness_atlas.csv`
+- `results/atlas/module_coverage.csv`
+- `results/atlas/run_manifest.json`
+- `results/figures/estimand_results_main.pdf`
+- `results/figures/dataset_results_main.pdf`
+- `results/tables/Table_S1_sample_labels.csv`
+- `results/output_checksums.sha256`
 
 ## Nonfatal warnings observed
 
@@ -62,6 +62,6 @@ These warnings are recorded rather than hidden. They did not cause a failed vali
 
 ## Scope boundary
 
-This command is the complete **three-public-bulk-dataset pilot**. Single-cell compilation, patient
+This command is the complete **three-public-bulk-dataset analysis**. Single-cell compilation, patient
 pseudobulk, ML, drug reversal, QSAR, docking, and MD require additional inputs and separate evidence
 gates. They are not silently simulated or described as executed by this runner.
