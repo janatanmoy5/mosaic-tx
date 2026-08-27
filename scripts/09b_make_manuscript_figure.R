@@ -66,8 +66,8 @@ counts <- rbindlist(list(
 p_a <- ggplot(counts, aes(dataset, N, fill = dataset)) +
   geom_col(width = 0.68) +
   geom_text(aes(label = N), vjust = -0.35, size = 3) +
-  scale_fill_manual(values = c(GSE50084 = palette["teal"], GSE36059 = palette["navy"],
-                               GSE275824 = palette["gold"]), guide = "none") +
+  scale_fill_manual(values = c(GSE50084 = unname(palette["teal"]), GSE36059 = unname(palette["navy"]),
+                               GSE275824 = unname(palette["gold"])), guide = "none") +
   facet_wrap(~group, scales = "free_x", nrow = 2) +
   scale_y_continuous(expand = expansion(mult = c(0, 0.12))) +
   labs(title = "A  Public-cohort architecture", subtitle = "Observed profiles entering each analysis",
@@ -90,7 +90,7 @@ p_b <- ggplot(replication, aes(logFC, module_label, color = comparison)) +
   geom_errorbar(aes(xmin = lower_95, xmax = upper_95), width = 0.13, orientation = "y",
                 position = position_dodge(width = 0.55)) +
   geom_point(aes(shape = fdr_state), size = 2.7, position = position_dodge(width = 0.55)) +
-  scale_color_manual(values = c(palette["teal"], palette["navy"], palette["red"])) +
+  scale_color_manual(values = unname(c(palette["teal"], palette["navy"], palette["red"]))) +
   scale_shape_manual(values = c("FDR < 0.05" = 16, "FDR >= 0.05" = 1)) +
   labs(title = "B  Replication does not imply ABMR specificity",
        subtitle = "Positive effects favor ABMR; negative specificity effects favor TCMR",
@@ -111,7 +111,7 @@ p_c <- ggplot(dsa, aes(logFC, module_label, color = comparison)) +
   geom_errorbar(aes(xmin = lower_95, xmax = upper_95), width = 0.13, orientation = "y",
                 position = position_dodge(width = 0.55)) +
   geom_point(aes(shape = fdr_state), size = 2.7, position = position_dodge(width = 0.55)) +
-  scale_color_manual(values = c(palette["red"], palette["purple"], palette["gold"])) +
+  scale_color_manual(values = unname(c(palette["red"], palette["purple"], palette["gold"]))) +
   scale_shape_manual(values = c("FDR < 0.05" = 16, "FDR >= 0.05" = 1)) +
   labs(title = "C  DSA exposure is not equivalent to rejection",
        subtitle = "The DSA+ non-rejection contrast remains an explicit falsification test",
@@ -128,7 +128,7 @@ p_d <- ggplot(treatment, aes(logFC, module_label, color = week)) +
   geom_errorbar(aes(xmin = lower_95, xmax = upper_95), width = 0.13, orientation = "y",
                 position = position_dodge(width = 0.5)) +
   geom_point(aes(shape = fdr_state), size = 2.8, position = position_dodge(width = 0.5)) +
-  scale_color_manual(values = c("Week 24" = palette["teal"], "Week 52" = palette["red"])) +
+  scale_color_manual(values = c("Week 24" = unname(palette["teal"]), "Week 52" = unname(palette["red"]))) +
   scale_shape_manual(values = c("FDR < 0.05" = 16, "FDR >= 0.05" = 1)) +
   labs(title = "D  Randomized treatment-associated module changes",
        subtitle = "Patient-blocked placebo-adjusted difference-in-differences",
