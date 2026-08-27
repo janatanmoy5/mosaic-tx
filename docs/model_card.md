@@ -1,37 +1,21 @@
-# Model card: MOSAIC-Tx reference scorer 0.1
+# Analysis card
 
 ## Intended use
 
-Method development and retrospective research prioritization of candidate interventions for
-laboratory testing. Users are computational biologists working with transplant clinicians,
-pharmacists, pathologists, statisticians, and data-governance teams.
+Reproducible reanalysis of public kidney-allograft expression cohorts and generation of testable
+biological hypotheses about ABMR-associated immune and tissue-injury programs.
 
-## Prohibited use
+## Not intended for
 
-Diagnosis, treatment selection, prescribing, dosing, replacing Banff/clinical adjudication,
-estimating individual benefit, or use outside an approved research protocol.
+Diagnosis, prognosis, treatment selection, dosing, individual risk estimation, clinical decision
+support or claims of causal mechanism.
 
-## Current model
+## Methods currently implemented
 
-The reference implementation computes confidence/evidence-weighted negative cosine similarity
-between disease and perturbation effects within matched cell-state features. It multiplies the
-reversal score by measured disease-state coverage and subtracts separate, configurable safety
-penalties. Low-coverage pairs are ineligible. It does not impute missing perturbation effects.
+Checksum-verified GEO acquisition, platform-specific Bioconductor annotation, limma differential
+expression, Hallmark GSEA, external ABMR/TCMR contrasts and patient-blocked longitudinal analysis.
 
-## Principal limitations
+## Principal risks
 
-- Anticorrelation is not causality and may reflect toxic suppression.
-- In vitro perturbations may not transport to a graft under immunosuppression.
-- Cell labels, reference choices, tissue dissociation, treatment timing, and batch effects can
-  dominate the score.
-- A normalized safety penalty is not a clinical risk estimate and cannot encode patient-specific
-  contraindications.
-- The simple score has no dose, pharmacokinetic, temporal, combination, or spatial mechanism.
-- Underrepresented ancestry, age, sex, organ, center, and rare endotypes can produce hidden failure.
-
-## Required reporting
-
-Always show reversal, coverage, safety components, evidence provenance, uncertainty, subgroup
-performance, missingness, and abstentions. Never report a candidate rank without the model version
-and input hashes.
-
+Historical label heterogeneity, platform effects, incomplete covariates, small treatment and
+single-cell cohorts, selective publication and overinterpretation of pathway associations.

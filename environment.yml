@@ -1,0 +1,17 @@
+name: mosaic-tx
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.12
+  - r-base=4.4
+  - r-data.table
+  - r-jsonlite
+  - r-nlme
+  - bioconductor-limma
+  - bioconductor-fgsea
+  - bioconductor-annotationdbi
+  - bioconductor-hgu219.db
+  - bioconductor-hgu133plus2.db
+  - bioconductor-hugene10sttranscriptcluster.db
+  - r-msigdbr

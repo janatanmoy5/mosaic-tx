@@ -34,6 +34,29 @@
       "role": "platform_annotation",
       "url": "https://ftp.ncbi.nlm.nih.gov/geo/platforms/GPL6nnn/GPL6244/annot/GPL6244.annot.gz",
       "sha256": "99ee70f87e02c75ff1c8dc57b6c40c0482c7ef2760e004301315ac34344ac6dc"
+    },
+    "E-MTAB-12051": {
+      "role": "planned_primary_cell_localization",
+      "status": "verified_not_compiled",
+      "samples": 16,
+      "processed_counts_bytes": 3092166324,
+      "repository": "BioStudies",
+      "feasibility": "32-64 GB RAM recommended; chunked sparse conversion required"
+    },
+    "GSE145927": {
+      "role": "planned_single_cell_sensitivity",
+      "status": "verified_not_compiled",
+      "biopsy_donors": 5,
+      "cells": 81139,
+      "processed_archive_bytes": 259207987,
+      "feasibility": "16-32 GB RAM; donor count limits inference"
+    },
+    "GSE252137": {
+      "role": "exploratory_spatial_specificity",
+      "status": "verified_not_compiled",
+      "samples_or_rois": 12,
+      "disease": "TCMR/non-TCMR",
+      "restriction": "not independent ABMR validation"
     }
   }
 }

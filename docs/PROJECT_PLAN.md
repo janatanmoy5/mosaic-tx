@@ -2,102 +2,95 @@
 
 ## Working title
 
-**Spatially resolved multicohort analysis identifies persistent, druggable immune–vascular programs in antibody-mediated kidney-allograft injury**
+**Immune suppression without complete tissue resolution in antibody-mediated kidney-allograft injury: a multicohort public-data study**
 
 ## Central question
 
-Which molecular programs distinguish ABMR from DSA-positive accommodation and TCMR, where do those
-programs localize in the graft, which respond to therapy in published longitudinal data, and which
-remaining regulators are credible small-molecule targets?
+Do DSA exposure, active ABMR and post-treatment persistence reflect separable immune-effector and
+tissue-injury programs?
 
-## Hypothesis
+## Biological model to test—not assume
 
-Persistent ABMR is sustained by reproducible immune–endothelial and tissue-injury programs that are
-measurable in bulk biopsies, attributable to defined cell states, spatially localized, and only
-partially suppressed by current treatment. Targets are prioritized only when their direction,
-cellular source, spatial context, treatment responsiveness, druggability, and structural evidence
-converge.
+The study tests a two-component model:
 
-![MOSAIC-Tx study design](../figures/fig1_study_design.svg)
+1. **Immune-effector activity:** IFN-gamma-responsive, NK-cell/Fc-receptor and antibody-associated
+   programs that may decrease during CD38-directed therapy.
+2. **Tissue-injury persistence:** endothelial, microvascular and parenchymal injury programs that may
+   remain when immune-effector activity falls.
 
-## Specific aims
+The model is rejected if the components are not reproducible across independent cohorts, cannot be
+localized at patient level in single-cell data, or do not show distinguishable longitudinal behavior.
+No transcriptomic association is called causal.
 
-### Aim 1 — Establish reproducible ABMR programs
+![MOSAIC-Tx evidence design](../figures/fig1_study_design.svg)
 
-Use GSE50084 for discovery, GSE36059 for independent replication and ABMR-versus-TCMR specificity,
-and GSE275824 for patient-blocked treatment-response analysis. Perform platform-specific QC,
-authoritative probe annotation, limma models, pathway enrichment, effect-direction concordance and
-random-effects meta-analysis. Primary endpoint: replicated gene-set activity with BH FDR control.
+## Aim 1 — Separate DSA exposure from damaging rejection
 
-### Aim 2 — Resolve cellular and spatial mechanisms
+Primary GSE50084 contrasts:
 
-Analyze E-MTAB-12051 and complementary public single-cell cohorts using donor-aware QC, sample-level
-pseudobulk statistics and cell-state annotation. Test localization in public spatial datasets rather
-than treating spot-level observations as independent patients. Primary endpoint: cross-dataset
-concordance of pathway direction in a prespecified cell type or spatial compartment.
+- DSA-positive/rejection versus DSA-positive/no-rejection
+- DSA-positive/no-rejection versus DSA-negative/no-rejection
+- DSA-positive/rejection versus DSA-negative/no-rejection
 
-### Aim 3 — Prioritize computational intervention hypotheses
+The difficult DSA-positive/no-rejection group is central, not a disposable control. Success requires
+interpretable effect estimates and pathway results; a null contrast is retained and may falsify a
+simple binary model.
 
-Integrate replicated biology with perturbational evidence, target tractability and transplant safety.
-Only targets passing biological and structural gates proceed to reference-ligand benchmarking,
-ensemble docking and replicated MD. Primary endpoint: a transparent evidence matrix and experimental
-shortlist—not a therapeutic recommendation.
+## Aim 2 — Replicate ABMR biology and test rejection specificity
 
-## Cohort roles and leakage controls
+In GSE36059, compare ABMR with non-rejecting allografts and separately with TCMR. Nephrectomies and
+mixed rejection remain distinct. A program is considered replicated only when direction agrees,
+FDR is controlled in the validation cohort, and the effect is not merely a pan-rejection signal.
 
-| Evidence layer | Dataset | Prespecified role | Key restriction |
-|---|---|---|---|
-| Bulk | GSE50084 | Discovery | DSA-positive/no-rejection remains a distinct difficult control |
-| Bulk | GSE36059 | External validation and TCMR specificity | Nephrectomy is separate from stable allograft |
-| Intervention | GSE275824 | Longitudinal treatment response | Patient-blocked difference-in-differences |
-| Single cell | E-MTAB-12051, GSE145927 | Cell-state localization | Patient, not cell, is the replicate |
-| Spatial | GSE252137, GSE280559, GSE284715 | Spatial/cross-species support | ROI/spot is not treated as an independent patient |
+## Aim 3 — Test immune-versus-tissue response during randomized therapy
 
-No sample may contribute to both model selection and held-out evaluation. Feature selection,
-normalization and tuning occur inside training folds. Dataset and center holdouts take precedence
-over random cell- or sample-level splits.
+In GSE275824, analyze baseline, week 24 and week 52 using patient blocking and a placebo-adjusted
+change-from-baseline contrast. Analyze both genome-wide expression and the study-provided ABMR,
+IFN-gamma, NK and endothelial scores. The key test is whether immune and endothelial/tissue scores
+show different trajectories; the analysis does not estimate individual treatment benefit.
 
-## Statistical hierarchy
+## Aim 4 — Localize replicated programs to cells
 
-1. Cohort-specific effect estimation with explicit contrasts.
-2. BH false-discovery control within each declared analysis family.
-3. Independent direction and pathway replication.
-4. Random-effects meta-analysis with heterogeneity statistics.
-5. Sensitivity analyses for label definition, reference group and platform.
-6. Cell-state pseudobulk and spatial permutation tests at the biological-replicate level.
-7. Nested ML evaluation with calibration, uncertainty and negative controls.
+Use E-MTAB-12051 as the primary cell-localization resource and GSE145927 as sensitivity evidence.
+Inference is performed by patient-level pseudobulk within prespecified cell classes. Cells are not
+independent replicates. Because E-MTAB-12051 is a 3.09 GB count CSV and GSE145927 includes only five
+biopsy donors, this aim requires a separate 32–64 GB RAM environment and is not yet completed.
 
-Exploratory analyses are labeled separately. Null results remain in the report.
+## Spatial evidence
 
-## Target-selection gate
+Spatial data are not a primary validation aim. GSE252137 contains 12 TCMR/non-TCMR ROIs and can test
+anatomical plausibility or specificity, not establish ABMR replication. The previously cited
+GSE280559 is unrelated to transplantation and has been removed. ABMR spatial case studies with one
+patient are literature support only.
 
-A target proceeds only if it has replicated association, coherent direction, defined cellular source,
-spatial support, perturbational evidence, acceptable transplant-safety rationale and a tractable
-binding site. A docking score alone is never selection evidence. MD requires pose recovery or a
-reference ligand, decoys, multiple seeds and convergence checks.
+## Primary endpoints
 
-## Planned principal figures
+- Aim 1: moderated log-fold changes and Hallmark enrichment for the three declared contrasts.
+- Aim 2: independent direction concordance and ABMR-versus-TCMR specificity.
+- Aim 3: placebo-adjusted longitudinal interaction for published molecular scores and expression.
+- Aim 4: patient-level pseudobulk direction concordance in prespecified cell classes.
 
-1. Study design and evidence gates.
-2. Cohort QC, contrasts and cross-cohort effect concordance.
-3. Replicated pathways and treatment-responsive versus persistent programs.
-4. Single-cell atlas with patient-level pseudobulk effects.
-5. Spatial localization and neighborhood enrichment.
-6. Multimodal evidence graph and calibrated ML evaluation.
-7. Target triage, docking controls and replicated MD—only if eligibility gates pass.
+## Success and stop criteria
 
-## Reporting standard and realistic journal positioning
+Proceed to mechanistic synthesis only if a program is supported in at least two independent cohorts
+and is not explained solely by TCMR. Stop target prioritization if cell localization is inconsistent,
+treatment direction is unstable, or results depend on one reference definition. Do not initiate
+docking or MD without a replicated target, known directional biology, a tractable structure and a
+reference-ligand benchmark.
 
-The work should follow STROBE-style observational reporting, TRIPOD principles for prediction,
-FAIR provenance, complete code/data manifests and explicit limitations. With public computational
-data alone, a defensible aspirational target is **Nature Communications**, **Communications
-Medicine**, **Cell Reports Medicine**, or a strong transplant/bioinformatics journal. **NEJM** or a
-primary Nature/Cell research journal is not a credible claim without major prospective clinical or
-experimental validation. Journal selection follows completed evidence, not branding.
+## Expected paper figures
 
-## Current verified status
+1. Dataset architecture, contrasts and evidence gates.
+2. DSA-state continuum in GSE50084, including the null difficult-control result.
+3. External ABMR replication and ABMR-versus-TCMR specificity.
+4. Randomized longitudinal immune, NK and endothelial score trajectories.
+5. Patient-level single-cell localization, only after successful computation.
+6. Cross-cohort evidence synthesis and falsification tests.
 
-The three bulk cohorts, gene annotation, differential expression, Hallmark GSEA, external specificity
-analysis and randomized longitudinal analysis run successfully. Single-cell, spatial, meta-analysis,
-ML, target convergence, docking and MD remain gated work packages and must not be described as
-completed until their scripts, QC and results are verified.
+## Journal positioning
+
+A public-data-only study should be judged after completion. Reasonable aspirational venues include
+American Journal of Transplantation, Kidney International Reports, Communications Biology, or a
+strong computational biology journal. Nature Communications or Cell Reports Medicine would require
+substantial multimodal replication and a clearly new biological conclusion. NEJM and primary
+Nature/Cell are not realistic without major prospective or experimental evidence.

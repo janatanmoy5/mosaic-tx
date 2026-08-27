@@ -48,5 +48,5 @@ def compile_geo(source:Path,out:Path,dataset:str,expected:int):
    if key not in keys: keys.append(key)
  with (out/'samples.csv').open('w',newline='') as f:
   w=csv.DictWriter(f,fieldnames=keys,extrasaction='ignore'); w.writeheader(); w.writerows(rows)
- manifest={'schema_version':'1.0','dataset':dataset,'source_sha256':file_sha256(source),'sample_count':len(rows),'feature_count':features,'model_ready':True if dataset in {'GSE36059','GSE275824'} else False,'label_source':'GEO submitter characteristics'}
+ manifest={'schema_version':'1.0','dataset':dataset,'source_sha256':file_sha256(source),'sample_count':len(rows),'feature_count':features,'compiled':True,'analysis_ready_with_original_labels':True,'label_source':'GEO submitter characteristics'}
  (out/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n'); return manifest

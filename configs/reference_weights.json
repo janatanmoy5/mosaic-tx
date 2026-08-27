@@ -1,9 +1,0 @@
-{
-  "schema_version": "1.0",
-  "infection": 0.20,
-  "nephrotoxicity": 0.25,
-  "interaction": 0.15,
-  "minimum_coverage": 0.25,
-  "status": "illustrative; weights require stakeholder elicitation and preregistration"
-}
-

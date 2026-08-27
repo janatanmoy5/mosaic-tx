@@ -70,7 +70,7 @@ def compile_gse50084(source: Path, output: Path, expected_samples: int=115):
     counts={}
     for row in rows:
       key=f"{row['compartment']}|{row['analysis_group']}"; counts[key]=counts.get(key,0)+1
-    manifest={"schema_version":"1.0","dataset":"GSE50084","source_sha256":file_sha256(source),"sample_count":len(rows),"feature_count":features,"group_counts":counts,"expression_level":"submitted_normalized_probe_values","model_ready":False,"blocking_review":"clinical phenotype and probe-to-gene mapping review"}
+    manifest={"schema_version":"1.0","dataset":"GSE50084","source_sha256":file_sha256(source),"sample_count":len(rows),"feature_count":features,"group_counts":counts,"expression_level":"submitted_normalized_probe_values","compiled":True,"gene_mapping_complete":False,"label_caveat":"historical GEO submitter labels"}
     (output/"manifest.json").write_text(json.dumps(manifest,indent=2)+"\n")
     return manifest
 

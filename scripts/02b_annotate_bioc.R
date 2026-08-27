@@ -8,4 +8,4 @@ map<-AnnotationDbi::mapIds(db,keys=as.character(expr$probe_id),column="SYMBOL",k
 expr[,gene_symbol:=unname(map[as.character(probe_id)])]; sample_cols<-setdiff(names(expr),c("probe_id","gene_symbol")); annotated<-expr[!is.na(gene_symbol)&gene_symbol!=""]
 for(n in sample_cols)set(annotated,j=n,value=as.numeric(annotated[[n]]))
 gene<-annotated[,lapply(.SD,mean,na.rm=TRUE),by=gene_symbol,.SDcols=sample_cols];fwrite(gene,file.path(out,"gene_expression.csv.gz"))
-manifest<-list(platform=platform,annotation_package=pkg,input_probes=nrow(expr),annotated_probes=nrow(annotated),unique_genes=nrow(gene),aggregation="mean",model_ready=TRUE);write_json(manifest,file.path(out,"annotation_manifest.json"),pretty=TRUE,auto_unbox=TRUE);print(manifest)
+manifest<-list(platform=platform,annotation_package=pkg,input_probes=nrow(expr),annotated_probes=nrow(annotated),unique_genes=nrow(gene),aggregation="mean",mapping_complete=TRUE);write_json(manifest,file.path(out,"annotation_manifest.json"),pretty=TRUE,auto_unbox=TRUE);print(manifest)

@@ -1,9 +1,9 @@
 cff-version: 1.2.0
-message: "If you use this research prototype, please cite the software repository."
-title: "MOSAIC-Tx"
+message: "If you use this public-data analysis, please cite the repository and original datasets."
+title: "MOSAIC-Tx: multicohort omics study of antibody-associated transplant injury"
 type: software
-version: 0.1.0
+version: 0.2.0
 date-released: 2026-08-26
 license: MIT
 repository-code: "https://github.com/janatanmoy5/mosaic-tx"
-abstract: "Cell-state-aware, safety-constrained intervention prioritization for transplant research."
+abstract: "Reproducible public-data analysis of immune activity and tissue-injury persistence in kidney-allograft ABMR."

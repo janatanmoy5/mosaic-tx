@@ -1,12 +1,10 @@
-# Maximum defensible computational scope
+# Computational scope
 
-This is a public-data-only study. It has no private clinical cohort, prospective patients, or wet-lab
-validation. Evidence strength comes from replication across independent published cohorts and
-modalities. The primary disease is kidney-allograft ABMR; TCMR is a specificity control.
+The executable primary scope is public bulk transcriptomics: acquisition, checksums, metadata
+compilation, authoritative array annotation, differential expression, pathway enrichment, independent
+specificity testing and longitudinal treatment-response analysis. The next justified stage is
+patient-level single-cell pseudobulk localization.
 
-The gated workflow is: bulk discovery and external replication; treatment-response validation;
-single-cell localization; spatial localization; pathway and regulatory convergence; leakage-safe
-ML; perturbation evidence; target druggability; then docking and replicated MD only for structurally
-eligible small-molecule hypotheses. Each stage must emit provenance, QC, uncertainty, negative
-controls, and stop/go status. Docking cannot rescue weak biology, and computational predictions are
-not clinical recommendations or experimental validation.
+Spatial analysis is exploratory. High-capacity AI, patient-specific prediction, drug repurposing,
+docking and MD are not current study components because the available sample sizes and biological
+evidence do not justify them.
