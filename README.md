@@ -67,20 +67,12 @@ The demo data and candidate names are fictional. A higher `priority_score` indic
 predicted reversal after safety penalties; `coverage` reveals how much of the measured disease
 state was actually evaluated.
 
-## Architecture
+## Study design
 
-```mermaid
-flowchart LR
-  A[Biopsy + blood + clinical timeline] --> B[Cell-state disease programs]
-  S[Spatial neighborhoods] --> B
-  P[Perturbation evidence] --> C[Cell-aware counterfactual engine]
-  B --> C
-  K[Transplant safety knowledge] --> D[Constraint layer]
-  C --> D
-  D --> E[Patient-level ranked hypotheses]
-  E --> F[Organoid / ex vivo validation]
-  F --> G[Prospective observational validation]
-```
+![MOSAIC-Tx publication study design](figures/fig1_study_design.svg)
+
+The complete hypothesis-driven plan, statistical hierarchy, dataset roles, evidence gates, figure
+plan and journal positioning are in [`docs/PROJECT_PLAN.md`](docs/PROJECT_PLAN.md).
 
 ## Repository map
 
