@@ -1,0 +1,7 @@
+{
+  "method": "linear mixed effects; patient random intercept; treatment-by-time interaction; BH across declared scores/timepoints",
+  "n_patients": 22,
+  "n_biopsies": 63,
+  "scores": ["abmract", "abmrifng", "abmrnk", "abmrendo", "nkb", "endat"],
+  "significant_interactions_fdr_0_05": 4
+}

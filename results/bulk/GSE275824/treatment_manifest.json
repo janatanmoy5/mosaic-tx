@@ -1,0 +1,18 @@
+{
+  "consensus_correlation": 0.0341,
+  "W24": {
+    "fdr": 0,
+    "top_gene": "ERG28",
+    "top_pathway": "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+    "pathways_fdr": 15
+  },
+  "W52": {
+    "fdr": 0,
+    "top_gene": "ERG28",
+    "top_pathway": "HALLMARK_MYC_TARGETS_V1",
+    "pathways_fdr": 34
+  },
+  "design": "patient-blocked limma; (follow-up - baseline) felzartamab minus placebo",
+  "n_patients": 22,
+  "n_biopsies": 63
+}

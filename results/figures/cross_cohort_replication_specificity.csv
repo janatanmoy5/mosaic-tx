@@ -1,0 +1,7 @@
+module,module_label,Discovery: DSA+ rejection vs DSA+ no rejection,Validation: ABMR vs non-rejecting,Specificity: ABMR vs TCMR
+cytotoxicity,Cytotoxicity,0.324757778169163,0.507558184617662,-0.641900512595718
+endothelial_activation_injury,Endothelial activation,0.428066398203542,0.496388736919329,-0.158908010425848
+fcgr3a_adcc_effector,FCGR3A/Fc signaling,0.26361297680987,0.423066498907528,-0.896256729954814
+ifng_chemokine,IFN-gamma/chemokines,0.557364575238181,0.704221590646138,-0.767292255220589
+nk_identity,NK identity,0.296872732639828,0.539391250403421,-0.343375146272506
+tissue_injury_repair,Tissue injury/repair,-0.0506120193766239,0.208531358458563,-0.0215503912997476

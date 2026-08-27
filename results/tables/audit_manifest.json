@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "canonical_runner": "scripts/run_three_dataset_pipeline.sh",
+  "tables": 4,
+  "artifacts": [
+    {
+      "path": "results/tables/Table_1_cohort_composition.csv",
+      "sha256": "4fd73d862b7d0c8afa7205de32c81afc08b4fef9aff2227211c13f8b6ec43bd5"
+    },
+    {
+      "path": "results/tables/Table_2_primary_estimands.csv",
+      "sha256": "4a4c47ab1fbfa7658f3a16969d5ad6d78cf36c60c19c57eb26f494a430d9be07"
+    },
+    {
+      "path": "results/tables/Table_S1_sample_labels.csv",
+      "sha256": "c0bf8224c65f8e99f231a9e0da21a3a0b5634abd933390f70ed4ae0866af47b6"
+    },
+    {
+      "path": "results/tables/Table_S2_module_definitions_and_coverage.csv",
+      "sha256": "45c1c89501614cf97575d50bd821856829aca3bb07e750098eb53f65d3477540"
+    },
+    {
+      "path": "results/tables/audit_manifest.json",
+      "sha256": "3c022311b36a53f49c144c4060375e5c93b4e1ab8d05a3f3b33685040a3245ed"
+    }
+  ]
+}

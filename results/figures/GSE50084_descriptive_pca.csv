@@ -1,0 +1,116 @@
+dataset,sample_accession,sample_title,compartment,analysis_group,dsa_status,rejection_status,platform,label_review_status,PC1,PC2,group_label
+GSE50084,GSM1213867,Biopsy_No_DSA_1,biopsy,DSA_negative_control,negative,no_rejection,GPL6244,requires_clinical_review,-32.3261718707503,2.00577645573837,DSA- / no rejection
+GSE50084,GSM1213868,Biopsy_No_DSA_2,biopsy,DSA_negative_control,negative,no_rejection,GPL6244,requires_clinical_review,-33.3521852621289,4.81964928198142,DSA- / no rejection
+GSE50084,GSM1213869,Biopsy_No_DSA_3,biopsy,DSA_negative_control,negative,no_rejection,GPL6244,requires_clinical_review,-28.445479935405,-0.106867480331265,DSA- / no rejection
+GSE50084,GSM1213870,Biopsy_No_DSA_4,biopsy,DSA_negative_control,negative,no_rejection,GPL6244,requires_clinical_review,-30.6201674062152,-1.14440833778398,DSA- / no rejection
+GSE50084,GSM1213871,Biopsy_No_DSA_5,biopsy,DSA_negative_control,negative,no_rejection,GPL6244,requires_clinical_review,-33.736341586148,5.33493507254076,DSA- / no rejection
+GSE50084,GSM1213872,Biopsy_No_DSA_6,biopsy,DSA_negative_control,negative,no_rejection,GPL6244,requires_clinical_review,-31.7285291737037,1.36886579438666,DSA- / no rejection
+GSE50084,GSM1213873,Biopsy_No_DSA_7,biopsy,DSA_negative_control,negative,no_rejection,GPL6244,requires_clinical_review,-31.1322523024936,4.85157111498427,DSA- / no rejection
+GSE50084,GSM1213874,Biopsy_No_DSA_8,biopsy,DSA_negative_control,negative,no_rejection,GPL6244,requires_clinical_review,-32.7599494320077,7.58432518158825,DSA- / no rejection
+GSE50084,GSM1213875,Biopsy_No_DSA_9,biopsy,DSA_negative_control,negative,no_rejection,GPL6244,requires_clinical_review,-27.4501251754113,2.87329794343475,DSA- / no rejection
+GSE50084,GSM1213876,Biopsy_No_DSA_10,biopsy,DSA_negative_control,negative,no_rejection,GPL6244,requires_clinical_review,-33.3583603443302,5.33538210421277,DSA- / no rejection
+GSE50084,GSM1213877,Biopsy_No_DSA_11,biopsy,DSA_negative_control,negative,no_rejection,GPL6244,requires_clinical_review,-33.6676739331541,5.24615709799052,DSA- / no rejection
+GSE50084,GSM1213878,Biopsy_No_DSA_12,biopsy,DSA_negative_control,negative,no_rejection,GPL6244,requires_clinical_review,-32.1791091294669,5.87681357793815,DSA- / no rejection
+GSE50084,GSM1213879,Biopsy_No_DSA_13,biopsy,DSA_negative_control,negative,no_rejection,GPL6244,requires_clinical_review,-32.5168883802849,4.9095162242943,DSA- / no rejection
+GSE50084,GSM1213880,Biopsy_No_DSA_14,biopsy,DSA_negative_control,negative,no_rejection,GPL6244,requires_clinical_review,-32.6648459223603,4.68066551374206,DSA- / no rejection
+GSE50084,GSM1213881,Biopsy_No_DSA_15,biopsy,DSA_negative_control,negative,no_rejection,GPL6244,requires_clinical_review,-29.1986429795374,-0.526683733974881,DSA- / no rejection
+GSE50084,GSM1213882,Biopsy_No_DSA_16,biopsy,DSA_negative_control,negative,no_rejection,GPL6244,requires_clinical_review,-17.4861563378195,-6.92532715247943,DSA- / no rejection
+GSE50084,GSM1213883,Biopsy_No_DSA_17,biopsy,DSA_negative_control,negative,no_rejection,GPL6244,requires_clinical_review,-31.7425803340369,0.790204289638366,DSA- / no rejection
+GSE50084,GSM1213884,Biopsy_No_DSA_18,biopsy,DSA_negative_control,negative,no_rejection,GPL6244,requires_clinical_review,-31.6777176898877,1.2881339945982,DSA- / no rejection
+GSE50084,GSM1213885,Biopsy_No_DSA_19,biopsy,DSA_negative_control,negative,no_rejection,GPL6244,requires_clinical_review,-31.9759912017088,4.57951603136696,DSA- / no rejection
+GSE50084,GSM1213886,Biopsy_No_DSA_20,biopsy,DSA_negative_control,negative,no_rejection,GPL6244,requires_clinical_review,-27.694571188524,4.58087337194887,DSA- / no rejection
+GSE50084,GSM1213887,Biopsy_DSA_normal_1,biopsy,DSA_positive_no_rejection,positive,no_rejection,GPL6244,requires_clinical_review,-18.1954908810383,-9.83134485875274,DSA+ / no rejection
+GSE50084,GSM1213888,Biopsy_DSA_normal_2,biopsy,DSA_positive_no_rejection,positive,no_rejection,GPL6244,requires_clinical_review,-23.8516672416209,-7.95931822503,DSA+ / no rejection
+GSE50084,GSM1213889,Biopsy_DSA_normal_3,biopsy,DSA_positive_no_rejection,positive,no_rejection,GPL6244,requires_clinical_review,-30.2421281828316,2.00145045715842,DSA+ / no rejection
+GSE50084,GSM1213890,Biopsy_DSA_normal_4,biopsy,DSA_positive_no_rejection,positive,no_rejection,GPL6244,requires_clinical_review,-30.5095017437854,1.758826972266,DSA+ / no rejection
+GSE50084,GSM1213891,Biopsy_DSA_normal_5,biopsy,DSA_positive_no_rejection,positive,no_rejection,GPL6244,requires_clinical_review,-30.8936954493343,-0.513475624427428,DSA+ / no rejection
+GSE50084,GSM1213892,Biopsy_DSA_normal_6,biopsy,DSA_positive_no_rejection,positive,no_rejection,GPL6244,requires_clinical_review,-32.8337071508358,1.90723425626944,DSA+ / no rejection
+GSE50084,GSM1213893,Biopsy_DSA_normal_7,biopsy,DSA_positive_no_rejection,positive,no_rejection,GPL6244,requires_clinical_review,-33.9251655115832,7.91887543196623,DSA+ / no rejection
+GSE50084,GSM1213894,Biopsy_DSA_normal_8,biopsy,DSA_positive_no_rejection,positive,no_rejection,GPL6244,requires_clinical_review,-28.1470926022571,2.11241042774175,DSA+ / no rejection
+GSE50084,GSM1213895,Biopsy_DSA_normal_9,biopsy,DSA_positive_no_rejection,positive,no_rejection,GPL6244,requires_clinical_review,-26.6155065553049,-5.9695717672084,DSA+ / no rejection
+GSE50084,GSM1213896,Biopsy_DSA_normal_10,biopsy,DSA_positive_no_rejection,positive,no_rejection,GPL6244,requires_clinical_review,-34.3767117049509,6.01767862482011,DSA+ / no rejection
+GSE50084,GSM1213897,Biopsy_DSA_normal_11,biopsy,DSA_positive_no_rejection,positive,no_rejection,GPL6244,requires_clinical_review,-31.3403204123423,1.3360016081989,DSA+ / no rejection
+GSE50084,GSM1213898,Biopsy_DSA_normal_12,biopsy,DSA_positive_no_rejection,positive,no_rejection,GPL6244,requires_clinical_review,-30.2931270876666,-1.07575447301376,DSA+ / no rejection
+GSE50084,GSM1213899,Biopsy_DSA_normal_13,biopsy,DSA_positive_no_rejection,positive,no_rejection,GPL6244,requires_clinical_review,-29.1236306374358,3.02542271240417,DSA+ / no rejection
+GSE50084,GSM1213900,Biopsy_DSA_rejection_1,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,-26.0760525501424,-5.94202386684747,DSA+ / rejection
+GSE50084,GSM1213901,Biopsy_DSA_rejection_2,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,-25.3889946582379,-6.20713373570772,DSA+ / rejection
+GSE50084,GSM1213902,Biopsy_DSA_rejection_3,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,-25.5921812563294,-6.89647382993562,DSA+ / rejection
+GSE50084,GSM1213903,Biopsy_DSA_rejection_4,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,-26.1247224226959,-5.55065910139945,DSA+ / rejection
+GSE50084,GSM1213904,Biopsy_DSA_rejection_5,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,-23.9287646191897,1.73521551179156,DSA+ / rejection
+GSE50084,GSM1213905,Biopsy_DSA_rejection_6,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,-27.8268400642047,-2.25470914426115,DSA+ / rejection
+GSE50084,GSM1213906,Biopsy_DSA_rejection_7,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,-25.7684927601337,0.190538678138843,DSA+ / rejection
+GSE50084,GSM1213907,Biopsy_DSA_rejection_8,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,-25.1315569153998,-5.39973555962229,DSA+ / rejection
+GSE50084,GSM1213908,Biopsy_DSA_rejection_9,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,-24.0099215352714,2.9189256778665,DSA+ / rejection
+GSE50084,GSM1213909,Biopsy_DSA_rejection_10,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,-25.6872853992449,1.39933316521472,DSA+ / rejection
+GSE50084,GSM1213910,Biopsy_DSA_rejection_11,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,-23.2084395936574,-7.41401822651625,DSA+ / rejection
+GSE50084,GSM1213911,Biopsy_DSA_rejection_12,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,-23.3498393587372,6.7639011688192,DSA+ / rejection
+GSE50084,GSM1213912,Biopsy_DSA_rejection_13,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,-29.1973778668683,-2.3332734462208,DSA+ / rejection
+GSE50084,GSM1213913,Biopsy_DSA_rejection_14,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,-27.3572221642228,-1.3331784264324,DSA+ / rejection
+GSE50084,GSM1213914,Biopsy_DSA_rejection_15,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,-29.2828099113117,-0.0701660611676332,DSA+ / rejection
+GSE50084,GSM1213915,Biopsy_DSA_rejection_16,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,-28.1508184181445,-1.82549641385202,DSA+ / rejection
+GSE50084,GSM1213916,Biopsy_DSA_rejection_17,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,-25.9677230311542,-2.88171894895487,DSA+ / rejection
+GSE50084,GSM1213917,Biopsy_DSA_rejection_18,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,-27.3448515613105,-2.85087226934202,DSA+ / rejection
+GSE50084,GSM1213918,Biopsy_DSA_rejection_19,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,-26.0564377823914,-0.0973728598374832,DSA+ / rejection
+GSE50084,GSM1213919,Biopsy_DSA_rejection_20,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,-27.9059058039111,-2.94064822873088,DSA+ / rejection
+GSE50084,GSM1213920,Biopsy_DSA_rejection_21,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,-23.0446106771561,-7.41952266711362,DSA+ / rejection
+GSE50084,GSM1213921,Biopsy_DSA_rejection_22,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,-32.773716032863,3.27544463413904,DSA+ / rejection
+GSE50084,GSM1213922,Biopsy_DSA_rejection_23,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,-26.86523192556,-6.66134341470197,DSA+ / rejection
+GSE50084,GSM1213923,Biopsy_DSA_rejection_24,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,-28.3829913898564,-0.945063825184783,DSA+ / rejection
+GSE50084,GSM1213924,Biopsy_DSA_rejection_25,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,-27.3994949135884,-4.884012101495,DSA+ / rejection
+GSE50084,GSM1213925,Biopsy_DSA_rejection_26,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,-22.2559262063164,-7.05883184932764,DSA+ / rejection
+GSE50084,GSM1213926,Biopsy_DSA_rejection_27,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,-22.8333511138235,-4.41925927529553,DSA+ / rejection
+GSE50084,GSM1213927,Biopsy_DSA_rejection_28,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,-28.2212705419502,-1.60205440538481,DSA+ / rejection
+GSE50084,GSM1213928,Blood_No_DSA_1,blood,DSA_negative_control,negative,no_rejection,GPL6244,requires_clinical_review,30.4768355890709,-0.58445049565222,DSA- / no rejection
+GSE50084,GSM1213929,Blood_No_DSA_2,blood,DSA_negative_control,negative,no_rejection,GPL6244,requires_clinical_review,32.8342985506233,0.0775258208584313,DSA- / no rejection
+GSE50084,GSM1213930,Blood_No_DSA_3,blood,DSA_negative_control,negative,no_rejection,GPL6244,requires_clinical_review,31.7451965345673,-0.25599409124508,DSA- / no rejection
+GSE50084,GSM1213931,Blood_No_DSA_4,blood,DSA_negative_control,negative,no_rejection,GPL6244,requires_clinical_review,30.8329044946202,2.31515683980972,DSA- / no rejection
+GSE50084,GSM1213932,Blood_No_DSA_5,blood,DSA_negative_control,negative,no_rejection,GPL6244,requires_clinical_review,29.6018176148209,1.85477498077367,DSA- / no rejection
+GSE50084,GSM1213933,Blood_No_DSA_6,blood,DSA_negative_control,negative,no_rejection,GPL6244,requires_clinical_review,28.4802741319482,-1.0302148137606,DSA- / no rejection
+GSE50084,GSM1213934,Blood_No_DSA_7,blood,DSA_negative_control,negative,no_rejection,GPL6244,requires_clinical_review,32.0209009073759,1.89366100587077,DSA- / no rejection
+GSE50084,GSM1213935,Blood_No_DSA_8,blood,DSA_negative_control,negative,no_rejection,GPL6244,requires_clinical_review,31.7070360108288,1.81342587687288,DSA- / no rejection
+GSE50084,GSM1213936,Blood_No_DSA_9,blood,DSA_negative_control,negative,no_rejection,GPL6244,requires_clinical_review,33.954272150619,1.61276942363488,DSA- / no rejection
+GSE50084,GSM1213937,Blood_No_DSA_10,blood,DSA_negative_control,negative,no_rejection,GPL6244,requires_clinical_review,31.9978744025195,-0.358109480291187,DSA- / no rejection
+GSE50084,GSM1213938,Blood_No_DSA_11,blood,DSA_negative_control,negative,no_rejection,GPL6244,requires_clinical_review,31.7545181334633,0.997627354818337,DSA- / no rejection
+GSE50084,GSM1213939,Blood_No_DSA_12,blood,DSA_negative_control,negative,no_rejection,GPL6244,requires_clinical_review,32.1375409186462,-0.321556553486349,DSA- / no rejection
+GSE50084,GSM1213940,Blood_DSA_normal_1,blood,DSA_positive_no_rejection,positive,no_rejection,GPL6244,requires_clinical_review,32.7157551751407,-0.00204870581331074,DSA+ / no rejection
+GSE50084,GSM1213941,Blood_DSA_normal_2,blood,DSA_positive_no_rejection,positive,no_rejection,GPL6244,requires_clinical_review,30.5470826320489,3.78163785956368,DSA+ / no rejection
+GSE50084,GSM1213942,Blood_DSA_normal_3,blood,DSA_positive_no_rejection,positive,no_rejection,GPL6244,requires_clinical_review,32.4233983374564,3.23588782105807,DSA+ / no rejection
+GSE50084,GSM1213943,Blood_DSA_normal_4,blood,DSA_positive_no_rejection,positive,no_rejection,GPL6244,requires_clinical_review,31.4369609647221,-0.131334208137329,DSA+ / no rejection
+GSE50084,GSM1213944,Blood_DSA_normal_5,blood,DSA_positive_no_rejection,positive,no_rejection,GPL6244,requires_clinical_review,32.3218514651427,3.76044300460096,DSA+ / no rejection
+GSE50084,GSM1213945,Blood_DSA_normal_6,blood,DSA_positive_no_rejection,positive,no_rejection,GPL6244,requires_clinical_review,29.7679237526197,-3.48819008474176,DSA+ / no rejection
+GSE50084,GSM1213946,Blood_DSA_normal_7,blood,DSA_positive_no_rejection,positive,no_rejection,GPL6244,requires_clinical_review,33.331416288802,1.73913352581141,DSA+ / no rejection
+GSE50084,GSM1213947,Blood_DSA_normal_8,blood,DSA_positive_no_rejection,positive,no_rejection,GPL6244,requires_clinical_review,31.8215392227248,-2.22727759326579,DSA+ / no rejection
+GSE50084,GSM1213948,Blood_DSA_normal_9,blood,DSA_positive_no_rejection,positive,no_rejection,GPL6244,requires_clinical_review,30.9566968471031,-2.54871996798614,DSA+ / no rejection
+GSE50084,GSM1213949,Blood_DSA_normal_10,blood,DSA_positive_no_rejection,positive,no_rejection,GPL6244,requires_clinical_review,32.213872972317,-0.769801972227957,DSA+ / no rejection
+GSE50084,GSM1213950,Blood_DSA_normal_11,blood,DSA_positive_no_rejection,positive,no_rejection,GPL6244,requires_clinical_review,33.3466295189542,2.17829104426432,DSA+ / no rejection
+GSE50084,GSM1213951,Blood_DSA_normal_12,blood,DSA_positive_no_rejection,positive,no_rejection,GPL6244,requires_clinical_review,31.2684181886698,0.278712819387412,DSA+ / no rejection
+GSE50084,GSM1213952,Blood_DSA_normal_13,blood,DSA_positive_no_rejection,positive,no_rejection,GPL6244,requires_clinical_review,33.2894168052086,1.53521903839889,DSA+ / no rejection
+GSE50084,GSM1213953,Blood_DSA_normal_14,blood,DSA_positive_no_rejection,positive,no_rejection,GPL6244,requires_clinical_review,31.4220313397517,3.7127571911348,DSA+ / no rejection
+GSE50084,GSM1213954,Blood_DSA_rejection_1,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,31.7568292976485,-0.166401039398067,DSA+ / rejection
+GSE50084,GSM1213955,Blood_DSA_rejection_2,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,31.1828723351911,-2.65726264099796,DSA+ / rejection
+GSE50084,GSM1213956,Blood_DSA_rejection_3,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,31.8085293923174,1.74400418424008,DSA+ / rejection
+GSE50084,GSM1213957,Blood_DSA_rejection_4,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,31.9722242472963,-2.3682860758849,DSA+ / rejection
+GSE50084,GSM1213958,Blood_DSA_rejection_5,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,33.4492786109888,2.60842947235083,DSA+ / rejection
+GSE50084,GSM1213959,Blood_DSA_rejection_6,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,31.5543015253039,0.821415285222568,DSA+ / rejection
+GSE50084,GSM1213960,Blood_DSA_rejection_7,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,33.1019712033657,-0.324264295212318,DSA+ / rejection
+GSE50084,GSM1213961,Blood_DSA_rejection_8,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,31.7486956364155,-1.85995076354488,DSA+ / rejection
+GSE50084,GSM1213962,Blood_DSA_rejection_9,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,32.4627206321807,-1.33719736211693,DSA+ / rejection
+GSE50084,GSM1213963,Blood_DSA_rejection_10,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,32.5186339043101,-1.77784930913672,DSA+ / rejection
+GSE50084,GSM1213964,Blood_DSA_rejection_11,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,32.4922219666416,-0.533074034021894,DSA+ / rejection
+GSE50084,GSM1213965,Blood_DSA_rejection_12,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,33.1963135786639,-2.32885863259243,DSA+ / rejection
+GSE50084,GSM1213966,Blood_DSA_rejection_13,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,31.7711978709702,-0.992764055492589,DSA+ / rejection
+GSE50084,GSM1213967,Blood_DSA_rejection_14,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,33.7003255490523,-0.221889862025362,DSA+ / rejection
+GSE50084,GSM1213968,Blood_DSA_rejection_15,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,33.6304339089936,0.11713238094968,DSA+ / rejection
+GSE50084,GSM1213969,Blood_DSA_rejection_16,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,33.4450527926897,1.77098164223241,DSA+ / rejection
+GSE50084,GSM1213970,Blood_DSA_rejection_17,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,31.7243445979275,2.70563827260183,DSA+ / rejection
+GSE50084,GSM1213971,Blood_DSA_rejection_18,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,31.6541601399747,0.0713164154470177,DSA+ / rejection
+GSE50084,GSM1213972,Blood_DSA_rejection_19,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,31.4177168454197,1.39110891931383,DSA+ / rejection
+GSE50084,GSM1213973,Blood_DSA_rejection_20,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,31.2948892370899,-0.272781969038615,DSA+ / rejection
+GSE50084,GSM1213974,Blood_DSA_rejection_21,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,32.7992783885882,-1.02513342057794,DSA+ / rejection
+GSE50084,GSM1213975,Blood_DSA_rejection_22,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,32.8878418493877,1.02861245626624,DSA+ / rejection
+GSE50084,GSM1213976,Blood_DSA_rejection_23,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,33.4340333012545,-0.386987229165753,DSA+ / rejection
+GSE50084,GSM1213977,Blood_DSA_rejection_24,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,32.6959683368861,-0.467387153047306,DSA+ / rejection
+GSE50084,GSM1213978,Blood_DSA_rejection_25,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,31.3121856515773,-0.228882473372076,DSA+ / rejection
+GSE50084,GSM1213979,Blood_DSA_rejection_26,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,33.7399424707039,-0.825996954009777,DSA+ / rejection
+GSE50084,GSM1213980,Blood_DSA_rejection_27,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,30.9265511041163,-2.15886085489939,DSA+ / rejection
+GSE50084,GSM1213981,Blood_DSA_rejection_28,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,GPL6244,requires_clinical_review,33.1093378953143,1.15924038881391,DSA+ / rejection

@@ -1,0 +1,590 @@
+dataset,sample_accession,sample_title,platform,compartment,analysis_group,dsa_status,rejection_status,patient_id,treatment,timepoint,included_primary_analysis,inclusion_reason,label_source
+GSE50084,GSM1213867,Biopsy_No_DSA_1,GPL6244,biopsy,DSA_negative_control,negative,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213868,Biopsy_No_DSA_2,GPL6244,biopsy,DSA_negative_control,negative,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213869,Biopsy_No_DSA_3,GPL6244,biopsy,DSA_negative_control,negative,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213870,Biopsy_No_DSA_4,GPL6244,biopsy,DSA_negative_control,negative,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213871,Biopsy_No_DSA_5,GPL6244,biopsy,DSA_negative_control,negative,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213872,Biopsy_No_DSA_6,GPL6244,biopsy,DSA_negative_control,negative,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213873,Biopsy_No_DSA_7,GPL6244,biopsy,DSA_negative_control,negative,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213874,Biopsy_No_DSA_8,GPL6244,biopsy,DSA_negative_control,negative,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213875,Biopsy_No_DSA_9,GPL6244,biopsy,DSA_negative_control,negative,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213876,Biopsy_No_DSA_10,GPL6244,biopsy,DSA_negative_control,negative,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213877,Biopsy_No_DSA_11,GPL6244,biopsy,DSA_negative_control,negative,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213878,Biopsy_No_DSA_12,GPL6244,biopsy,DSA_negative_control,negative,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213879,Biopsy_No_DSA_13,GPL6244,biopsy,DSA_negative_control,negative,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213880,Biopsy_No_DSA_14,GPL6244,biopsy,DSA_negative_control,negative,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213881,Biopsy_No_DSA_15,GPL6244,biopsy,DSA_negative_control,negative,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213882,Biopsy_No_DSA_16,GPL6244,biopsy,DSA_negative_control,negative,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213883,Biopsy_No_DSA_17,GPL6244,biopsy,DSA_negative_control,negative,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213884,Biopsy_No_DSA_18,GPL6244,biopsy,DSA_negative_control,negative,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213885,Biopsy_No_DSA_19,GPL6244,biopsy,DSA_negative_control,negative,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213886,Biopsy_No_DSA_20,GPL6244,biopsy,DSA_negative_control,negative,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213887,Biopsy_DSA_normal_1,GPL6244,biopsy,DSA_positive_no_rejection,positive,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213888,Biopsy_DSA_normal_2,GPL6244,biopsy,DSA_positive_no_rejection,positive,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213889,Biopsy_DSA_normal_3,GPL6244,biopsy,DSA_positive_no_rejection,positive,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213890,Biopsy_DSA_normal_4,GPL6244,biopsy,DSA_positive_no_rejection,positive,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213891,Biopsy_DSA_normal_5,GPL6244,biopsy,DSA_positive_no_rejection,positive,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213892,Biopsy_DSA_normal_6,GPL6244,biopsy,DSA_positive_no_rejection,positive,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213893,Biopsy_DSA_normal_7,GPL6244,biopsy,DSA_positive_no_rejection,positive,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213894,Biopsy_DSA_normal_8,GPL6244,biopsy,DSA_positive_no_rejection,positive,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213895,Biopsy_DSA_normal_9,GPL6244,biopsy,DSA_positive_no_rejection,positive,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213896,Biopsy_DSA_normal_10,GPL6244,biopsy,DSA_positive_no_rejection,positive,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213897,Biopsy_DSA_normal_11,GPL6244,biopsy,DSA_positive_no_rejection,positive,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213898,Biopsy_DSA_normal_12,GPL6244,biopsy,DSA_positive_no_rejection,positive,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213899,Biopsy_DSA_normal_13,GPL6244,biopsy,DSA_positive_no_rejection,positive,no_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213900,Biopsy_DSA_rejection_1,GPL6244,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213901,Biopsy_DSA_rejection_2,GPL6244,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213902,Biopsy_DSA_rejection_3,GPL6244,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213903,Biopsy_DSA_rejection_4,GPL6244,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213904,Biopsy_DSA_rejection_5,GPL6244,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213905,Biopsy_DSA_rejection_6,GPL6244,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213906,Biopsy_DSA_rejection_7,GPL6244,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213907,Biopsy_DSA_rejection_8,GPL6244,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213908,Biopsy_DSA_rejection_9,GPL6244,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213909,Biopsy_DSA_rejection_10,GPL6244,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213910,Biopsy_DSA_rejection_11,GPL6244,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213911,Biopsy_DSA_rejection_12,GPL6244,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213912,Biopsy_DSA_rejection_13,GPL6244,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213913,Biopsy_DSA_rejection_14,GPL6244,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213914,Biopsy_DSA_rejection_15,GPL6244,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213915,Biopsy_DSA_rejection_16,GPL6244,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213916,Biopsy_DSA_rejection_17,GPL6244,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213917,Biopsy_DSA_rejection_18,GPL6244,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213918,Biopsy_DSA_rejection_19,GPL6244,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213919,Biopsy_DSA_rejection_20,GPL6244,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213920,Biopsy_DSA_rejection_21,GPL6244,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213921,Biopsy_DSA_rejection_22,GPL6244,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213922,Biopsy_DSA_rejection_23,GPL6244,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213923,Biopsy_DSA_rejection_24,GPL6244,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213924,Biopsy_DSA_rejection_25,GPL6244,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213925,Biopsy_DSA_rejection_26,GPL6244,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213926,Biopsy_DSA_rejection_27,GPL6244,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213927,Biopsy_DSA_rejection_28,GPL6244,biopsy,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,TRUE,primary biopsy,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213928,Blood_No_DSA_1,GPL6244,blood,DSA_negative_control,negative,no_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213929,Blood_No_DSA_2,GPL6244,blood,DSA_negative_control,negative,no_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213930,Blood_No_DSA_3,GPL6244,blood,DSA_negative_control,negative,no_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213931,Blood_No_DSA_4,GPL6244,blood,DSA_negative_control,negative,no_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213932,Blood_No_DSA_5,GPL6244,blood,DSA_negative_control,negative,no_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213933,Blood_No_DSA_6,GPL6244,blood,DSA_negative_control,negative,no_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213934,Blood_No_DSA_7,GPL6244,blood,DSA_negative_control,negative,no_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213935,Blood_No_DSA_8,GPL6244,blood,DSA_negative_control,negative,no_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213936,Blood_No_DSA_9,GPL6244,blood,DSA_negative_control,negative,no_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213937,Blood_No_DSA_10,GPL6244,blood,DSA_negative_control,negative,no_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213938,Blood_No_DSA_11,GPL6244,blood,DSA_negative_control,negative,no_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213939,Blood_No_DSA_12,GPL6244,blood,DSA_negative_control,negative,no_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213940,Blood_DSA_normal_1,GPL6244,blood,DSA_positive_no_rejection,positive,no_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213941,Blood_DSA_normal_2,GPL6244,blood,DSA_positive_no_rejection,positive,no_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213942,Blood_DSA_normal_3,GPL6244,blood,DSA_positive_no_rejection,positive,no_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213943,Blood_DSA_normal_4,GPL6244,blood,DSA_positive_no_rejection,positive,no_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213944,Blood_DSA_normal_5,GPL6244,blood,DSA_positive_no_rejection,positive,no_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213945,Blood_DSA_normal_6,GPL6244,blood,DSA_positive_no_rejection,positive,no_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213946,Blood_DSA_normal_7,GPL6244,blood,DSA_positive_no_rejection,positive,no_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213947,Blood_DSA_normal_8,GPL6244,blood,DSA_positive_no_rejection,positive,no_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213948,Blood_DSA_normal_9,GPL6244,blood,DSA_positive_no_rejection,positive,no_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213949,Blood_DSA_normal_10,GPL6244,blood,DSA_positive_no_rejection,positive,no_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213950,Blood_DSA_normal_11,GPL6244,blood,DSA_positive_no_rejection,positive,no_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213951,Blood_DSA_normal_12,GPL6244,blood,DSA_positive_no_rejection,positive,no_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213952,Blood_DSA_normal_13,GPL6244,blood,DSA_positive_no_rejection,positive,no_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213953,Blood_DSA_normal_14,GPL6244,blood,DSA_positive_no_rejection,positive,no_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213954,Blood_DSA_rejection_1,GPL6244,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213955,Blood_DSA_rejection_2,GPL6244,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213956,Blood_DSA_rejection_3,GPL6244,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213957,Blood_DSA_rejection_4,GPL6244,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213958,Blood_DSA_rejection_5,GPL6244,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213959,Blood_DSA_rejection_6,GPL6244,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213960,Blood_DSA_rejection_7,GPL6244,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213961,Blood_DSA_rejection_8,GPL6244,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213962,Blood_DSA_rejection_9,GPL6244,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213963,Blood_DSA_rejection_10,GPL6244,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213964,Blood_DSA_rejection_11,GPL6244,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213965,Blood_DSA_rejection_12,GPL6244,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213966,Blood_DSA_rejection_13,GPL6244,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213967,Blood_DSA_rejection_14,GPL6244,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213968,Blood_DSA_rejection_15,GPL6244,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213969,Blood_DSA_rejection_16,GPL6244,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213970,Blood_DSA_rejection_17,GPL6244,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213971,Blood_DSA_rejection_18,GPL6244,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213972,Blood_DSA_rejection_19,GPL6244,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213973,Blood_DSA_rejection_20,GPL6244,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213974,Blood_DSA_rejection_21,GPL6244,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213975,Blood_DSA_rejection_22,GPL6244,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213976,Blood_DSA_rejection_23,GPL6244,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213977,Blood_DSA_rejection_24,GPL6244,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213978,Blood_DSA_rejection_25,GPL6244,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213979,Blood_DSA_rejection_26,GPL6244,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213980,Blood_DSA_rejection_27,GPL6244,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE50084,GSM1213981,Blood_DSA_rejection_28,GPL6244,blood,DSA_positive_rejection,positive,acute_or_chronic_rejection,,,,FALSE,blood excluded from biopsy analysis,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880204,non-rejecting146,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880205,non-rejecting63,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880206,non-rejecting252,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880207,non-rejecting180,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880208,non-rejecting181,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880209,non-rejecting182,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880210,non-rejecting147,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880211,non-rejecting183,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880212,ABMR18,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880213,non-rejecting1,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880214,ABMR19,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880215,TCMR1,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880216,ABMR20,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880217,ABMR21,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880218,ABMR22,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880219,non-rejecting148,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880220,non-rejecting2,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880221,non-rejecting3,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880222,non-rejecting64,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880223,non-rejecting184,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880224,non-rejecting105,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880225,non-rejecting4,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880226,non-rejecting185,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880227,non-rejecting5,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880228,MIXED1,GPL570,biopsy,MIXED,,,,,,FALSE,MIXED retained but excluded from primary contrast,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880229,ABMR23,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880230,MIXED2,GPL570,biopsy,MIXED,,,,,,FALSE,MIXED retained but excluded from primary contrast,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880231,non-rejecting6,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880232,non-rejecting65,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880233,ABMR1,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880234,TCMR2,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880235,non-rejecting186,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880236,ABMR24,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880237,ABMR25,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880238,non-rejecting149,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880239,ABMR26,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880240,TCMR3,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880241,non-rejecting150,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880242,non-rejecting151,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880243,non-rejecting152,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880244,MIXED3,GPL570,biopsy,MIXED,,,,,,FALSE,MIXED retained but excluded from primary contrast,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880245,Nephrectomy1,GPL570,biopsy,Nephrectomy,,,,,,FALSE,Nephrectomy retained but excluded from primary contrast,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880246,Nephrectomy2,GPL570,biopsy,Nephrectomy,,,,,,FALSE,Nephrectomy retained but excluded from primary contrast,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880247,non-rejecting106,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880248,ABMR27,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880249,ABMR28,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880250,MIXED4,GPL570,biopsy,MIXED,,,,,,FALSE,MIXED retained but excluded from primary contrast,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880251,ABMR29,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880252,non-rejecting7,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880253,non-rejecting66,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880254,non-rejecting8,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880255,non-rejecting107,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880256,non-rejecting108,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880257,non-rejecting109,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880258,ABMR2,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880259,ABMR30,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880260,MIXED5,GPL570,biopsy,MIXED,,,,,,FALSE,MIXED retained but excluded from primary contrast,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880261,MIXED6,GPL570,biopsy,MIXED,,,,,,FALSE,MIXED retained but excluded from primary contrast,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880262,non-rejecting110,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880263,non-rejecting67,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880264,ABMR3,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880265,non-rejecting153,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880266,non-rejecting187,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880267,non-rejecting154,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880268,non-rejecting111,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880269,non-rejecting253,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880270,ABMR31,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880271,MIXED7,GPL570,biopsy,MIXED,,,,,,FALSE,MIXED retained but excluded from primary contrast,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880272,non-rejecting272,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880273,MIXED8,GPL570,biopsy,MIXED,,,,,,FALSE,MIXED retained but excluded from primary contrast,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880274,non-rejecting188,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880275,ABMR4,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880276,ABMR32,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880277,non-rejecting155,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880278,non-rejecting9,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880279,non-rejecting10,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880280,TCMR4,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880281,non-rejecting273,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880282,non-rejecting112,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880283,non-rejecting11,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880284,non-rejecting189,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880285,non-rejecting190,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880286,ABMR33,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880287,ABMR34,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880288,ABMR35,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880289,ABMR36,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880290,non-rejecting191,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880291,ABMR37,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880292,non-rejecting156,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880293,non-rejecting68,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880294,ABMR38,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880295,non-rejecting113,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880296,non-rejecting114,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880297,ABMR39,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880298,non-rejecting69,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880299,Nephrectomy3,GPL570,biopsy,Nephrectomy,,,,,,FALSE,Nephrectomy retained but excluded from primary contrast,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880300,non-rejecting192,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880301,non-rejecting274,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880302,MIXED9,GPL570,biopsy,MIXED,,,,,,FALSE,MIXED retained but excluded from primary contrast,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880303,non-rejecting157,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880304,ABMR40,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880305,ABMR41,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880306,ABMR42,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880307,TCMR5,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880308,non-rejecting70,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880309,TCMR6,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880310,non-rejecting193,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880311,Nephrectomy4,GPL570,biopsy,Nephrectomy,,,,,,FALSE,Nephrectomy retained but excluded from primary contrast,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880312,non-rejecting12,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880313,ABMR43,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880314,MIXED10,GPL570,biopsy,MIXED,,,,,,FALSE,MIXED retained but excluded from primary contrast,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880315,non-rejecting71,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880316,non-rejecting72,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880317,ABMR44,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880318,Nephrectomy5,GPL570,biopsy,Nephrectomy,,,,,,FALSE,Nephrectomy retained but excluded from primary contrast,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880319,non-rejecting13,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880320,non-rejecting51,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880321,non-rejecting52,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880322,non-rejecting14,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880323,non-rejecting194,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880324,non-rejecting158,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880325,non-rejecting73,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880326,non-rejecting254,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880327,non-rejecting74,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880328,non-rejecting195,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880329,non-rejecting75,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880330,non-rejecting196,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880331,TCMR7,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880332,non-rejecting159,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880333,ABMR45,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880334,ABMR46,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880335,ABMR47,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880336,non-rejecting197,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880337,non-rejecting198,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880338,non-rejecting160,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880339,non-rejecting255,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880340,non-rejecting199,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880341,TCMR8,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880342,non-rejecting161,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880343,non-rejecting15,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880344,non-rejecting200,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880345,TCMR9,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880346,TCMR10,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880347,non-rejecting201,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880348,non-rejecting76,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880349,non-rejecting115,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880350,non-rejecting16,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880351,non-rejecting116,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880352,MIXED11,GPL570,biopsy,MIXED,,,,,,FALSE,MIXED retained but excluded from primary contrast,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880353,ABMR48,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880354,non-rejecting77,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880355,non-rejecting117,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880356,non-rejecting162,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880357,non-rejecting118,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880358,non-rejecting119,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880359,non-rejecting256,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880360,non-rejecting257,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880361,non-rejecting17,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880362,non-rejecting258,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880363,non-rejecting202,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880364,non-rejecting120,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880365,non-rejecting18,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880366,non-rejecting259,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880367,non-rejecting260,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880368,non-rejecting19,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880369,non-rejecting203,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880370,ABMR5,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880371,non-rejecting20,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880372,TCMR11,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880373,non-rejecting21,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880374,ABMR6,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880375,non-rejecting22,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880376,non-rejecting204,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880377,non-rejecting23,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880378,non-rejecting261,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880379,non-rejecting205,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880380,non-rejecting53,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880381,non-rejecting24,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880382,non-rejecting25,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880383,non-rejecting26,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880384,non-rejecting262,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880385,non-rejecting206,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880386,non-rejecting121,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880387,non-rejecting207,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880388,TCMR12,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880389,non-rejecting78,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880390,non-rejecting208,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880391,MIXED12,GPL570,biopsy,MIXED,,,,,,FALSE,MIXED retained but excluded from primary contrast,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880392,non-rejecting209,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880393,non-rejecting27,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880394,TCMR13,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880395,MIXED13,GPL570,biopsy,MIXED,,,,,,FALSE,MIXED retained but excluded from primary contrast,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880396,non-rejecting122,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880397,ABMR49,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880398,non-rejecting123,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880399,TCMR14,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880400,non-rejecting124,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880401,non-rejecting79,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880402,non-rejecting275,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880403,non-rejecting210,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880404,non-rejecting28,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880405,ABMR50,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880406,non-rejecting276,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880407,MIXED14,GPL570,biopsy,MIXED,,,,,,FALSE,MIXED retained but excluded from primary contrast,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880408,ABMR7,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880409,non-rejecting277,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880410,non-rejecting278,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880411,TCMR15,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880412,non-rejecting211,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880413,non-rejecting125,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880414,non-rejecting212,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880415,non-rejecting126,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880416,TCMR16,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880417,non-rejecting163,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880418,non-rejecting127,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880419,non-rejecting80,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880420,ABMR51,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880421,non-rejecting81,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880422,non-rejecting29,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880423,non-rejecting82,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880424,ABMR52,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880425,non-rejecting30,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880426,TCMR17,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880427,non-rejecting213,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880428,ABMR53,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880429,ABMR54,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880430,Nephrectomy6,GPL570,biopsy,Nephrectomy,,,,,,FALSE,Nephrectomy retained but excluded from primary contrast,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880431,non-rejecting54,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880432,non-rejecting214,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880433,non-rejecting215,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880434,TCMR18,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880435,non-rejecting216,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880436,ABMR8,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880437,MIXED15,GPL570,biopsy,MIXED,,,,,,FALSE,MIXED retained but excluded from primary contrast,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880438,non-rejecting128,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880439,non-rejecting129,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880440,TCMR19,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880441,non-rejecting130,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880442,ABMR55,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880443,non-rejecting131,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880444,non-rejecting132,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880445,TCMR20,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880446,non-rejecting83,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880447,Nephrectomy7,GPL570,biopsy,Nephrectomy,,,,,,FALSE,Nephrectomy retained but excluded from primary contrast,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880448,non-rejecting84,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880449,ABMR56,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880450,non-rejecting164,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880451,non-rejecting279,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880452,non-rejecting133,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880453,ABMR57,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880454,non-rejecting31,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880455,non-rejecting263,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880456,TCMR21,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880457,non-rejecting134,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880458,non-rejecting165,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880459,MIXED16,GPL570,biopsy,MIXED,,,,,,FALSE,MIXED retained but excluded from primary contrast,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880460,non-rejecting135,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880461,non-rejecting32,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880462,non-rejecting33,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880463,non-rejecting85,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880464,TCMR22,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880465,TCMR23,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880466,ABMR9,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880467,non-rejecting280,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880468,non-rejecting217,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880469,non-rejecting86,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880470,non-rejecting87,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880471,non-rejecting218,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880472,non-rejecting55,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880473,non-rejecting219,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880474,non-rejecting136,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880475,non-rejecting137,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880476,non-rejecting220,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880477,ABMR10,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880478,non-rejecting221,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880479,non-rejecting88,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880480,non-rejecting222,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880481,non-rejecting223,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880482,non-rejecting56,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880483,non-rejecting57,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880484,TCMR24,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880485,TCMR25,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880486,non-rejecting89,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880487,non-rejecting90,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880488,non-rejecting91,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880489,non-rejecting92,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880490,TCMR26,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880491,non-rejecting264,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880492,TCMR27,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880493,TCMR28,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880494,non-rejecting166,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880495,non-rejecting167,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880496,non-rejecting224,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880497,non-rejecting138,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880498,non-rejecting93,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880499,non-rejecting34,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880500,Nephrectomy8,GPL570,biopsy,Nephrectomy,,,,,,FALSE,Nephrectomy retained but excluded from primary contrast,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880501,non-rejecting225,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880502,MIXED17,GPL570,biopsy,MIXED,,,,,,FALSE,MIXED retained but excluded from primary contrast,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880503,ABMR11,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880504,non-rejecting35,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880505,MIXED18,GPL570,biopsy,MIXED,,,,,,FALSE,MIXED retained but excluded from primary contrast,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880506,MIXED19,GPL570,biopsy,MIXED,,,,,,FALSE,MIXED retained but excluded from primary contrast,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880507,non-rejecting168,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880508,non-rejecting226,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880509,non-rejecting36,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880510,non-rejecting227,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880511,non-rejecting169,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880512,MIXED20,GPL570,biopsy,MIXED,,,,,,FALSE,MIXED retained but excluded from primary contrast,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880513,non-rejecting37,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880514,non-rejecting94,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880515,non-rejecting170,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880516,non-rejecting171,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880517,ABMR12,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880518,non-rejecting228,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880519,ABMR58,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880520,non-rejecting229,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880521,ABMR59,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880522,non-rejecting172,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880523,non-rejecting230,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880524,non-rejecting95,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880525,non-rejecting231,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880526,non-rejecting281,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880527,non-rejecting232,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880528,non-rejecting233,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880529,ABMR60,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880530,TCMR29,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880531,ABMR13,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880532,non-rejecting38,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880533,non-rejecting234,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880534,non-rejecting139,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880535,ABMR61,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880536,non-rejecting235,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880537,non-rejecting58,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880538,non-rejecting59,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880539,non-rejecting60,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880540,non-rejecting265,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880541,non-rejecting236,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880542,non-rejecting237,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880543,non-rejecting96,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880544,non-rejecting238,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880545,non-rejecting61,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880546,non-rejecting97,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880547,non-rejecting140,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880548,non-rejecting141,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880549,non-rejecting98,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880550,non-rejecting239,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880551,non-rejecting142,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880552,non-rejecting62,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880553,non-rejecting266,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880554,non-rejecting267,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880555,non-rejecting39,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880556,non-rejecting40,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880557,non-rejecting41,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880558,non-rejecting240,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880559,non-rejecting99,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880560,non-rejecting173,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880561,non-rejecting42,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880562,non-rejecting43,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880563,non-rejecting44,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880564,TCMR30,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880565,ABMR62,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880566,non-rejecting174,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880567,non-rejecting241,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880568,non-rejecting45,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880569,non-rejecting242,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880570,TCMR31,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880571,non-rejecting243,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880572,non-rejecting244,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880573,ABMR63,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880574,non-rejecting245,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880575,non-rejecting246,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880576,TCMR32,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880577,non-rejecting268,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880578,non-rejecting46,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880579,non-rejecting47,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880580,non-rejecting175,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880581,TCMR33,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880582,non-rejecting48,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880583,non-rejecting247,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880584,TCMR34,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880585,non-rejecting269,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880586,non-rejecting100,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880587,non-rejecting248,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880588,non-rejecting176,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880589,non-rejecting177,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880590,non-rejecting178,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880591,ABMR14,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880592,non-rejecting270,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880593,non-rejecting249,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880594,non-rejecting250,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880595,non-rejecting49,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880596,ABMR15,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880597,non-rejecting179,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880598,non-rejecting50,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880599,non-rejecting251,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880600,non-rejecting143,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880601,MIXED21,GPL570,biopsy,MIXED,,,,,,FALSE,MIXED retained but excluded from primary contrast,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880602,ABMR64,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880603,non-rejecting101,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880604,non-rejecting102,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880605,ABMR16,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880606,ABMR17,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880607,non-rejecting144,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880608,non-rejecting145,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880609,non-rejecting271,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880610,non-rejecting103,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880611,MIXED22,GPL570,biopsy,MIXED,,,,,,FALSE,MIXED retained but excluded from primary contrast,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880612,ABMR65,GPL570,biopsy,ABMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880613,non-rejecting104,GPL570,biopsy,non-rejecting,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE36059,GSM880614,TCMR35,GPL570,biopsy,TCMR,,,,,,TRUE,prespecified validation class,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486127,kidney biopsy [f1],GPL13667,biopsy,Index_Placebo,,,17,Placebo,Baseline,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486128,kidney biopsy [f2],GPL13667,biopsy,FU1_Placebo,,,17,Placebo,Week24,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486129,kidney biopsy [f3],GPL13667,biopsy,FU2_Placebo,,,17,Placebo,Week52,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486130,kidney biopsy [f4],GPL13667,biopsy,Index_Felzartamab,,,18,Felzartamab,Baseline,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486131,kidney biopsy [f6],GPL13667,biopsy,FU2_Felzartamab,,,18,Felzartamab,Week52,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486132,kidney biopsy [f7],GPL13667,biopsy,Index_Felzartamab,,,19,Felzartamab,Baseline,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486133,kidney biopsy [f8],GPL13667,biopsy,FU1_Felzartamab,,,19,Felzartamab,Week24,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486134,kidney biopsy [f9],GPL13667,biopsy,FU2_Felzartamab,,,19,Felzartamab,Week52,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486135,kidney biopsy [f10],GPL13667,biopsy,Index_Placebo,,,20,Placebo,Baseline,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486136,kidney biopsy [f11],GPL13667,biopsy,FU1_Placebo,,,20,Placebo,Week24,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486137,kidney biopsy [f12],GPL13667,biopsy,FU2_Placebo,,,20,Placebo,Week52,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486138,kidney biopsy [f13],GPL13667,biopsy,Index_Placebo,,,21,Placebo,Baseline,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486139,kidney biopsy [f14],GPL13667,biopsy,FU1_Placebo,,,21,Placebo,Week24,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486140,kidney biopsy [f15],GPL13667,biopsy,FU2_Placebo,,,21,Placebo,Week52,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486141,kidney biopsy [f16],GPL13667,biopsy,Index_Felzartamab,,,22,Felzartamab,Baseline,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486142,kidney biopsy [f17],GPL13667,biopsy,FU1_Felzartamab,,,22,Felzartamab,Week24,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486143,kidney biopsy [f18],GPL13667,biopsy,FU2_Felzartamab,,,22,Felzartamab,Week52,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486144,kidney biopsy [f19],GPL13667,biopsy,Index_Placebo,,,1,Placebo,Baseline,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486145,kidney biopsy [f20],GPL13667,biopsy,FU1_Placebo,,,1,Placebo,Week24,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486146,kidney biopsy [f21],GPL13667,biopsy,FU2_Placebo,,,1,Placebo,Week52,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486147,kidney biopsy [f22],GPL13667,biopsy,Index_Felzartamab,,,2,Felzartamab,Baseline,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486148,kidney biopsy [f23],GPL13667,biopsy,FU1_Felzartamab,,,2,Felzartamab,Week24,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486149,kidney biopsy [f24],GPL13667,biopsy,FU2_Felzartamab,,,2,Felzartamab,Week52,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486150,kidney biopsy [f25],GPL13667,biopsy,Index_Placebo,,,3,Placebo,Baseline,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486151,kidney biopsy [f26],GPL13667,biopsy,FU1_Placebo,,,3,Placebo,Week24,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486152,kidney biopsy [f27],GPL13667,biopsy,FU2_Placebo,,,3,Placebo,Week52,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486153,kidney biopsy [f28],GPL13667,biopsy,Index_Felzartamab,,,4,Felzartamab,Baseline,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486154,kidney biopsy [f29],GPL13667,biopsy,FU1_Felzartamab,,,4,Felzartamab,Week24,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486155,kidney biopsy [f30],GPL13667,biopsy,FU2_Felzartamab,,,4,Felzartamab,Week52,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486156,kidney biopsy [f31],GPL13667,biopsy,Index_Placebo,,,6,Placebo,Baseline,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486157,kidney biopsy [f32],GPL13667,biopsy,FU1_Placebo,,,6,Placebo,Week24,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486158,kidney biopsy [f33],GPL13667,biopsy,FU2_Placebo,,,6,Placebo,Week52,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486159,kidney biopsy [f34],GPL13667,biopsy,Index_Felzartamab,,,5,Felzartamab,Baseline,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486160,kidney biopsy [f35],GPL13667,biopsy,FU1_Felzartamab,,,5,Felzartamab,Week24,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486161,kidney biopsy [f36],GPL13667,biopsy,FU2_Felzartamab,,,5,Felzartamab,Week52,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486162,kidney biopsy [f37],GPL13667,biopsy,Index_Felzartamab,,,7,Felzartamab,Baseline,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486163,kidney biopsy [f38],GPL13667,biopsy,FU1_Felzartamab,,,7,Felzartamab,Week24,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486164,kidney biopsy [f39],GPL13667,biopsy,FU2_Felzartamab,,,7,Felzartamab,Week52,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486165,kidney biopsy [f40],GPL13667,biopsy,Index_Placebo,,,8,Placebo,Baseline,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486166,kidney biopsy [f41],GPL13667,biopsy,FU1_Placebo,,,8,Placebo,Week24,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486167,kidney biopsy [f42],GPL13667,biopsy,FU2_Placebo,,,8,Placebo,Week52,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486168,kidney biopsy [f43],GPL13667,biopsy,Index_Felzartamab,,,9,Felzartamab,Baseline,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486169,kidney biopsy [f44],GPL13667,biopsy,FU1_Felzartamab,,,9,Felzartamab,Week24,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486170,kidney biopsy [f45],GPL13667,biopsy,FU2_Felzartamab,,,9,Felzartamab,Week52,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486171,kidney biopsy [f46],GPL13667,biopsy,Index_Placebo,,,10,Placebo,Baseline,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486172,kidney biopsy [f47],GPL13667,biopsy,FU1_Placebo,,,10,Placebo,Week24,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486173,kidney biopsy [f48],GPL13667,biopsy,FU2_Placebo,,,10,Placebo,Week52,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486174,kidney biopsy [f49],GPL13667,biopsy,Index_Placebo,,,11,Placebo,Baseline,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486175,kidney biopsy [f50],GPL13667,biopsy,FU1_Placebo,,,11,Placebo,Week24,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486176,kidney biopsy [f51],GPL13667,biopsy,FU2_Placebo,,,11,Placebo,Week52,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486177,kidney biopsy [f52],GPL13667,biopsy,Index_Felzartamab,,,12,Felzartamab,Baseline,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486178,kidney biopsy [f53],GPL13667,biopsy,FU1_Felzartamab,,,12,Felzartamab,Week24,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486179,kidney biopsy [f54],GPL13667,biopsy,FU2_Felzartamab,,,12,Felzartamab,Week52,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486180,kidney biopsy [f55],GPL13667,biopsy,Index_Felzartamab,,,13,Felzartamab,Baseline,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486181,kidney biopsy [f56],GPL13667,biopsy,FU1_Felzartamab,,,13,Felzartamab,Week24,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486182,kidney biopsy [f57],GPL13667,biopsy,FU2_Felzartamab,,,13,Felzartamab,Week52,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486183,kidney biopsy [f58],GPL13667,biopsy,Index_Placebo,,,14,Placebo,Baseline,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486184,kidney biopsy [f59],GPL13667,biopsy,FU1_Placebo,,,14,Placebo,Week24,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486185,kidney biopsy [f60],GPL13667,biopsy,FU2_Placebo,,,14,Placebo,Week52,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486186,kidney biopsy [f61],GPL13667,biopsy,Index_Placebo,,,15,Placebo,Baseline,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486187,kidney biopsy [f63],GPL13667,biopsy,Index_Felzartamab,,,16,Felzartamab,Baseline,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486188,kidney biopsy [f64],GPL13667,biopsy,FU1_Felzartamab,,,16,Felzartamab,Week24,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv
+GSE275824,GSM8486189,kidney biopsy [f65],GPL13667,biopsy,FU2_Felzartamab,,,16,Felzartamab,Week52,TRUE,randomized longitudinal biopsy,GEO submitter metadata; see processed samples.csv

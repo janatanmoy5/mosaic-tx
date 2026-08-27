@@ -1,0 +1,238 @@
+MOSAIC-Tx three-dataset pipeline started
+python3 scripts/build_public_data.py --dataset GSE50084
+Downloading/verifying GSE50084 from NCBI GEO...
+Compiling metadata and submitted normalized expression matrix...
+{
+  "schema_version": "1.0",
+  "dataset": "GSE50084",
+  "source_sha256": "b635a99d80c42aed824e4edc43ec755b088d5aaed85687d697726af37b496b92",
+  "sample_count": 115,
+  "feature_count": 29096,
+  "group_counts": {
+    "biopsy|DSA_negative_control": 20,
+    "biopsy|DSA_positive_no_rejection": 13,
+    "biopsy|DSA_positive_rejection": 28,
+    "blood|DSA_negative_control": 12,
+    "blood|DSA_positive_no_rejection": 14,
+    "blood|DSA_positive_rejection": 28
+  },
+  "expression_level": "submitted_normalized_probe_values",
+  "compiled": true,
+  "gene_mapping_complete": false,
+  "label_caveat": "historical GEO submitter labels"
+}
+Validated outputs: /Users/janat/Desktop/project_plan/files/mosaic-tx/data/processed/GSE50084
+python3 scripts/build_bulk_cohorts.py --dataset GSE36059
+{
+  "schema_version": "1.0",
+  "dataset": "GSE36059",
+  "source_sha256": "f5da23258dc9b67c62f2128da713e92e14fc084be0a07641d7d6e839aaf4cdb5",
+  "sample_count": 411,
+  "feature_count": 54675,
+  "compiled": true,
+  "analysis_ready_with_original_labels": true,
+  "label_source": "GEO submitter characteristics"
+}
+python3 scripts/build_bulk_cohorts.py --dataset GSE275824
+{
+  "schema_version": "1.0",
+  "dataset": "GSE275824",
+  "source_sha256": "ac3c25b6f51e03ad9d9d57cd5f89fa8a9f4eda8a1c31731f56866020f9b7f66a",
+  "sample_count": 63,
+  "feature_count": 49293,
+  "compiled": true,
+  "analysis_ready_with_original_labels": true,
+  "label_source": "GEO submitter characteristics"
+}
+Rscript scripts/02b_annotate_bioc.R data/processed/GSE50084/expression_probe_matrix.csv.gz data/processed/GSE50084/samples.csv GPL6244 data/processed/GSE50084
+Warning message:
+package ‘data.table’ was built under R version 4.4.3 
+'select()' returned 1:many mapping between keys and columns
+$platform
+[1] "GPL6244"
+
+$annotation_package
+[1] "hugene10sttranscriptcluster.db"
+
+$input_probes
+[1] 29096
+
+$annotated_probes
+[1] 22025
+
+$unique_genes
+[1] 19998
+
+$aggregation
+[1] "mean"
+
+$mapping_complete
+[1] TRUE
+
+Rscript scripts/02b_annotate_bioc.R data/processed/GSE36059/expression_probe_matrix.csv.gz data/processed/GSE36059/samples.csv GPL570 data/processed/GSE36059
+Warning message:
+package ‘data.table’ was built under R version 4.4.3 
+'select()' returned 1:many mapping between keys and columns
+$platform
+[1] "GPL570"
+
+$annotation_package
+[1] "hgu133plus2.db"
+
+$input_probes
+[1] 54675
+
+$annotated_probes
+[1] 44650
+
+$unique_genes
+[1] 21358
+
+$aggregation
+[1] "mean"
+
+$mapping_complete
+[1] TRUE
+
+Rscript scripts/02b_annotate_bioc.R data/processed/GSE275824/expression_probe_matrix.csv.gz data/processed/GSE275824/samples.csv GPL13667 data/processed/GSE275824
+Warning message:
+package ‘data.table’ was built under R version 4.4.3 
+'select()' returned 1:many mapping between keys and columns
+$platform
+[1] "GPL13667"
+
+$annotation_package
+[1] "hgu219.db"
+
+$input_probes
+[1] 49293
+
+$annotated_probes
+[1] 48733
+
+$unique_genes
+[1] 19434
+
+$aggregation
+[1] "mean"
+
+$mapping_complete
+[1] TRUE
+
+Rscript scripts/03_bulk_de_gsea.R data/processed/GSE50084/gene_expression.csv.gz data/processed/GSE50084/samples.csv results/bulk/GSE50084
+Warning messages:
+1: package ‘data.table’ was built under R version 4.4.3 
+2: package ‘fgsea’ was built under R version 4.4.3 
+3: package ‘msigdbr’ was built under R version 4.4.3 
+Warning messages:
+1: In fgseaMultilevel(pathways, ranks, minSize = 10, maxSize = 500) :
+  For some pathways, in reality P-values are less than 1e-50. You can set the `eps` argument to zero for better estimation.
+2: In fgseaMultilevel(pathways, ranks, minSize = 10, maxSize = 500) :
+  For some of the pathways the P-values were likely overestimated. For such pathways log2err is set to NA.
+3: In fgseaMultilevel(pathways, ranks, minSize = 10, maxSize = 500) :
+  For some pathways, in reality P-values are less than 1e-50. You can set the `eps` argument to zero for better estimation.
+Rscript scripts/04_external_validation.R data/processed/GSE36059/gene_expression.csv.gz data/processed/GSE36059/samples.csv results/bulk/GSE36059
+Warning messages:
+1: package ‘data.table’ was built under R version 4.4.3 
+2: package ‘fgsea’ was built under R version 4.4.3 
+3: package ‘msigdbr’ was built under R version 4.4.3 
+Warning messages:
+1: In fgseaMultilevel(paths, ranks, minSize = 10, maxSize = 500) :
+  For some of the pathways the P-values were likely overestimated. For such pathways log2err is set to NA.
+2: In fgseaMultilevel(paths, ranks, minSize = 10, maxSize = 500) :
+  For some pathways, in reality P-values are less than 1e-50. You can set the `eps` argument to zero for better estimation.
+3: In fgseaMultilevel(paths, ranks, minSize = 10, maxSize = 500) :
+  For some of the pathways the P-values were likely overestimated. For such pathways log2err is set to NA.
+4: In fgseaMultilevel(paths, ranks, minSize = 10, maxSize = 500) :
+  For some pathways, in reality P-values are less than 1e-50. You can set the `eps` argument to zero for better estimation.
+Rscript scripts/05_treatment_response.R data/processed/GSE275824/gene_expression.csv.gz data/processed/GSE275824/samples.csv results/bulk/GSE275824
+Warning messages:
+1: package ‘data.table’ was built under R version 4.4.3 
+2: package ‘fgsea’ was built under R version 4.4.3 
+3: package ‘msigdbr’ was built under R version 4.4.3 
+Warning messages:
+1: In preparePathwaysAndStats(pathways, stats, minSize, maxSize, gseaParam,  :
+  There are ties in the preranked stats (0.01% of the list).
+The order of those tied genes will be arbitrary, which may produce unexpected results.
+2: In preparePathwaysAndStats(pathways, stats, minSize, maxSize, gseaParam,  :
+  There are ties in the preranked stats (0.01% of the list).
+The order of those tied genes will be arbitrary, which may produce unexpected results.
+Rscript scripts/06_published_score_trajectories.R data/processed/GSE275824/samples.csv results/bulk/GSE275824
+Warning message:
+package ‘data.table’ was built under R version 4.4.3 
+$method
+[1] "linear mixed effects; patient random intercept; treatment-by-time interaction; BH across declared scores/timepoints"
+
+$n_patients
+[1] 22
+
+$n_biopsies
+[1] 63
+
+$scores
+[1] "abmract"  "abmrifng" "abmrnk"   "abmrendo" "nkb"      "endat"   
+
+$significant_interactions_fdr_0_05
+[1] 4
+
+Rscript scripts/08_build_robustness_atlas.R . results/atlas
+Warning message:
+package ‘data.table’ was built under R version 4.4.3 
+$schema_version
+[1] "1.0"
+
+$datasets
+[1] "GSE50084"  "GSE36059"  "GSE275824"
+
+$modules
+[1] "nk_identity"                   "fcgr3a_adcc_effector"         
+[3] "cytotoxicity"                  "ifng_chemokine"               
+[5] "negative_control_t_cell"       "negative_control_monocyte"    
+[7] "endothelial_identity"          "endothelial_activation_injury"
+[9] "tissue_injury_repair"         
+
+$contrasts
+[1] "ABMR_DSApos_vs_DSAneg_nonrejection"        
+[2] "ABMR_DSApos_vs_DSApos_nonrejection"        
+[3] "ABMR_vs_TCMR"                              
+[4] "ABMR_vs_nonrejection"                      
+[5] "DSApos_nonrejection_vs_DSAneg_nonrejection"
+[6] "treatment_difference_in_differences_W24"   
+[7] "treatment_difference_in_differences_W52"   
+
+$treatment_consensus_correlation
+[1] 0.5065239
+
+$methods
+[1] "within-cohort gene z-score module means"                                    
+[2] "limma moderated contrasts"                                                  
+[3] "patient-blocked duplicateCorrelation longitudinal difference-in-differences"
+[4] "BH FDR per contrast"                                                        
+
+$limitations
+[1] "retrospective public cohorts"                
+[2] "module effects are association not causation"
+[3] "bulk modules cannot establish cell lineage"  
+[4] "GSE275824 contains 22 randomized patients"   
+[5] "no clinical model or drug efficacy claim"    
+
+Warning message:
+package ‘data.table’ was built under R version 4.4.3 
+Dataset-level figures generated from 61 GSE50084 biopsies, 381 GSE36059 biopsies, and 63 GSE275824 biopsies.
+Warning message:
+package ‘data.table’ was built under R version 4.4.3 
+Estimand-centered biological results figure generated.
+Audit tables created under results/: /Users/janat/Desktop/project_plan/files/mosaic-tx/results/tables (589 labeled public profiles)
+python3 -m unittest discover -s tests -v
+test_compile (test_geo.GeoTests.test_compile) ... ok
+test_gse36059_keeps_nephrectomy_separate (test_geo_multi.MultiCohortCompilerTests.test_gse36059_keeps_nephrectomy_separate) ... ok
+test_treatment_requires_patient_arm_and_time (test_geo_multi.MultiCohortCompilerTests.test_treatment_requires_patient_arm_and_time) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.004s
+
+OK
+python3 -m py_compile scripts/07_score_mechanism_modules.py scripts/10_build_scanpy_object.py scripts/11_sc_qc_cluster.py scripts/12_patient_pseudobulk.py scripts/13_grouped_nested_ml.py
+python3 -c 'from pathlib import Path; from geo_utils import validate_compiled; validate_compiled(Path("data/processed/GSE50084"))'
+Pipeline output validation passed for all three datasets.
+MOSAIC-Tx three-dataset pipeline completed successfully

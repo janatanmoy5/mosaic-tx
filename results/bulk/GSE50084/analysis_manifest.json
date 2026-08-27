@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "method": "limma moderated linear model; BH FDR; fgseaMultilevel Hallmark",
+  "contrasts": {
+    "rejection_vs_dsa_positive_control": {
+      "n_samples": 41,
+      "group_counts": {
+        "DSA_positive_rejection": 28,
+        "DSA_positive_no_rejection": 13
+      },
+      "fdr_0_05": 0,
+      "fdr_and_abs_logfc_0_5": 0,
+      "top_gene": "GBP7",
+      "top_hallmark": "HALLMARK_OXIDATIVE_PHOSPHORYLATION"
+    },
+    "rejection_vs_dsa_negative_control": {
+      "n_samples": 48,
+      "group_counts": {
+        "DSA_positive_rejection": 28,
+        "DSA_negative_control": 20
+      },
+      "fdr_0_05": 1427,
+      "fdr_and_abs_logfc_0_5": 475,
+      "top_gene": "CXCL11",
+      "top_hallmark": "HALLMARK_ALLOGRAFT_REJECTION"
+    }
+  },
+  "limitations": ["historical submitter labels", "no sample-level covariate adjustment available in GSE50084 metadata", "discovery analysis only"]
+}

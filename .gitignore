@@ -6,8 +6,9 @@ __pycache__/
 .venv/
 venv/
 .DS_Store
-results/*
-!results/.gitkeep
+# Publish reproducible derived analyses and figures under results/.
+# Raw and processed assay matrices remain excluded under data/.
+results/.DS_Store
 data/controlled/
 data/raw/
 data/processed/

@@ -1,0 +1,22 @@
+{
+  "ABMR_vs_non_rejecting": {
+    "n": 346,
+    "counts": {
+      "ABMR": 65,
+      "non-rejecting": 281
+    },
+    "fdr": 1340,
+    "top_gene": "PLA1A",
+    "top_pathway": "HALLMARK_INTERFERON_GAMMA_RESPONSE"
+  },
+  "ABMR_vs_TCMR": {
+    "n": 100,
+    "counts": {
+      "ABMR": 65,
+      "TCMR": 35
+    },
+    "fdr": 3231,
+    "top_gene": "CCL18",
+    "top_pathway": "HALLMARK_ALLOGRAFT_REJECTION"
+  }
+}
