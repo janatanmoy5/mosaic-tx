@@ -12,15 +12,9 @@ This repository does not claim patient-specific treatment prediction, clinical v
 validation, causal target discovery, or validated drug repurposing. It compiles published,
 de-identified datasets and tests prespecified contrasts with reproducible statistics.
 
-## Executed primary result
+## Manuscript review package
 
-The primary figure answers four prespecified biological questions using effect sizes, confidence intervals, specificity tests, pathway enrichment, and randomized treatment-by-time interactions. It does not use simulated values. The exact plotted estimates are exported as CSV files.
-
-![Estimand-centered ABMR results](figures/fig7_estimand_results.png)
-
-The biopsy-level PCA, distributions, and individual patient trajectories are retained as [descriptive quality-control results](figures/fig6_dataset_results.png), not as the main biological evidence.
-
-Conceptual workflow and mechanism diagrams are retained only as study-design documentation: [evidence design](figures/fig1_study_design.svg), [translational extension](figures/fig2_translational_extension.svg), and [mechanism chain](figures/fig3_mechanism_chain.svg). They are not data figures. The former summary-effect figures are retained for provenance but are not the primary results display.
+The only presentation-ready outputs are in [`manuscript/`](manuscript/): Figure 1 (design), Figure 2 (primary inferential results), Figure 3 (sample-level verification), Tables 1–2, supplementary sample/module tables, legends, and a checksum manifest. Older exploratory figures are not part of the repository.
 
 ## Why this question is supported by available data
 
@@ -77,7 +71,7 @@ bash scripts/run_three_dataset_pipeline.sh
 
 The script executes acquisition and checksum verification, platform annotation, all declared statistical models, GSEA, module scoring, inferential figures, sample-level verification, tests, artifact validation, and manuscript packaging in order. It stops immediately if any stage fails.
 
-The review-ready output is `results/manuscript/`: three nonredundant figures, Tables 1–2, supplementary sample/module tables, figure legends, and a SHA-256 manifest. `Table_S1_sample_labels.csv` contains all 589 public profiles with accession, original title, analysis label, inclusion status, treatment/timepoint where applicable, and the reason for inclusion or exclusion.
+The review-ready output is `manuscript/`: three nonredundant figures, Tables 1–2, supplementary sample/module tables, figure legends, and a SHA-256 manifest. `Table_S1_sample_labels.csv` contains all 589 public profiles with accession, original title, analysis label, inclusion status, treatment/timepoint where applicable, and the reason for inclusion or exclusion.
 
 Equivalent stage-by-stage execution:
 

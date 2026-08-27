@@ -1,6 +1,6 @@
-.PHONY: all data annotate bulk scores pilot manuscript-figure validate test check
+.PHONY: all data annotate bulk scores pilot manuscript validate test check
 
-all: data annotate bulk scores pilot manuscript-figure check validate
+all: data annotate bulk scores pilot manuscript check validate
 
 data:
 	python3 scripts/build_public_data.py --dataset GSE50084
@@ -22,10 +22,11 @@ scores:
 
 pilot:
 	Rscript scripts/08_build_robustness_atlas.R . results/pilot/atlas
-	Rscript scripts/09_make_pilot_figures.R results/pilot/atlas results/pilot/figures
 
-manuscript-figure:
-	Rscript scripts/09b_make_manuscript_figure.R . results/pilot/atlas results/pilot/figures
+manuscript:
+	Rscript scripts/15_make_dataset_result_figures.R . results/pilot/figures
+	Rscript scripts/16_make_estimand_figure.R . results/pilot/atlas results/pilot/figures
+	python3 scripts/17_build_manuscript_package.py --root . --output manuscript
 
 validate:
 	python3 scripts/14_validate_pipeline_outputs.py --root .

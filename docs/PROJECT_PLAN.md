@@ -36,12 +36,6 @@ The model is rejected if the components are not reproducible across independent 
 localized at patient level in single-cell data, or do not show distinguishable longitudinal behavior.
 No transcriptomic association is called causal.
 
-![MOSAIC-Tx evidence design](../figures/fig1_study_design.svg)
-
-![Evidence-gated single-cell to therapeutics extension](../figures/fig2_translational_extension.svg)
-
-![DSA-to-graft-injury mechanistic backbone](../figures/fig3_mechanism_chain.svg)
-
 ## Aim 1 — Separate DSA exposure from damaging rejection
 
 Primary GSE50084 contrasts:

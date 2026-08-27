@@ -184,7 +184,7 @@ def module_table(root: Path) -> list[dict[str, object]]:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", type=Path, default=Path("."))
-    parser.add_argument("--output", type=Path, default=Path("results/manuscript"))
+    parser.add_argument("--output", type=Path, default=Path("manuscript"))
     args = parser.parse_args(); root = args.root.resolve(); out = (root / args.output).resolve()
     figures, tables = out / "figures", out / "tables"
     figures.mkdir(parents=True, exist_ok=True); tables.mkdir(parents=True, exist_ok=True)
