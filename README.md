@@ -119,3 +119,21 @@ SHA-256 input hashes. See `CONTRIBUTING.md` before proposing a new dataset or sc
 Code is MIT licensed. Documentation is also distributed under the MIT license. Cite the repository
 using `CITATION.cff`. Clinical datasets retain their original terms and are never redistributed here.
 
+
+## Reproduce the multi-cohort bulk analysis
+
+```bash
+python scripts/build_public_data.py --dataset GSE50084
+python scripts/build_bulk_cohorts.py --dataset GSE36059
+python scripts/build_bulk_cohorts.py --dataset GSE275824
+Rscript scripts/02b_annotate_bioc.R data/processed/GSE50084/expression_probe_matrix.csv.gz data/processed/GSE50084/samples.csv GPL6244 data/processed/GSE50084
+Rscript scripts/02b_annotate_bioc.R data/processed/GSE36059/expression_probe_matrix.csv.gz data/processed/GSE36059/samples.csv GPL570 data/processed/GSE36059
+Rscript scripts/02b_annotate_bioc.R data/processed/GSE275824/expression_probe_matrix.csv.gz data/processed/GSE275824/samples.csv GPL13667 data/processed/GSE275824
+Rscript scripts/03_bulk_de_gsea.R data/processed/GSE50084/gene_expression.csv.gz data/processed/GSE50084/samples.csv results/bulk/GSE50084
+Rscript scripts/04_external_validation.R data/processed/GSE36059/gene_expression.csv.gz data/processed/GSE36059/samples.csv results/bulk/GSE36059
+Rscript scripts/05_treatment_response.R data/processed/GSE275824/gene_expression.csv.gz data/processed/GSE275824/samples.csv results/bulk/GSE275824
+```
+
+Required R packages: `data.table`, `limma`, `fgsea`, `msigdbr`, `jsonlite`, `AnnotationDbi`,
+`hugene10sttranscriptcluster.db`, `hgu133plus2.db`, and `hgu219.db`. Verified results and
+limitations are summarized in `docs/RESULTS_SNAPSHOT.md`.

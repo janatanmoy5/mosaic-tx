@@ -8,7 +8,32 @@
       "expected_samples": 115,
       "platform": "GPL6244"
     },
-    "GSE36059": {"role": "planned_external_validation", "status": "registered_not_built", "expected_samples": 411, "platform": "GPL570"},
-    "GSE228300": {"role": "planned_mechanistic_reference", "status": "registered_not_training", "expected_samples": 3, "platform": "GPL20795"}
+    "GSE36059": {
+      "role": "planned_external_validation",
+      "status": "active_external_validation",
+      "expected_samples": 411,
+      "platform": "GPL570",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE36nnn/GSE36059/matrix/GSE36059_series_matrix.txt.gz",
+      "sha256": "f5da23258dc9b67c62f2128da713e92e14fc084be0a07641d7d6e839aaf4cdb5"
+    },
+    "GSE228300": {
+      "role": "planned_mechanistic_reference",
+      "status": "registered_not_training",
+      "expected_samples": 3,
+      "platform": "GPL20795"
+    },
+    "GSE275824": {
+      "role": "randomized_treatment_response",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE275nnn/GSE275824/matrix/GSE275824_series_matrix.txt.gz",
+      "sha256": "ac3c25b6f51e03ad9d9d57cd5f89fa8a9f4eda8a1c31731f56866020f9b7f66a",
+      "expected_samples": 63,
+      "platform": "GPL13667",
+      "status": "active"
+    },
+    "GPL6244": {
+      "role": "platform_annotation",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/platforms/GPL6nnn/GPL6244/annot/GPL6244.annot.gz",
+      "sha256": "99ee70f87e02c75ff1c8dc57b6c40c0482c7ef2760e004301315ac34344ac6dc"
+    }
   }
 }
