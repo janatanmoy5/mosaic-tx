@@ -1,0 +1,13 @@
+dataset,analysis_stratum,role,platform,n_profiles,n_patients,analysis_unit
+GSE275824,Felzartamab / Baseline,randomized treatment-time stratum,GPL13667,11,11,patient
+GSE275824,Felzartamab / Week24,randomized treatment-time stratum,GPL13667,10,10,patient
+GSE275824,Felzartamab / Week52,randomized treatment-time stratum,GPL13667,11,11,patient
+GSE275824,Placebo / Baseline,randomized treatment-time stratum,GPL13667,11,11,patient
+GSE275824,Placebo / Week24,randomized treatment-time stratum,GPL13667,10,10,patient
+GSE275824,Placebo / Week52,randomized treatment-time stratum,GPL13667,10,10,patient
+GSE36059,ABMR,case,GPL570,65,not available,biopsy
+GSE36059,TCMR,disease specificity control,GPL570,35,not available,biopsy
+GSE36059,non-rejecting,control,GPL570,281,not available,biopsy
+GSE50084,DSA_negative_control,DSA-negative control,GPL6244,20,not available,biopsy
+GSE50084,DSA_positive_no_rejection,difficult DSA-positive control,GPL6244,13,not available,biopsy
+GSE50084,DSA_positive_rejection,DSA-positive rejection case,GPL6244,28,not available,biopsy
