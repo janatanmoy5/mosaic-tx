@@ -189,12 +189,7 @@ p_e <- ggplot(trajectory, aes(timepoint, score, group = interaction(patient_id, 
 audit_scores <- rbindlist(list(s50084, s36059), fill = TRUE)
 fwrite(audit_scores, file.path(out_dir, "individual_sample_module_scores.csv"))
 
-# Save panels separately and assemble a landscape manuscript figure with readable labels.
-panel_files <- list(A = p_a, B = p_b, C = p_c, D = p_d, E = p_e)
-for (nm in names(panel_files)) {
-  ggsave(file.path(out_dir, paste0("dataset_panel_", nm, ".png")), panel_files[[nm]],
-         width = if (nm == "E") 15 else 7.5, height = 5.4, dpi = 300, bg = "white")
-}
+# Assemble one sample-level verification figure; do not export redundant standalone panels.
 main <- (p_a | p_b) / (p_c | p_d) / p_e +
   plot_layout(heights = c(1, 1, 0.88)) +
   plot_annotation(
