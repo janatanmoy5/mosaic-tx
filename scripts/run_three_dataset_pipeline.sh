@@ -31,8 +31,9 @@ make bulk
 make scores
 make pilot
 
-# Render the four-panel main figure after statistical results have been frozen to disk.
+# Render inferential summary panels and the biopsy/patient-level primary results figure.
 Rscript scripts/09b_make_manuscript_figure.R . results/pilot/atlas results/pilot/figures
+Rscript scripts/15_make_dataset_result_figures.R . results/pilot/figures
 
 # Run unit/syntax checks and strict artifact validation.
 make check
@@ -45,6 +46,10 @@ shasum -a 256 \
   results/pilot/atlas/run_manifest.json \
   results/pilot/figures/main_figure_multicohort.png \
   results/pilot/figures/main_figure_multicohort.pdf \
+  results/pilot/figures/dataset_results_main.png \
+  results/pilot/figures/dataset_results_main.pdf \
+  results/pilot/figures/individual_sample_module_scores.csv \
+  results/pilot/figures/GSE275824_patient_trajectories.csv \
   > results/pilot/output_checksums.sha256
 
 echo "MOSAIC-Tx three-dataset pipeline completed successfully"
