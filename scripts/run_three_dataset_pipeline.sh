@@ -53,6 +53,10 @@ shasum -a 256 \
   results/figures/selected_hallmark_gsea_atlas.csv \
   results/figures/individual_sample_module_scores.csv \
   results/figures/GSE275824_patient_trajectories.csv \
+  results/figures/GSE275824_change_from_baseline.csv \
+  results/figures/GSE36059_validation_effects.csv \
+  results/figures/GSE50084_descriptive_pca.csv \
+  results/figures/GSE36059_descriptive_pca.csv \
   results/tables/Table_1_cohort_composition.csv \
   results/tables/Table_2_primary_estimands.csv \
   results/tables/Table_S1_sample_labels.csv \

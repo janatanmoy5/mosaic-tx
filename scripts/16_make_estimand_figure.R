@@ -11,10 +11,26 @@ dir.create(out, recursive = TRUE, showWarnings = FALSE)
 
 pal <- c(red="#B64B4B", gold="#D39C3F", navy="#24476B", purple="#6F5AA8",
          teal="#16817A", grey="#707B83")
-theme_paper <- theme_classic(base_size=10.5) + theme(
-  plot.title=element_text(face="bold", size=11.5), plot.subtitle=element_text(size=9, color="grey30"),
-  strip.background=element_rect(fill="grey94", color=NA), strip.text=element_text(face="bold"),
-  axis.title=element_text(face="bold"), legend.position="bottom", legend.title=element_text(face="bold"))
+theme_paper <- theme_classic(base_size=9.5) + theme(
+  plot.title=element_text(face="bold",size=10.5,margin=margin(b=2)),
+  plot.subtitle=element_text(size=8,color="grey30",margin=margin(b=2)),
+  strip.background=element_rect(fill="grey94",color=NA),
+  strip.text=element_text(face="bold",size=8.5),
+  axis.title=element_text(face="bold",size=9.5),
+  axis.title.x=element_text(margin=margin(t=2)),
+  axis.title.y=element_text(margin=margin(r=0)),
+  axis.text=element_text(size=8.5,color="black"),
+  axis.text.y=element_text(margin=margin(r=0)),
+  legend.position="bottom",
+  legend.title=element_text(face="bold",size=7.5),
+  legend.text=element_text(size=7),
+  legend.key.height=grid::unit(8,"pt"),
+  legend.key.width=grid::unit(9,"pt"),
+  legend.spacing.x=grid::unit(2,"pt"),
+  legend.background=element_rect(fill="white",color="grey45",linewidth=.3),
+  legend.box.background=element_rect(fill="white",color="grey45",linewidth=.3),
+  legend.margin=margin(2,3,2,3),
+  plot.margin=margin(2,2,2,2))
 
 labels <- c(nk_identity="NK identity", fcgr3a_adcc_effector="FCGR3A/Fc signaling",
   cytotoxicity="Cytotoxicity", ifng_chemokine="IFN-gamma/chemokines",
@@ -42,25 +58,33 @@ p_a <- ggplot(pa, aes(logFC,module_label,color=comparison)) + geom_vline(xinterc
   scale_shape_manual(values=c("FDR < 0.05"=16,"FDR >= 0.05"=1)) +
   labs(title="A  DSA exposure is separated from damaging rejection",
        subtitle="GSE50084, 61 primary biopsies; standardized module effects with approximate 95% CI",
-       x="Case - control module effect",y=NULL,color="Estimand",shape="Evidence") + theme_paper
+       x="Case - control module effect",y=NULL,color="Estimand",shape="Evidence") +
+  guides(color=guide_legend(nrow=2,byrow=TRUE),shape=guide_legend(nrow=1)) + theme_paper
 
-# B: concordance is not sufficient; color explicitly reports the ABMR-versus-TCMR estimate.
-disc <- e[contrast=="ABMR_DSApos_vs_DSApos_nonrejection",.(module,discovery=logFC,discovery_fdr=module_fdr)]
-val <- e[contrast=="ABMR_vs_nonrejection",.(module,validation=logFC,validation_fdr=module_fdr)]
-spec <- e[contrast=="ABMR_vs_TCMR",.(module,specificity=logFC,specificity_fdr=module_fdr)]
-rep <- Reduce(function(x,y) merge(x,y,by="module"),list(disc,val,spec))[module %in% primary]
-rep[, module_label:=labels[module]]
-rep[, replicated:=discovery_fdr<.05 & validation_fdr<.05 & sign(discovery)==sign(validation)]
-p_b <- ggplot(rep,aes(discovery,validation,color=specificity)) +
-  geom_hline(yintercept=0,color="grey80") + geom_vline(xintercept=0,color="grey80") +
-  geom_point(aes(shape=replicated),size=3.2) +
-  geom_text(aes(label=module_label),nudge_y=.055,size=2.8,check_overlap=TRUE) +
-  scale_color_gradient2(low=pal["purple"],mid="grey92",high=pal["red"],midpoint=0) +
-  scale_shape_manual(values=c(`TRUE`=16,`FALSE`=1)) +
-  labs(title="B  Replication is challenged for rejection specificity",
-       subtitle="Color: ABMR - TCMR; purple means the program is stronger in TCMR",
-       x="GSE50084: DSA+ rejection - DSA+ non-rejection",y="GSE36059: ABMR - non-rejecting",
-       color="ABMR - TCMR",shape="Replicated") + theme_paper
+# B: show the three clinically distinct comparisons directly; do not encode specificity as color.
+disc <- e[contrast=="ABMR_DSApos_vs_DSApos_nonrejection",.(module,estimate=logFC,lo,hi,module_fdr)]
+disc[, comparison := "Discovery: DSA+ rejection vs DSA+ no rejection"]
+val <- e[contrast=="ABMR_vs_nonrejection",.(module,estimate=logFC,lo,hi,module_fdr)]
+val[, comparison := "Validation: ABMR vs non-rejecting"]
+spec <- e[contrast=="ABMR_vs_TCMR",.(module,estimate=logFC,lo,hi,module_fdr)]
+spec[, comparison := "Specificity: ABMR vs TCMR"]
+rep_long <- rbindlist(list(disc,val,spec))[module %in% primary]
+rep_long[, module_label := factor(labels[module], levels=rev(labels[primary]))]
+rep_long[, comparison := factor(comparison, levels=c(
+  "Discovery: DSA+ rejection vs DSA+ no rejection",
+  "Validation: ABMR vs non-rejecting",
+  "Specificity: ABMR vs TCMR"))]
+rep_long[, evidence := ifelse(module_fdr<.05,"FDR < 0.05","FDR >= 0.05")]
+p_b <- ggplot(rep_long,aes(estimate,module_label,color=comparison)) +
+  geom_vline(xintercept=0,color="grey75") +
+  geom_errorbar(aes(xmin=lo,xmax=hi),orientation="y",width=.12,position=position_dodge(.64)) +
+  geom_point(aes(shape=evidence),size=2.5,position=position_dodge(.64)) +
+  scale_color_manual(values=c(unname(pal["teal"]),unname(pal["navy"]),unname(pal["purple"]))) +
+  scale_shape_manual(values=c("FDR < 0.05"=16,"FDR >= 0.05"=1)) +
+  labs(title="B  Replication and ABMR specificity are separate tests",
+       subtitle="Right of zero: higher in the first named group; ABMR-vs-TCMR is the required disease-control comparison",
+       x="Standardized module difference (95% CI)",y=NULL,color="Comparison",shape="Evidence") + theme_paper
+rep <- dcast(rep_long, module + module_label ~ comparison, value.var="estimate")
 
 # C: broader pathway context from all executed Hallmark GSEA contrasts.
 gsea_files <- list(
@@ -82,7 +106,7 @@ p_c <- ggplot(g,aes(contrast,pathway_label,fill=NES,alpha=padj<.05)) + geom_tile
   scale_fill_gradient2(low=pal["navy"],mid="white",high=pal["red"],midpoint=0) +
   scale_alpha_manual(values=c(`TRUE`=1,`FALSE`=.32)) +
   labs(title="C  Pathway direction across discovery, specificity and treatment",
-       subtitle="Red: enriched in first group; blue: enriched in control/placebo direction; opacity denotes BH FDR",
+       subtitle="Each column names the numerator and comparator; red favors the first group, blue favors the second",
        x=NULL,y=NULL,fill="Hallmark NES",alpha="FDR < 0.05") + theme_paper +
   theme(axis.text.x=element_text(angle=32,hjust=1,size=8))
 
@@ -94,6 +118,54 @@ d[, `:=`(week=factor(ifelse(grepl("Week24",term),"Week 24","Week 52"),levels=c("
                              levels=rev(c("ABMR activity","IFN-gamma","NK","Endothelium"))),
           lo=Value-1.96*Std.Error,hi=Value+1.96*Std.Error,
           evidence=ifelse(fdr<.05,"FDR < 0.05","FDR >= 0.05"))]
+# E: platform-specific unsupervised PCA provides descriptive sample structure, not inference.
+make_pca_panel <- function(dataset, keep_groups, group_labels, group_colors, panel_title) {
+  meta <- fread(file.path(root,"data/processed",dataset,"samples.csv"))[
+    analysis_group %in% names(group_labels)]
+  expr <- fread(file.path(root,"data/processed",dataset,"gene_expression.csv.gz"))
+  setnames(expr,1L,"gene_symbol")
+  sample_ids <- intersect(meta$sample_accession,names(expr))
+  meta <- meta[match(sample_ids,sample_accession)]
+  mat <- as.matrix(expr[,..sample_ids]); storage.mode(mat) <- "double"
+  gene_var <- apply(mat,1L,var,na.rm=TRUE)
+  keep <- head(order(gene_var,decreasing=TRUE,na.last=NA),min(1000L,sum(is.finite(gene_var))))
+  fit <- prcomp(t(mat[keep,,drop=FALSE]),center=TRUE,scale.=TRUE)
+  variance <- 100*fit$sdev^2/sum(fit$sdev^2)
+  pc <- data.table(sample_accession=rownames(fit$x),PC1=fit$x[,1],PC2=fit$x[,2])
+  pc <- meta[pc,on="sample_accession"]
+  pc[,group_label:=factor(group_labels[analysis_group],levels=unname(group_labels))]
+  centroids <- pc[,.(PC1=mean(PC1),PC2=mean(PC2)),by=group_label]
+  fwrite(pc,file.path(out,paste0(dataset,"_descriptive_pca.csv")))
+  ggplot(pc,aes(PC1,PC2,color=group_label)) +
+    geom_hline(yintercept=0,color="grey90",linewidth=.3) +
+    geom_vline(xintercept=0,color="grey90",linewidth=.3) +
+    stat_ellipse(aes(group=group_label),level=.80,linetype=2,linewidth=.55,show.legend=FALSE) +
+    geom_point(size=1.7,alpha=.72) +
+    geom_point(data=centroids,aes(PC1,PC2,fill=group_label),shape=21,size=3.2,
+               color="white",stroke=.7,inherit.aes=FALSE) +
+    scale_color_manual(values=setNames(group_colors,unname(group_labels)),drop=FALSE) +
+    scale_fill_manual(values=setNames(group_colors,unname(group_labels)),drop=FALSE,guide="none") +
+    labs(title=panel_title,
+         subtitle="Unsupervised PCA of 1,000 most-variable genes; dashed contours enclose 80% of each labeled group",
+         x=sprintf("PC1 (%.1f%% variance)",variance[1]),
+         y=sprintf("PC2 (%.1f%% variance)",variance[2]),color="Clinical group") +
+    guides(color=guide_legend(nrow=1,byrow=TRUE)) +
+    theme_paper + theme(legend.position="bottom",
+      axis.title.y=element_text(margin=margin(r=0)),
+      plot.margin=margin(2,2,2,2))
+}
+p_e1 <- make_pca_panel("GSE50084",
+  c("DSA_negative_control","DSA_positive_no_rejection","DSA_positive_rejection"),
+  c(DSA_negative_control="DSA- / no rejection",
+    DSA_positive_no_rejection="DSA+ / no rejection",
+    DSA_positive_rejection="DSA+ / rejection"),
+  c("#707B83","#D39C3F","#B64B4B"),
+  "E  Discovery-cohort structure: GSE50084 kidney biopsies")
+p_e2 <- make_pca_panel("GSE36059",c("non-rejecting","TCMR","ABMR"),
+  c("non-rejecting"="Non-rejecting",TCMR="TCMR",ABMR="ABMR"),
+  c("#707B83","#6F5AA8","#B64B4B"),
+  "F  Validation-cohort structure: GSE36059 kidney biopsies")
+
 p_d <- ggplot(d,aes(Value,score_label,color=week)) + geom_vline(xintercept=0,color="grey75") +
   geom_errorbar(aes(xmin=lo,xmax=hi),orientation="y",width=.13,position=position_dodge(.48)) +
   geom_point(aes(shape=evidence),size=2.8,position=position_dodge(.48)) +
@@ -103,13 +175,13 @@ p_d <- ggplot(d,aes(Value,score_label,color=week)) + geom_vline(xintercept=0,col
        subtitle="Felzartamab-minus-placebo difference-in-differences; negative values indicate relative reduction",
        x="Treatment-by-time interaction (95% CI)",y=NULL,color="Time",shape="Evidence") + theme_paper
 
-fig <- (p_a|p_b)/(p_c|p_d) + plot_annotation(
-  title="MOSAIC-Tx: qualification of a treatment-responsive rejection program",
-  subtitle="Effect estimates answer prespecified biological questions; descriptive PCA is excluded from the primary result",
+pca_row <- wrap_elements(full=p_e1) | wrap_elements(full=p_e2)
+fig <- (p_a|p_b)/(p_c|p_d)/pca_row +
+  plot_layout(heights=c(1,1,.92),widths=c(1,1)) + plot_annotation(
   caption="Associative bulk transcriptomics cannot prove antibody engagement, cell of origin, target causality, or drug efficacy.",
-  theme=theme(plot.title=element_text(face="bold",size=15),plot.subtitle=element_text(size=10),plot.caption=element_text(size=8)))
-ggsave(file.path(out,"estimand_results_main.png"),fig,width=16,height=12,dpi=300,bg="white")
-ggsave(file.path(out,"estimand_results_main.pdf"),fig,width=16,height=12,device="pdf")
+  theme=theme(plot.caption=element_text(size=8,hjust=0)))
+ggsave(file.path(out,"estimand_results_main.png"),fig,width=16,height=17,dpi=300,bg="white")
+ggsave(file.path(out,"estimand_results_main.pdf"),fig,width=16,height=17,device="pdf")
 fwrite(rep,file.path(out,"cross_cohort_replication_specificity.csv"))
 fwrite(g,file.path(out,"selected_hallmark_gsea_atlas.csv"))
 cat("Estimand-centered biological results figure generated.\n")

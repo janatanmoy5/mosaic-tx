@@ -20,9 +20,11 @@ strict output validation.
 5. Fit published molecular-score mixed models with patient random intercepts.
 6. Construct nine frozen module scores independently within every platform.
 7. Build the direction-aware robustness and ABMR-specificity atlas.
-8. Render the two-panel atlas and four-panel main manuscript figure in PNG and PDF.
-9. Run Python unit tests, Python/R syntax checks, GEO compilation validation, and artifact validation.
-10. Write SHA-256 checksums for principal tables and figures.
+8. Render Figure 1 (cohorts, observed distributions, specificity, and MMDx trajectories).
+9. Render Figure 2 (estimands, GSEA, randomized effects, and platform-specific PCA).
+10. Build manuscript tables and auditable plotting CSV files.
+11. Run syntax, unit, GEO-compilation, and artifact validation.
+12. Write SHA-256 checksums for principal tables and figures.
 
 ## Successful local execution
 
@@ -44,9 +46,12 @@ the exact three-dataset manifest, and both raster and vector manuscript figures.
 - `results/atlas/robustness_atlas.csv`
 - `results/atlas/module_coverage.csv`
 - `results/atlas/run_manifest.json`
-- `results/figures/estimand_results_main.pdf`
-- `results/figures/dataset_results_main.pdf`
+- `results/figures/estimand_results_main.pdf` and `.png`
+- `results/figures/dataset_results_main.pdf` and `.png`
+- `results/tables/Table_1_cohort_composition.csv`
+- `results/tables/Table_2_primary_estimands.csv`
 - `results/tables/Table_S1_sample_labels.csv`
+- `docs/ABSTRACT.md` and `docs/MANUSCRIPT_DRAFT.md`
 - `results/output_checksums.sha256`
 
 ## Nonfatal warnings observed

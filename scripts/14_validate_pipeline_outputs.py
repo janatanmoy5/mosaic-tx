@@ -65,8 +65,10 @@ def main() -> None:
     # The primary figure must remain auditable back to individual GEO profiles.
     require_csv_rows(root / "results/figures/individual_sample_module_scores.csv", 3978)
     require_csv_rows(root / "results/figures/GSE275824_patient_trajectories.csv", 252)
-    for dataset in ("GSE50084", "GSE36059"):
-        require_csv_rows(root / "results/figures" / f"{dataset}_pca_coordinates.csv", 61)
+    require_csv_rows(root / "results/figures/GSE275824_change_from_baseline.csv", 160)
+    require_csv_rows(root / "results/figures/GSE36059_validation_effects.csv", 8)
+    require_csv_rows(root / "results/figures/GSE50084_descriptive_pca.csv", 61)
+    require_csv_rows(root / "results/figures/GSE36059_descriptive_pca.csv", 381)
 
     # Validate auditable cohort, effect, sample-label, and module tables under results/.
     require_csv_rows(root / "results/tables/Table_1_cohort_composition.csv", 12)

@@ -1,11 +1,12 @@
-# Executed analysis: ABMR signature robustness and transportability atlas
+# Executed analysis: reference-aware qualification of ABMR-associated transcript programs
 
 ## Status
 
 The bulk analysis was executed on the local Mac using the processed public matrices for GSE50084,
 GSE36059 and GSE275824. The run comprised 589 expression profiles in total, including 22 patients
-with serial randomized-treatment biopsies. The complete effect table, module coverage, evidence
-grades, run manifest and rendered figures are stored under `results/`.
+with serial randomized-treatment biopsies. The complete effect table, module coverage, evidence grades, run manifest, two principal figures,
+and source plotting tables are stored under `results/`. The manuscript narrative is in
+`docs/MANUSCRIPT_DRAFT.md`, with its abstract in `docs/ABSTRACT.md`.
 
 This analysis is a stress test of molecular inputs for drug repositioning. It is not an independent
 drug-discovery claim and does not duplicate the experimental aims of R01AI180118.

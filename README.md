@@ -35,7 +35,7 @@ types, but their modest patient counts preclude cell-level machine-learning clai
 - [x] Patient-blocked randomized treatment-response analysis
 - [x] Published-score trajectory analysis
 - [ ] Single-cell patient-level pseudobulk localization
-- [ ] Cross-cohort effect-size synthesis
+- [x] Cross-cohort effect-size synthesis with explicit TCMR specificity testing
 - [ ] Externally validated patient-level biomarker model
 - [ ] Evidence-qualified drug-signature reversal
 - [ ] Target-specific QSAR (only if the activity-data gate passes)
@@ -47,20 +47,14 @@ QSAR, docking and molecular dynamics are downstream gates—not assumed delivera
 
 ## Start here
 
-1. [`docs/STUDY_BLUEPRINT.md`](docs/STUDY_BLUEPRINT.md) — biological question, estimands, statistical models, figure-to-claim contract, and decision gates
-2. [`docs/DATASET_COMPARISON.md`](docs/DATASET_COMPARISON.md) — bulk-versus-single-cell scope, three-GEO comparison, and steps for adding another cohort
-2. [`docs/PROJECT_PLAN.md`](docs/PROJECT_PLAN.md) — question, hypotheses, aims and success criteria
-2. [`docs/FEASIBILITY_AUDIT.md`](docs/FEASIBILITY_AUDIT.md) — what is practical on this Mac and what is not
-3. [`docs/ANALYSIS_SPECIFICATION.md`](docs/ANALYSIS_SPECIFICATION.md) — frozen contrasts and statistics
-4. [`docs/MECHANISM_MAP.md`](docs/MECHANISM_MAP.md) — measurable evidence and falsification at every biological arrow
-5. [`docs/RESULTS_SNAPSHOT.md`](docs/RESULTS_SNAPSHOT.md) — verified results and null findings
-6. [`docs/LIMITATIONS.md`](docs/LIMITATIONS.md) — claims the data cannot support
-7. [`docs/TRANSLATIONAL_EXTENSION.md`](docs/TRANSLATIONAL_EXTENSION.md) — single-cell, ML and drug gates
-8. [`docs/DRUG_QSAR_PROTOCOL.md`](docs/DRUG_QSAR_PROTOCOL.md) — chemical-data and QSAR requirements
-9. [`docs/RESULTS.md`](docs/RESULTS.md) — executed findings, null results, and claim boundaries
-10. [`docs/CODE_REVIEW.md`](docs/CODE_REVIEW.md) — script-by-script verification status and defects found
-11. [`docs/R01AI180118_ALIGNMENT.md`](docs/R01AI180118_ALIGNMENT.md) — contribution to the transplantation program without aim duplication
-12. [`docs/PIPELINE_EXECUTION.md`](docs/PIPELINE_EXECUTION.md) — successful one-command run, outputs, checksums, and warnings
+1. [`docs/ABSTRACT.md`](docs/ABSTRACT.md) — structured project abstract
+2. [`docs/MANUSCRIPT_DRAFT.md`](docs/MANUSCRIPT_DRAFT.md) — Introduction, Methods, Results, Discussion, and figure legends
+3. [`docs/STUDY_BLUEPRINT.md`](docs/STUDY_BLUEPRINT.md) — biological question, estimands, models, figures, and decision gates
+4. [`docs/DATASET_COMPARISON.md`](docs/DATASET_COMPARISON.md) — cohort scope and adding another GEO series
+5. [`docs/ANALYSIS_SPECIFICATION.md`](docs/ANALYSIS_SPECIFICATION.md) — frozen contrasts and statistics
+6. [`docs/RESULTS.md`](docs/RESULTS.md) — executed findings and claim boundaries
+7. [`docs/LIMITATIONS.md`](docs/LIMITATIONS.md) — claims the data cannot support
+8. [`docs/PIPELINE_EXECUTION.md`](docs/PIPELINE_EXECUTION.md) — one-command execution and outputs
 
 ## Run the canonical manuscript pipeline
 
@@ -87,6 +81,57 @@ make check
 
 The tracked analysis results were generated from the three public cohorts on the local Mac. Single-cell,
 ML, drug reversal, QSAR, docking and MD remain gated and are not represented as completed.
+
+## Cohort and biospecimen contract
+
+| Cohort | Profiles used | Primary specimen | Role | Prespecified comparisons |
+|---|---:|---|---|---|
+| GSE50084 | 61 biopsies; 54 blood profiles retained separately | Kidney-allograft biopsy | DSA-conditioned discovery | DSA+/rejection vs DSA+/no rejection; DSA+/no rejection vs DSA-/no rejection |
+| GSE36059 | 381 primary-analysis profiles | Kidney-allograft biopsy | independent replication and specificity | ABMR vs non-rejecting; ABMR vs TCMR |
+| GSE275824 | 63 biopsies from 22 randomized patients | Serial kidney-allograft biopsy | randomized molecular response | felzartamab-minus-placebo change from baseline at weeks 24 and 52 |
+
+Blood and biopsy expression are never pooled. GSE50084 blood is retained in the audit table but is
+not used in the primary tissue analysis. GSE36059 nephrectomy and mixed-rejection profiles remain in
+metadata but are excluded from primary contrasts. Only GSE275824 supports connected trajectories.
+
+## Pipeline execution order
+
+| Order | Program | Purpose | Principal output |
+|---:|---|---|---|
+| 1 | `make data` | download, checksum and compile the GEO series | processed sample tables and probe matrices |
+| 2 | `scripts/02b_annotate_bioc.R` | platform-specific probe-to-gene mapping | gene matrices and annotation manifests |
+| 3 | `scripts/03_bulk_de_gsea.R` | GSE50084 moderated DE and Hallmark GSEA | discovery DE/GSEA tables |
+| 4 | `scripts/04_external_validation.R` | replication and ABMR-versus-TCMR specificity | validation DE/GSEA tables |
+| 5 | `scripts/05_treatment_response.R` | patient-blocked treatment-by-time contrasts | week-24 and week-52 effects |
+| 6 | `scripts/06_published_score_trajectories.R` | mixed-effects analysis of deposited MMDx programs | interaction estimates and manifest |
+| 7 | `scripts/08_build_robustness_atlas.R` | harmonize module effects across cohorts | `results/atlas/` |
+| 8 | `scripts/15_make_dataset_result_figures.R` | cohort, distribution, forest and MMDx displays | Figure 1 and audit CSVs |
+| 9 | `scripts/16_make_estimand_figure.R` | inferential synthesis, GSEA and platform-specific PCA | Figure 2 and PCA coordinates |
+| 10 | `scripts/17_build_audit_tables.py` | build sample, cohort, estimand and module tables | `results/tables/` |
+| 11 | `make check` plus output validator | tests, syntax checks and artifact contracts | fail-fast validation |
+| 12 | `shasum` | hash principal outputs | `results/output_checksums.sha256` |
+
+## Statistical interpretation
+
+- Differential expression uses limma moderated models with Benjamini-Hochberg FDR within each contrast.
+- Hallmark GSEA uses preranked fgsea; direction follows the printed numerator-minus-comparator label.
+- Mechanism modules are prespecified within-cohort mean gene-z scores and cannot establish cell origin.
+- GSE275824 inference uses a patient-blocked treatment-by-time interaction.
+- Figure 1, dataset_results_main.pdf, combines four cohort panels (A-D) and four aligned GSE275824 patient-trajectory panels (E-H).
+- Longitudinal panels use the original deposited ABMRact, ABMRIFNG, ABMRNK and ABMREndo values and report patient-blocked treatment-by-time estimates with BH-adjusted FDR.
+- Figure 2, estimand_results_main.pdf, contains the inferential synthesis, pathway atlas and platform-specific PCA.
+- These are the only two graphical deliverables; plotted values and coordinates remain as audit CSVs.
+- PCA is platform-specific, uses 1,000 most-variable genes, and is descriptive rather than predictive.
+- KNN is not used as clustering; supervised prediction requires a separate target and external validation.
+
+## Results directory
+
+- `results/bulk/`: cohort-specific DE, GSEA and treatment-model results.
+- `results/atlas/`: cross-cohort mechanism effects and run manifest.
+- `results/figures/`: PNG/PDF figures and exact plotted values or coordinates.
+- `results/tables/`: cohort composition, estimands, sample labels and module coverage.
+- `results/logs/three_dataset_pipeline.log`: complete execution record.
+- `results/output_checksums.sha256`: integrity hashes for principal deliverables.
 
 ## Reproduce verified analyses
 
