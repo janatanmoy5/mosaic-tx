@@ -59,6 +59,10 @@ def main() -> None:
     require_nonempty(root / "results/pilot/figures/main_figure_multicohort.pdf")
     require_nonempty(root / "results/pilot/figures/dataset_results_main.png")
     require_nonempty(root / "results/pilot/figures/dataset_results_main.pdf")
+    require_nonempty(root / "results/pilot/figures/estimand_results_main.png")
+    require_nonempty(root / "results/pilot/figures/estimand_results_main.pdf")
+    require_csv_rows(root / "results/pilot/figures/cross_cohort_replication_specificity.csv", 6)
+    require_csv_rows(root / "results/pilot/figures/selected_hallmark_gsea_atlas.csv", 20)
 
     # The primary figure must remain auditable back to individual GEO profiles.
     require_csv_rows(root / "results/pilot/figures/individual_sample_module_scores.csv", 3978)

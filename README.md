@@ -14,9 +14,11 @@ de-identified datasets and tests prespecified contrasts with reproducible statis
 
 ## Executed primary result
 
-The primary figure below is generated from observed GEO profiles—not simulated values or a workflow diagram. Panels A-B use all 61 eligible GSE50084 biopsies; panels C-D use the 381 prespecified GSE36059 validation biopsies; panel E shows all 63 GSE275824 biopsies from 22 randomized patients. The exact plotted sample-level tables are exported with the figure.
+The primary figure answers four prespecified biological questions using effect sizes, confidence intervals, specificity tests, pathway enrichment, and randomized treatment-by-time interactions. It does not use simulated values. The exact plotted estimates are exported as CSV files.
 
-![Observed three-cohort biopsy and patient-level results](figures/fig6_dataset_results.png)
+![Estimand-centered ABMR results](figures/fig7_estimand_results.png)
+
+The biopsy-level PCA, distributions, and individual patient trajectories are retained as [descriptive quality-control results](figures/fig6_dataset_results.png), not as the main biological evidence.
 
 Conceptual workflow and mechanism diagrams are retained only as study-design documentation: [evidence design](figures/fig1_study_design.svg), [translational extension](figures/fig2_translational_extension.svg), and [mechanism chain](figures/fig3_mechanism_chain.svg). They are not data figures. The former summary-effect figures are retained for provenance but are not the primary results display.
 
@@ -51,7 +53,8 @@ QSAR, docking and molecular dynamics are downstream gates—not assumed delivera
 
 ## Start here
 
-1. [`docs/PROJECT_PLAN.md`](docs/PROJECT_PLAN.md) — question, hypotheses, aims and success criteria
+1. [`docs/STUDY_BLUEPRINT.md`](docs/STUDY_BLUEPRINT.md) — biological question, estimands, statistical models, figure-to-claim contract, and decision gates
+2. [`docs/PROJECT_PLAN.md`](docs/PROJECT_PLAN.md) — question, hypotheses, aims and success criteria
 2. [`docs/FEASIBILITY_AUDIT.md`](docs/FEASIBILITY_AUDIT.md) — what is practical on this Mac and what is not
 3. [`docs/ANALYSIS_SPECIFICATION.md`](docs/ANALYSIS_SPECIFICATION.md) — frozen contrasts and statistics
 4. [`docs/MECHANISM_MAP.md`](docs/MECHANISM_MAP.md) — measurable evidence and falsification at every biological arrow

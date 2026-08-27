@@ -97,7 +97,7 @@ d[, `:=`(week=factor(ifelse(grepl("Week24",term),"Week 24","Week 52"),levels=c("
 p_d <- ggplot(d,aes(Value,score_label,color=week)) + geom_vline(xintercept=0,color="grey75") +
   geom_errorbar(aes(xmin=lo,xmax=hi),orientation="y",width=.13,position=position_dodge(.48)) +
   geom_point(aes(shape=evidence),size=2.8,position=position_dodge(.48)) +
-  scale_color_manual(values=c("Week 24"=pal["teal"],"Week 52"=pal["red"])) +
+  scale_color_manual(values=c("Week 24"=unname(pal["teal"]),"Week 52"=unname(pal["red"]))) +
   scale_shape_manual(values=c("FDR < 0.05"=16,"FDR >= 0.05"=1)) +
   labs(title="D  Randomized treatment effects are transient and program-dependent",
        subtitle="Felzartamab-minus-placebo difference-in-differences; negative values indicate relative reduction",

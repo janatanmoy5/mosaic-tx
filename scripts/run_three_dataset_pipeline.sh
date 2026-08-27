@@ -34,6 +34,7 @@ make pilot
 # Render inferential summary panels and the biopsy/patient-level primary results figure.
 Rscript scripts/09b_make_manuscript_figure.R . results/pilot/atlas results/pilot/figures
 Rscript scripts/15_make_dataset_result_figures.R . results/pilot/figures
+Rscript scripts/16_make_estimand_figure.R . results/pilot/atlas results/pilot/figures
 
 # Run unit/syntax checks and strict artifact validation.
 make check
@@ -48,6 +49,10 @@ shasum -a 256 \
   results/pilot/figures/main_figure_multicohort.pdf \
   results/pilot/figures/dataset_results_main.png \
   results/pilot/figures/dataset_results_main.pdf \
+  results/pilot/figures/estimand_results_main.png \
+  results/pilot/figures/estimand_results_main.pdf \
+  results/pilot/figures/cross_cohort_replication_specificity.csv \
+  results/pilot/figures/selected_hallmark_gsea_atlas.csv \
   results/pilot/figures/individual_sample_module_scores.csv \
   results/pilot/figures/GSE275824_patient_trajectories.csv \
   > results/pilot/output_checksums.sha256

@@ -4,6 +4,8 @@
 
 **Reference-robust and cell-state-aware qualification of molecular signatures for computational drug repositioning in antibody-mediated kidney-allograft rejection**
 
+The binding question-to-estimand and figure-to-claim specification is in `STUDY_BLUEPRINT.md`.
+
 ## Central question
 
 Which ABMR expression programs are reproducible, rejection-specific, cell-localizable, and sufficiently robust across reference definitions and treatment states to justify downstream drug-reversal analysis?
