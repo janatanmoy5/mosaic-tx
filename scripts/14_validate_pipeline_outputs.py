@@ -68,15 +68,13 @@ def main() -> None:
     for dataset in ("GSE50084", "GSE36059"):
         require_csv_rows(root / "results/pilot/figures" / f"{dataset}_pca_coordinates.csv", 61)
 
-    # Validate the nonredundant manuscript package and full sample-label audit trail.
-    require_nonempty(root / "manuscript/figures/Figure_1_study_design.svg")
-    require_nonempty(root / "manuscript/figures/Figure_2_primary_estimands.pdf")
-    require_nonempty(root / "manuscript/figures/Figure_3_sample_level_verification.pdf")
-    require_csv_rows(root / "manuscript/tables/Table_1_cohort_composition.csv", 12)
-    require_csv_rows(root / "manuscript/tables/Table_2_primary_estimands.csv", 42)
-    require_csv_rows(root / "manuscript/tables/Table_S1_sample_labels.csv", 589)
-    require_csv_rows(root / "manuscript/tables/Table_S2_module_definitions_and_coverage.csv", 27)
-    require_nonempty(root / "manuscript/run_manifest.json")
+    # Validate auditable cohort, effect, sample-label, and module tables under results/.
+    require_csv_rows(root / "results/pilot/tables/Table_1_cohort_composition.csv", 12)
+    require_csv_rows(root / "results/pilot/tables/Table_2_primary_estimands.csv", 42)
+    require_csv_rows(root / "results/pilot/tables/Table_S1_sample_labels.csv", 589)
+    require_csv_rows(root / "results/pilot/tables/Table_S2_module_definitions_and_coverage.csv", 27)
+    require_nonempty(root / "results/pilot/tables/audit_manifest.json")
+
     print("Pipeline output validation passed for all three datasets.")
 
 

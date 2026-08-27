@@ -34,7 +34,7 @@ make pilot
 # Render inferential summary panels and the biopsy/patient-level primary results figure.
 Rscript scripts/15_make_dataset_result_figures.R . results/pilot/figures
 Rscript scripts/16_make_estimand_figure.R . results/pilot/atlas results/pilot/figures
-python3 scripts/17_build_manuscript_package.py --root . --output manuscript
+python3 scripts/17_build_audit_tables.py --root . --output results/pilot/tables
 
 # Run unit/syntax checks and strict artifact validation.
 make check
@@ -53,11 +53,11 @@ shasum -a 256 \
   results/pilot/figures/selected_hallmark_gsea_atlas.csv \
   results/pilot/figures/individual_sample_module_scores.csv \
   results/pilot/figures/GSE275824_patient_trajectories.csv \
-  manuscript/tables/Table_1_cohort_composition.csv \
-  manuscript/tables/Table_2_primary_estimands.csv \
-  manuscript/tables/Table_S1_sample_labels.csv \
-  manuscript/tables/Table_S2_module_definitions_and_coverage.csv \
-  manuscript/run_manifest.json \
+  results/pilot/tables/Table_1_cohort_composition.csv \
+  results/pilot/tables/Table_2_primary_estimands.csv \
+  results/pilot/tables/Table_S1_sample_labels.csv \
+  results/pilot/tables/Table_S2_module_definitions_and_coverage.csv \
+  results/pilot/tables/audit_manifest.json \
   > results/pilot/output_checksums.sha256
 
 echo "MOSAIC-Tx three-dataset pipeline completed successfully"

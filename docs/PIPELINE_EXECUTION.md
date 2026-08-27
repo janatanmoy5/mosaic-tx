@@ -44,9 +44,9 @@ the exact three-dataset manifest, and both raster and vector manuscript figures.
 - `results/pilot/atlas/robustness_atlas.csv`
 - `results/pilot/atlas/module_coverage.csv`
 - `results/pilot/atlas/run_manifest.json`
-- `manuscript/figures/Figure_2_primary_estimands.pdf`
-- `manuscript/figures/Figure_3_sample_level_verification.pdf`
-- `manuscript/tables/Table_S1_sample_labels.csv`
+- `results/pilot/figures/estimand_results_main.pdf`
+- `results/pilot/figures/dataset_results_main.pdf`
+- `results/pilot/tables/Table_S1_sample_labels.csv`
 - `results/pilot/output_checksums.sha256`
 
 ## Nonfatal warnings observed

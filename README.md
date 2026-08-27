@@ -12,9 +12,9 @@ This repository does not claim patient-specific treatment prediction, clinical v
 validation, causal target discovery, or validated drug repurposing. It compiles published,
 de-identified datasets and tests prespecified contrasts with reproducible statistics.
 
-## Manuscript review package
+## Pipeline outputs
 
-The only presentation-ready outputs are in [`manuscript/`](manuscript/): Figure 1 (design), Figure 2 (primary inferential results), Figure 3 (sample-level verification), Tables 1–2, supplementary sample/module tables, legends, and a checksum manifest. Older exploratory figures are not part of the repository.
+All generated plots, statistical tables, sample labels, manifests, logs, and checksums are written under `results/`. No separate manuscript folder is created.
 
 ## Why this question is supported by available data
 
@@ -71,7 +71,7 @@ bash scripts/run_three_dataset_pipeline.sh
 
 The script executes acquisition and checksum verification, platform annotation, all declared statistical models, GSEA, module scoring, inferential figures, sample-level verification, tests, artifact validation, and manuscript packaging in order. It stops immediately if any stage fails.
 
-The review-ready output is `manuscript/`: three nonredundant figures, Tables 1–2, supplementary sample/module tables, figure legends, and a SHA-256 manifest. `Table_S1_sample_labels.csv` contains all 589 public profiles with accession, original title, analysis label, inclusion status, treatment/timepoint where applicable, and the reason for inclusion or exclusion.
+Primary plots are written to `results/pilot/figures/`; audit tables are written to `results/pilot/tables/`. `Table_S1_sample_labels.csv` contains all 589 public profiles with accession, original title, analysis label, inclusion status, treatment/timepoint where applicable, and the reason for inclusion or exclusion.
 
 Equivalent stage-by-stage execution:
 
