@@ -54,9 +54,17 @@ def main() -> None:
     if set(manifest["datasets"]) != {"GSE50084", "GSE36059", "GSE275824"}:
         raise RuntimeError("pilot manifest does not contain exactly the three declared cohorts")
 
-    # Validate both raster and vector forms of the main paper figure.
+    # Validate both summary and observed-data manuscript figures.
     require_nonempty(root / "results/pilot/figures/main_figure_multicohort.png")
     require_nonempty(root / "results/pilot/figures/main_figure_multicohort.pdf")
+    require_nonempty(root / "results/pilot/figures/dataset_results_main.png")
+    require_nonempty(root / "results/pilot/figures/dataset_results_main.pdf")
+
+    # The primary figure must remain auditable back to individual GEO profiles.
+    require_csv_rows(root / "results/pilot/figures/individual_sample_module_scores.csv", 3978)
+    require_csv_rows(root / "results/pilot/figures/GSE275824_patient_trajectories.csv", 252)
+    for dataset in ("GSE50084", "GSE36059"):
+        require_csv_rows(root / "results/pilot/figures" / f"{dataset}_pca_coordinates.csv", 61)
     print("Pipeline output validation passed for all three datasets.")
 
 

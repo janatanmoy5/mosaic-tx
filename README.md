@@ -12,15 +12,13 @@ This repository does not claim patient-specific treatment prediction, clinical v
 validation, causal target discovery, or validated drug repurposing. It compiles published,
 de-identified datasets and tests prespecified contrasts with reproducible statistics.
 
-![MOSAIC-Tx evidence design](figures/fig1_study_design.svg)
+## Executed primary result
 
-![Evidence-gated single-cell to therapeutics extension](figures/fig2_translational_extension.svg)
+The primary figure below is generated from observed GEO profiles—not simulated values or a workflow diagram. Panels A-B use all 61 eligible GSE50084 biopsies; panels C-D use the 381 prespecified GSE36059 validation biopsies; panel E shows all 63 GSE275824 biopsies from 22 randomized patients. The exact plotted sample-level tables are exported with the figure.
 
-![DSA-to-graft-injury mechanistic backbone](figures/fig3_mechanism_chain.svg)
+![Observed three-cohort biopsy and patient-level results](figures/fig6_dataset_results.png)
 
-![Executed pilot signature robustness atlas](figures/fig4_pilot_signature_robustness_atlas.png)
-
-![Executed three-cohort main manuscript figure](figures/fig5_main_multicohort.png)
+Conceptual workflow and mechanism diagrams are retained only as study-design documentation: [evidence design](figures/fig1_study_design.svg), [translational extension](figures/fig2_translational_extension.svg), and [mechanism chain](figures/fig3_mechanism_chain.svg). They are not data figures. The former summary-effect figures are retained for provenance but are not the primary results display.
 
 ## Why this question is supported by available data
 

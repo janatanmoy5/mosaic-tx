@@ -119,7 +119,7 @@ m50084 <- fread(file.path(root, "data/processed/GSE50084/samples.csv"))[compartm
 e50084 <- read_expression("GSE50084")
 s50084 <- score_modules(e50084, m50084$sample_accession, "GSE50084", m50084)
 g50084_levels <- c("DSA_negative_control", "DSA_positive_no_rejection", "DSA_positive_rejection")
-g50084_labels <- c("DSA− / no rejection\ncontrol (n=20)", "DSA+ / no rejection\ncontrol (n=13)",
+g50084_labels <- c("DSA- / no rejection\ncontrol (n=20)", "DSA+ / no rejection\ncontrol (n=13)",
                    "DSA+ / rejection\nABMR-enriched (n=28)")
 p_a <- make_pca(e50084, m50084$sample_accession, m50084, "GSE50084", "analysis_group",
                 g50084_levels, g50084_labels, unname(cols[c("control", "difficult", "abmr")]),
@@ -148,7 +148,7 @@ p_d <- make_distributions(s36059, "analysis_group", g36059_levels, g36059_labels
 
 # GSE275824: visualize actual longitudinal patient measurements and randomized assignment.
 m275824 <- fread(file.path(root, "data/processed/GSE275824/samples.csv"))
-score_labels <- c(abmract = "ABMR activity", abmrifng = "ABMR IFNγ",
+score_labels <- c(abmract = "ABMR activity", abmrifng = "ABMR IFN-gamma",
                   abmrnk = "ABMR NK", abmrendo = "ABMR endothelium")
 trajectory <- melt(m275824,
                    id.vars = c("sample_accession", "patient_id", "treatment", "timepoint"),
@@ -167,12 +167,17 @@ p_e <- ggplot(trajectory, aes(timepoint, score, group = interaction(patient_id, 
                               color = treatment_label)) +
   geom_line(alpha = 0.22, linewidth = 0.48) +
   geom_point(alpha = 0.38, size = 1.25) +
-  geom_errorbar(data = mean_trajectory, aes(y = mean, ymin = mean - 1.96 * se,
-                                             ymax = mean + 1.96 * se,
-                                             group = treatment_label),
+  geom_errorbar(data = mean_trajectory,
+                aes(x = timepoint, y = mean, ymin = mean - 1.96 * se,
+                    ymax = mean + 1.96 * se, color = treatment_label,
+                    group = treatment_label), inherit.aes = FALSE,
                 width = 0.07, linewidth = 0.72, alpha = 0.95) +
-  geom_line(data = mean_trajectory, aes(y = mean, group = treatment_label), linewidth = 1.15) +
-  geom_point(data = mean_trajectory, aes(y = mean), size = 2.6) +
+  geom_line(data = mean_trajectory,
+            aes(x = timepoint, y = mean, color = treatment_label, group = treatment_label),
+            inherit.aes = FALSE, linewidth = 1.15) +
+  geom_point(data = mean_trajectory,
+             aes(x = timepoint, y = mean, color = treatment_label),
+             inherit.aes = FALSE, size = 2.6) +
   facet_wrap(~published_score, nrow = 1, scales = "free_y") +
   scale_color_manual(values = c("Placebo (control)" = unname(cols["placebo"]),
                                 "Felzartamab (treated)" = unname(cols["treated"]))) +
