@@ -11,7 +11,16 @@ tissue-injury programs?
 
 ## Biological model to test—not assume
 
-The study tests a two-component model:
+The study tests the following explicit chain:
+
+```text
+DSA → endothelial antibody engagement → FCGR3A/CD16-positive NK and monocyte activation
+→ cytotoxicity plus IFN-gamma/chemokines → microvascular endothelial injury
+→ persistent versus treatment-responsive graft injury
+```
+
+Every arrow has an observable proxy, limitation and falsification test in `MECHANISM_MAP.md`. The final
+trajectory is summarized by a two-component model:
 
 1. **Immune-effector activity:** IFN-gamma-responsive, NK-cell/Fc-receptor and antibody-associated
    programs that may decrease during CD38-directed therapy.
@@ -25,6 +34,8 @@ No transcriptomic association is called causal.
 ![MOSAIC-Tx evidence design](../figures/fig1_study_design.svg)
 
 ![Evidence-gated single-cell to therapeutics extension](../figures/fig2_translational_extension.svg)
+
+![DSA-to-graft-injury mechanistic backbone](../figures/fig3_mechanism_chain.svg)
 
 ## Aim 1 — Separate DSA exposure from damaging rejection
 

@@ -17,6 +17,8 @@ de-identified datasets and tests prespecified contrasts with reproducible statis
 
 ![Evidence-gated single-cell to therapeutics extension](figures/fig2_translational_extension.svg)
 
+![DSA-to-graft-injury mechanistic backbone](figures/fig3_mechanism_chain.svg)
+
 ## Why this question is supported by available data
 
 GSE50084 contains DSA-negative, DSA-positive/no-rejection, and DSA-positive/rejection samples.
@@ -51,10 +53,11 @@ QSAR, docking and molecular dynamics are downstream gates—not assumed delivera
 1. [`docs/PROJECT_PLAN.md`](docs/PROJECT_PLAN.md) — question, hypotheses, aims and success criteria
 2. [`docs/FEASIBILITY_AUDIT.md`](docs/FEASIBILITY_AUDIT.md) — what is practical on this Mac and what is not
 3. [`docs/ANALYSIS_SPECIFICATION.md`](docs/ANALYSIS_SPECIFICATION.md) — frozen contrasts and statistics
-4. [`docs/RESULTS_SNAPSHOT.md`](docs/RESULTS_SNAPSHOT.md) — verified results and null findings
-5. [`docs/LIMITATIONS.md`](docs/LIMITATIONS.md) — claims the data cannot support
-6. [`docs/TRANSLATIONAL_EXTENSION.md`](docs/TRANSLATIONAL_EXTENSION.md) — single-cell, ML and drug gates
-7. [`docs/DRUG_QSAR_PROTOCOL.md`](docs/DRUG_QSAR_PROTOCOL.md) — chemical-data and QSAR requirements
+4. [`docs/MECHANISM_MAP.md`](docs/MECHANISM_MAP.md) — measurable evidence and falsification at every biological arrow
+5. [`docs/RESULTS_SNAPSHOT.md`](docs/RESULTS_SNAPSHOT.md) — verified results and null findings
+6. [`docs/LIMITATIONS.md`](docs/LIMITATIONS.md) — claims the data cannot support
+7. [`docs/TRANSLATIONAL_EXTENSION.md`](docs/TRANSLATIONAL_EXTENSION.md) — single-cell, ML and drug gates
+8. [`docs/DRUG_QSAR_PROTOCOL.md`](docs/DRUG_QSAR_PROTOCOL.md) — chemical-data and QSAR requirements
 
 ## Reproduce verified analyses
 
@@ -71,6 +74,8 @@ Rscript scripts/03_bulk_de_gsea.R data/processed/GSE50084/gene_expression.csv.gz
 Rscript scripts/04_external_validation.R data/processed/GSE36059/gene_expression.csv.gz data/processed/GSE36059/samples.csv results/bulk/GSE36059
 Rscript scripts/05_treatment_response.R data/processed/GSE275824/gene_expression.csv.gz data/processed/GSE275824/samples.csv results/bulk/GSE275824
 Rscript scripts/06_published_score_trajectories.R data/processed/GSE275824/samples.csv results/bulk/GSE275824
+
+python3 scripts/07_score_mechanism_modules.py --expression data/processed/GSE36059/gene_expression.csv.gz --output results/bulk/GSE36059/mechanism_module_scores.csv
 
 python3 -m unittest discover -s tests -v
 ```

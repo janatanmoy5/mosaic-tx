@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "mechanism": "DSA -> endothelial engagement -> FCGR3A-positive innate effectors -> cytotoxic/IFNG response -> microvascular injury -> persistence or response",
+  "modules": {
+    "nk_identity": {
+      "genes": ["NKG7", "KLRD1", "NCR1", "GNLY", "PRF1"],
+      "interpretation": "coherent NK-lineage program; KIR genes alone are insufficient"
+    },
+    "fcgr3a_adcc_effector": {
+      "genes": ["FCGR3A", "FCER1G", "TYROBP", "SYK", "LCP2", "FCRL3"],
+      "interpretation": "Fc-receptor signaling capacity; requires NK-versus-monocyte cell localization"
+    },
+    "cytotoxicity": {
+      "genes": ["GNLY", "PRF1", "GZMB", "GZMH", "CTSW", "CCL5"],
+      "interpretation": "cytotoxic effector state; not NK-specific without cell localization"
+    },
+    "ifng_chemokine": {
+      "genes": ["IFNG", "STAT1", "IRF1", "CXCL9", "CXCL10", "CXCL11", "GBP1", "IDO1"],
+      "interpretation": "type-II-interferon and chemokine response"
+    },
+    "endothelial_activation": {
+      "genes": ["VWF", "PECAM1", "EMCN", "ENG", "SELE", "VCAM1", "ICAM1", "PLVAP"],
+      "interpretation": "endothelial identity/activation; separate abundance from activation"
+    },
+    "microvascular_injury": {
+      "genes": ["KDR", "ESM1", "ACKR1", "CAV1", "RAMP2", "RGCC", "KLF2", "KLF4"],
+      "interpretation": "exploratory microvascular endothelial state; direction must be established empirically"
+    },
+    "negative_control_t_cell": {
+      "genes": ["CD3D", "CD3E", "TRAC", "CD247", "CD8A", "CD8B"],
+      "interpretation": "detect T-cell admixture and prevent KIR-positive CD8 cells being called NK cells"
+    },
+    "negative_control_monocyte": {
+      "genes": ["LST1", "CTSS", "LILRB1", "CTSD", "FCN1", "S100A8"],
+      "interpretation": "distinguish FCGR3A-positive monocytes from FCGR3A-positive NK cells"
+    }
+  },
+  "rules": {
+    "minimum_gene_coverage_fraction": 0.6,
+    "primary_score": "mean within-cohort gene z-score",
+    "no_redefinition_after_outcome_testing": true,
+    "cell_type_specific_pseudobulk_required_for_lineage_claims": true
+  }
+}

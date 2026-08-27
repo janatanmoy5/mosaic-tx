@@ -3,7 +3,9 @@
 The protocol is defined by `PROJECT_PLAN.md` and `ANALYSIS_SPECIFICATION.md`. The primary study is a
 retrospective reanalysis of public, de-identified kidney-transplant transcriptomic datasets. It tests
 whether immune-effector activity and tissue-injury persistence can be distinguished across DSA states,
-rejection types and randomized longitudinal treatment.
+rejection types and randomized longitudinal treatment. The mechanistic backbone is DSA exposure,
+endothelial engagement, FCGR3A-positive NK/monocyte activation, cytotoxic-IFNG/chemokine response,
+microvascular endothelial injury, and persistent versus treatment-responsive graft injury.
 
 All cohorts retain their original provenance and terminology. Analyses are cohort-specific before
 replication. The unit of inference is the biological sample or patient, never a cell or spatial spot.
