@@ -69,6 +69,16 @@ def main() -> None:
     require_csv_rows(root / "results/pilot/figures/GSE275824_patient_trajectories.csv", 252)
     for dataset in ("GSE50084", "GSE36059"):
         require_csv_rows(root / "results/pilot/figures" / f"{dataset}_pca_coordinates.csv", 61)
+
+    # Validate the nonredundant manuscript package and full sample-label audit trail.
+    require_nonempty(root / "results/manuscript/figures/Figure_1_study_design.svg")
+    require_nonempty(root / "results/manuscript/figures/Figure_2_primary_estimands.pdf")
+    require_nonempty(root / "results/manuscript/figures/Figure_3_sample_level_verification.pdf")
+    require_csv_rows(root / "results/manuscript/tables/Table_1_cohort_composition.csv", 12)
+    require_csv_rows(root / "results/manuscript/tables/Table_2_primary_estimands.csv", 42)
+    require_csv_rows(root / "results/manuscript/tables/Table_S1_sample_labels.csv", 589)
+    require_csv_rows(root / "results/manuscript/tables/Table_S2_module_definitions_and_coverage.csv", 27)
+    require_nonempty(root / "results/manuscript/run_manifest.json")
     print("Pipeline output validation passed for all three datasets.")
 
 

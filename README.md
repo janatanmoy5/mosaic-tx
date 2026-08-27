@@ -67,11 +67,17 @@ QSAR, docking and molecular dynamics are downstream gates—not assumed delivera
 11. [`docs/R01AI180118_ALIGNMENT.md`](docs/R01AI180118_ALIGNMENT.md) — contribution to the transplantation program without aim duplication
 12. [`docs/PIPELINE_EXECUTION.md`](docs/PIPELINE_EXECUTION.md) — successful one-command run, outputs, checksums, and warnings
 
-## Execute the complete bulk pilot
+## Run the canonical manuscript pipeline
+
+From the repository root, run exactly one command:
 
 ```bash
-scripts/run_three_dataset_pipeline.sh
+bash scripts/run_three_dataset_pipeline.sh
 ```
+
+The script executes acquisition and checksum verification, platform annotation, all declared statistical models, GSEA, module scoring, inferential figures, sample-level verification, tests, artifact validation, and manuscript packaging in order. It stops immediately if any stage fails.
+
+The review-ready output is `results/manuscript/`: three nonredundant figures, Tables 1–2, supplementary sample/module tables, figure legends, and a SHA-256 manifest. `Table_S1_sample_labels.csv` contains all 589 public profiles with accession, original title, analysis label, inclusion status, treatment/timepoint where applicable, and the reason for inclusion or exclusion.
 
 Equivalent stage-by-stage execution:
 
