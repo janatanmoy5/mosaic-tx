@@ -79,7 +79,7 @@ fit_pair <- function(scores, metadata, group_column, case, control, dataset, con
   group <- factor(d[[group_column]], levels = c(control, case))
   design <- model.matrix(~ group)
   fit <- eBayes(lmFit(y, design))
-  tab <- as.data.table(topTable(fit, coef = "groupcase", number = Inf, sort.by = "none"), keep.rownames = "module")
+  tab <- as.data.table(topTable(fit, coef = 2, number = Inf, sort.by = "none"), keep.rownames = "module")
   tab[, `:=`(
     dataset = dataset,
     contrast = contrast_name,
