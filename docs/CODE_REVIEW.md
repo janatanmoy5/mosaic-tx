@@ -21,6 +21,9 @@ does not mean a data workflow was executed.
 | `07_score_mechanism_modules.py` | Correct within-cohort z-score construction and coverage audit. It requires the declared Python scientific environment. | Smoke-tested with synthetic expression; superseded for the pilot by script 08. |
 | `08_build_robustness_atlas.R` | Fully annotated. Separates platforms, freezes modules, uses patient-blocked longitudinal models and direction-aware evidence grades. | Executed end to end on three cohorts; manifest and tables present. |
 | `09_make_pilot_figures.R` | Fully annotated. Reads saved results without recomputing statistics and exports PNG/PDF. | Executed; combined and individual panels present. |
+| `09b_make_manuscript_figure.R` | Builds a four-panel cohort, replication, DSA-state, and randomized-treatment figure with CIs, FDR symbols, legends, and claim-calibrated captions. | Executed; PNG/PDF main figure and four panels present. |
+| `14_validate_pipeline_outputs.py` | Fails on missing, empty, malformed, or dimensionally incomplete cohort/analysis/figure outputs. | Executed after the full pipeline; passed. |
+| `run_three_dataset_pipeline.sh` | Fail-fast orchestrator with dependency checks, logging, stage execution, validation, and output checksums. | Complete acquisition-to-figure run executed successfully. |
 
 ## Syntax-verified but not yet dataset-executed
 

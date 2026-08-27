@@ -20,6 +20,8 @@ de-identified datasets and tests prespecified contrasts with reproducible statis
 
 ![Executed pilot signature robustness atlas](figures/fig4_pilot_signature_robustness_atlas.png)
 
+![Executed three-cohort main manuscript figure](figures/fig5_main_multicohort.png)
+
 ## Why this question is supported by available data
 
 GSE50084 contains DSA-negative, DSA-positive/no-rejection, and DSA-positive/rejection samples.
@@ -62,8 +64,15 @@ QSAR, docking and molecular dynamics are downstream gates—not assumed delivera
 9. [`docs/PILOT_RESULTS.md`](docs/PILOT_RESULTS.md) — executed findings, null results, and claim boundaries
 10. [`docs/CODE_REVIEW.md`](docs/CODE_REVIEW.md) — script-by-script verification status and defects found
 11. [`docs/R01AI180118_ALIGNMENT.md`](docs/R01AI180118_ALIGNMENT.md) — contribution to the transplantation program without aim duplication
+12. [`docs/PIPELINE_EXECUTION.md`](docs/PIPELINE_EXECUTION.md) — successful one-command run, outputs, checksums, and warnings
 
 ## Execute the complete bulk pilot
+
+```bash
+scripts/run_three_dataset_pipeline.sh
+```
+
+Equivalent stage-by-stage execution:
 
 ```bash
 make data
