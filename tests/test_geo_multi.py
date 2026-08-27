@@ -1,6 +1,6 @@
 import gzip, tempfile, unittest
 from pathlib import Path
-from mosaic_tx.geo_multi import compile_geo
+from geo_utils import compile_geo
 
 class MultiCohortCompilerTests(unittest.TestCase):
     def _matrix(self, path, titles, accessions, characteristics):

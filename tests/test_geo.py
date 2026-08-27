@@ -1,6 +1,6 @@
 import csv, gzip, tempfile, unittest
 from pathlib import Path
-from mosaic_tx.geo import compile_gse50084, validate_compiled
+from geo_utils import compile_gse50084, validate_compiled
 class GeoTests(unittest.TestCase):
  def test_compile(self):
   with tempfile.TemporaryDirectory() as d:

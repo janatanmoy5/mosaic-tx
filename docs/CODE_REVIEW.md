@@ -36,9 +36,6 @@ does not mean a data workflow was executed.
 
 | Component | Review outcome |
 |---|---|
-| `mosaic_tx/geo.py` | GEO parsing, verified download and GSE50084 compilation are covered by unit tests. |
-| `mosaic_tx/geo_multi.py` | GSE36059 group preservation and GSE275824 patient/treatment/time requirements are tested. |
-| `mosaic_tx/io.py` | Shared checksum, atomic-download and manifest utilities; no destructive operations. |
 | `tests/test_geo.py` | Covers expected compilation invariants. |
 | `tests/test_geo_multi.py` | Protects nephrectomy separation and longitudinal identifiers. |
 

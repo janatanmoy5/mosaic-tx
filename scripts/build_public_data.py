@@ -4,7 +4,7 @@
 import argparse, json, sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]; sys.path.insert(0,str(ROOT))
-from mosaic_tx.geo import compile_gse50084, download_verified, validate_compiled
+from geo_utils import compile_gse50084, download_verified, validate_compiled
 
 def main():
  p=argparse.ArgumentParser(); p.add_argument("--dataset",default="GSE50084",choices=["GSE50084"]); p.add_argument("--force-download",action="store_true"); a=p.parse_args()

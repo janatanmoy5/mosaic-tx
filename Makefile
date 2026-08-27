@@ -37,5 +37,5 @@ test:
 	@for f in scripts/*.R; do Rscript -e "parse(file='$$f')" >/dev/null || exit 1; done
 
 check: test
-	python3 -c 'from pathlib import Path; from mosaic_tx.geo import validate_compiled; validate_compiled(Path("data/processed/GSE50084"))'
+	python3 -c 'from pathlib import Path; from geo_utils import validate_compiled; validate_compiled(Path("data/processed/GSE50084"))'
 	@test -f results/bulk/GSE275824/published_score_manifest.json
