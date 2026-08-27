@@ -58,10 +58,10 @@ g50084 <- fread(file.path(root, "data/processed/GSE50084/samples.csv"))[compartm
 g36059 <- fread(file.path(root, "data/processed/GSE36059/samples.csv"))
 g275824 <- fread(file.path(root, "data/processed/GSE275824/samples.csv"))
 counts <- rbindlist(list(
-  g50084[, .N, by = .(dataset = "GSE50084", group = analysis_group)],
+  g50084[, .N, by = .(group = analysis_group)][, dataset := "GSE50084"],
   g36059[analysis_group %in% c("ABMR", "TCMR", "non-rejecting"),
-         .N, by = .(dataset = "GSE36059", group = analysis_group)],
-  g275824[, .N, by = .(dataset = "GSE275824", group = paste(treatment, timepoint, sep = " / "))]
+         .N, by = .(group = analysis_group)][, dataset := "GSE36059"],
+  g275824[, .N, by = .(group = paste(treatment, timepoint, sep = " / "))][, dataset := "GSE275824"]
 ))
 p_a <- ggplot(counts, aes(dataset, N, fill = dataset)) +
   geom_col(width = 0.68) +
