@@ -181,7 +181,6 @@ fwrite(wide, file.path(out, "robustness_atlas.csv"))
 # Write a machine-readable run manifest with methods, sample sizes, and claim boundaries.
 manifest <- list(
   schema_version = "1.0",
-  generated_at_utc = format(Sys.time(), tz = "UTC", usetz = TRUE),
   datasets = datasets,
   modules = names(modules),
   contrasts = unique(effects$contrast),

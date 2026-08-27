@@ -1,10 +1,42 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-08-27 04:03:06 UTC",
-  "datasets": ["GSE50084", "GSE36059", "GSE275824"],
-  "modules": ["nk_identity", "fcgr3a_adcc_effector", "cytotoxicity", "ifng_chemokine", "negative_control_t_cell", "negative_control_monocyte", "endothelial_identity", "endothelial_activation_injury", "tissue_injury_repair"],
-  "contrasts": ["ABMR_DSApos_vs_DSAneg_nonrejection", "ABMR_DSApos_vs_DSApos_nonrejection", "ABMR_vs_TCMR", "ABMR_vs_nonrejection", "DSApos_nonrejection_vs_DSAneg_nonrejection", "treatment_difference_in_differences_W24", "treatment_difference_in_differences_W52"],
+  "datasets": [
+    "GSE50084",
+    "GSE36059",
+    "GSE275824"
+  ],
+  "modules": [
+    "nk_identity",
+    "fcgr3a_adcc_effector",
+    "cytotoxicity",
+    "ifng_chemokine",
+    "negative_control_t_cell",
+    "negative_control_monocyte",
+    "endothelial_identity",
+    "endothelial_activation_injury",
+    "tissue_injury_repair"
+  ],
+  "contrasts": [
+    "ABMR_DSApos_vs_DSAneg_nonrejection",
+    "ABMR_DSApos_vs_DSApos_nonrejection",
+    "ABMR_vs_TCMR",
+    "ABMR_vs_nonrejection",
+    "DSApos_nonrejection_vs_DSAneg_nonrejection",
+    "treatment_difference_in_differences_W24",
+    "treatment_difference_in_differences_W52"
+  ],
   "treatment_consensus_correlation": 0.5065,
-  "methods": ["within-cohort gene z-score module means", "limma moderated contrasts", "patient-blocked duplicateCorrelation longitudinal difference-in-differences", "BH FDR per contrast"],
-  "limitations": ["retrospective public cohorts", "module effects are association not causation", "bulk modules cannot establish cell lineage", "GSE275824 contains 22 randomized patients", "no clinical model or drug efficacy claim"]
+  "methods": [
+    "within-cohort gene z-score module means",
+    "limma moderated contrasts",
+    "patient-blocked duplicateCorrelation longitudinal difference-in-differences",
+    "BH FDR per contrast"
+  ],
+  "limitations": [
+    "retrospective public cohorts",
+    "module effects are association not causation",
+    "bulk modules cannot establish cell lineage",
+    "GSE275824 contains 22 randomized patients",
+    "no clinical model or drug efficacy claim"
+  ]
 }
