@@ -19,19 +19,19 @@ dir.create(figure_dir, recursive = TRUE, showWarnings = FALSE)
 # Load the complete module effect table and define readable plotting labels.
 effects <- fread(file.path(atlas_dir, "module_effects.csv"))
 contrast_labels <- c(
-  ABMR_DSApos_vs_DSAneg_nonrejection = "DSA+ ABMR vs DSA− non-rejection",
+  ABMR_DSApos_vs_DSAneg_nonrejection = "DSA+ ABMR vs DSA- non-rejection",
   ABMR_DSApos_vs_DSApos_nonrejection = "DSA+ ABMR vs DSA+ non-rejection",
-  DSApos_nonrejection_vs_DSAneg_nonrejection = "DSA+ non-rejection vs DSA− non-rejection",
+  DSApos_nonrejection_vs_DSAneg_nonrejection = "DSA+ non-rejection vs DSA- non-rejection",
   ABMR_vs_nonrejection = "ABMR vs non-rejection (validation)",
   ABMR_vs_TCMR = "ABMR vs TCMR (specificity)",
-  treatment_difference_in_differences_W24 = "Felzartamab ΔΔ at week 24",
-  treatment_difference_in_differences_W52 = "Felzartamab ΔΔ at week 52"
+  treatment_difference_in_differences_W24 = "Felzartamab DeltaDelta at week 24",
+  treatment_difference_in_differences_W52 = "Felzartamab DeltaDelta at week 52"
 )
 module_labels <- c(
   nk_identity = "NK identity",
   fcgr3a_adcc_effector = "FCGR3A/Fc signaling",
   cytotoxicity = "Cytotoxicity",
-  ifng_chemokine = "IFNγ/chemokines",
+  ifng_chemokine = "IFN-gamma/chemokines",
   endothelial_identity = "Endothelial identity",
   endothelial_activation_injury = "Endothelial activation",
   tissue_injury_repair = "Tissue injury/repair",
@@ -40,7 +40,7 @@ module_labels <- c(
 )
 effects[, contrast_label := factor(contrast_labels[contrast], levels = rev(unname(contrast_labels)))]
 effects[, module_label := factor(module_labels[module], levels = unname(module_labels))]
-effects[, significance := fifelse(module_fdr < 0.05, "FDR < 0.05", "FDR ≥ 0.05")]
+effects[, significance := fifelse(module_fdr < 0.05, "FDR < 0.05", "FDR >= 0.05")]
 
 # Panel A: the complete cross-cohort effect-size atlas; dot size communicates adjusted evidence.
 p_atlas <- ggplot(effects, aes(contrast_label, module_label, color = logFC,
@@ -48,7 +48,7 @@ p_atlas <- ggplot(effects, aes(contrast_label, module_label, color = logFC,
   geom_point() +
   scale_color_gradient2(low = "#2166AC", mid = "white", high = "#B2182B", midpoint = 0,
                         name = "Module effect") +
-  scale_size_continuous(range = c(2, 8), name = "−log10 FDR\n(capped at 6)") +
+  scale_size_continuous(range = c(2, 8), name = "-log10 FDR\n(capped at 6)") +
   coord_flip() +
   labs(title = "A  Cross-cohort ABMR mechanism-module atlas", x = NULL, y = NULL,
        subtitle = "Scores are standardized within cohort; positive values favor the first group") +

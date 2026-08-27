@@ -163,13 +163,14 @@ validation <- "ABMR_vs_nonrejection"
 specificity <- "ABMR_vs_TCMR"
 wide[, direction_concordant := sign(get(paste0("logFC_", discovery))) == sign(get(paste0("logFC_", validation)))]
 wide[, replicated_fdr := get(paste0("module_fdr_", discovery)) < 0.05 & get(paste0("module_fdr_", validation)) < 0.05]
-wide[, tcmr_specific_fdr := get(paste0("module_fdr_", specificity)) < 0.05]
-wide[, evidence_tier := fifelse(direction_concordant & replicated_fdr & tcmr_specific_fdr, "A",
+wide[, abmr_enriched_vs_tcmr := get(paste0("module_fdr_", specificity)) < 0.05 & get(paste0("logFC_", specificity)) > 0]
+wide[, evidence_tier := fifelse(direction_concordant & replicated_fdr & abmr_enriched_vs_tcmr, "A",
                          fifelse(direction_concordant & replicated_fdr, "B",
                            fifelse(direction_concordant &
                              (get(paste0("module_fdr_", discovery)) < 0.05 |
                               get(paste0("module_fdr_", validation)) < 0.05), "C", "D")))]
-wide[, evidence_definition := "A=replicated+TCMR-specific; B=replicated not TCMR-specific; C=partial; D=unsupported"]
+wide[grepl("^negative_control_", module), evidence_tier := "CONTROL"]
+wide[, evidence_definition := "A=replicated+ABMR-enriched vs TCMR; B=replicated but not ABMR-enriched vs TCMR; C=partial; D=unsupported; CONTROL=diagnostic only"]
 
 # Save auditable intermediate and final outputs rather than only a rendered figure.
 coverage <- rbindlist(lapply(compiled, `[[`, "coverage"))
