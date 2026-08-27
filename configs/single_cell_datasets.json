@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "eligibility": {
+    "species": "Homo sapiens",
+    "platform": "Illumina NovaSeq 6000",
+    "assay": "single-cell or single-nucleus RNA sequencing",
+    "required_metadata": [
+      "dataset_id", "sample_id", "patient_id", "phenotype", "tissue",
+      "species", "platform", "reference_domain"
+    ]
+  },
+  "datasets": {
+    "E-MTAB-12051": {
+      "role": "primary_cell_localization",
+      "status": "metadata_verified_object_not_built",
+      "species": "Homo sapiens",
+      "platform": "Illumina NovaSeq 6000",
+      "technology": "10x 3-prime scRNA-seq",
+      "biopsies": 16,
+      "processed_counts_bytes": 3092166324,
+      "reference_domains": ["stable_allograft", "rejection_allograft"],
+      "compute": "chunked sparse conversion; 32-64 GB RAM recommended"
+    },
+    "GSE216203": {
+      "role": "circulating_nk_mechanistic_sensitivity",
+      "status": "registered_not_compiled",
+      "species": "Homo sapiens",
+      "platform": "Illumina NovaSeq 6000",
+      "technology": "10x 3-prime v3; FACS-sorted blood NK cells",
+      "patients": 8,
+      "phenotypes": {"mixed_ABMR": 4, "TCMR": 4},
+      "restriction": "blood, sorted NK cells, and small n; not independent biomarker validation"
+    },
+    "GSE145927": {
+      "role": "biopsy_cell_localization_sensitivity",
+      "status": "platform_ineligible_for_novaseq_primary_branch",
+      "species": "Homo sapiens",
+      "platform": "Illumina HiSeq",
+      "biopsy_donors": 5,
+      "cells": 81139,
+      "restriction": "retain as technology sensitivity evidence; do not merge with NovaSeq discovery object"
+    }
+  }
+}

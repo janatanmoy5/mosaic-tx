@@ -4,6 +4,13 @@ channels:
   - bioconda
 dependencies:
   - python=3.12
+  - anndata
+  - scanpy
+  - muon
+  - leidenalg
+  - scikit-learn
+  - scipy
+  - pandas
   - r-base=4.4
   - r-data.table
   - r-jsonlite

@@ -24,6 +24,8 @@ No transcriptomic association is called causal.
 
 ![MOSAIC-Tx evidence design](../figures/fig1_study_design.svg)
 
+![Evidence-gated single-cell to therapeutics extension](../figures/fig2_translational_extension.svg)
+
 ## Aim 1 — Separate DSA exposure from damaging rejection
 
 Primary GSE50084 contrasts:
@@ -51,10 +53,33 @@ show different trajectories; the analysis does not estimate individual treatment
 
 ## Aim 4 — Localize replicated programs to cells
 
-Use E-MTAB-12051 as the primary cell-localization resource and GSE145927 as sensitivity evidence.
+Use human NovaSeq 6000 E-MTAB-12051 as the primary biopsy cell-localization resource and GSE216203
+as a circulating-NK mechanistic sensitivity dataset. GSE145927 was generated on HiSeq and is retained
+as a technology sensitivity analysis, not merged into the NovaSeq discovery object.
 Inference is performed by patient-level pseudobulk within prespecified cell classes. Cells are not
 independent replicates. Because E-MTAB-12051 is a 3.09 GB count CSV and GSE145927 includes only five
 biopsy donors, this aim requires a separate 32–64 GB RAM environment and is not yet completed.
+
+The canonical object is Scanpy `AnnData`, with raw counts retained and optional MuData export. Stable
+allograft, non-rejection injury and native healthy kidney remain distinct reference domains. Cell
+labels require markers, negative markers, reference mapping and manual cluster review; KIR expression
+alone cannot define NK cells.
+
+## Aim 5 — Build and externally challenge a parsimonious biomarker
+
+Freeze features only after bulk replication and patient-level cell localization. Train penalized
+logistic regression as the primary model, with all observations from a patient kept in the same fold.
+Feature selection and tuning occur inside nested group-aware cross-validation. The decisive test is an
+untouched study or leave-one-study-out validation, including calibration and specificity versus TCMR.
+If independent-patient numbers are inadequate, report association and do not train a classifier.
+
+## Aim 6 — Generate intervention hypotheses under explicit gates
+
+Query replicated up/down signatures against perturbational resources and retain compounds only when
+reversal is robust across contexts and target pharmacology agrees with the supported NK–Fc–endothelial
+mechanism. QSAR proceeds only for a single tractable target with an adequate, comparable public human
+activity series and scaffold-held-out evaluation. Docking/MD remain optional structural follow-up,
+not biological validation. See `TRANSLATIONAL_EXTENSION.md` and `DRUG_QSAR_PROTOCOL.md`.
 
 ## Spatial evidence
 
@@ -69,6 +94,8 @@ patient are literature support only.
 - Aim 2: independent direction concordance and ABMR-versus-TCMR specificity.
 - Aim 3: placebo-adjusted longitudinal interaction for published molecular scores and expression.
 - Aim 4: patient-level pseudobulk direction concordance in prespecified cell classes.
+- Aim 5: grouped nested validation, calibration and untouched-study performance.
+- Aim 6: robust signature reversal; target-specific QSAR only after the chemical-data gate.
 
 ## Success and stop criteria
 
@@ -86,6 +113,8 @@ reference-ligand benchmark.
 4. Randomized longitudinal immune, NK and endothelial score trajectories.
 5. Patient-level single-cell localization, only after successful computation.
 6. Cross-cohort evidence synthesis and falsification tests.
+7. Patient-level biomarker validation, only if sample size permits.
+8. Drug-reversal evidence ladder and QSAR feasibility decision—not an efficacy claim.
 
 ## Journal positioning
 

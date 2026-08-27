@@ -20,6 +20,7 @@ scores:
 
 test:
 	python3 -m unittest discover -s tests -v
+	python3 -m py_compile scripts/10_build_scanpy_object.py scripts/11_sc_qc_cluster.py scripts/12_patient_pseudobulk.py scripts/13_grouped_nested_ml.py
 	@for f in scripts/*.R; do Rscript -e "parse(file='$$f')" >/dev/null || exit 1; done
 
 check: test

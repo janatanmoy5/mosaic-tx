@@ -15,6 +15,8 @@ de-identified datasets and tests prespecified contrasts with reproducible statis
 
 ![MOSAIC-Tx evidence design](figures/fig1_study_design.svg)
 
+![Evidence-gated single-cell to therapeutics extension](figures/fig2_translational_extension.svg)
+
 ## Why this question is supported by available data
 
 GSE50084 contains DSA-negative, DSA-positive/no-rejection, and DSA-positive/rejection samples.
@@ -32,13 +34,17 @@ types, but their modest patient counts preclude cell-level machine-learning clai
 - [x] Independent ABMR-versus-non-rejection replication
 - [x] ABMR-versus-TCMR specificity analysis
 - [x] Patient-blocked randomized treatment-response analysis
-- [ ] Published-score trajectory analysis
+- [x] Published-score trajectory analysis
 - [ ] Single-cell patient-level pseudobulk localization
 - [ ] Cross-cohort effect-size synthesis
+- [ ] Externally validated patient-level biomarker model
+- [ ] Evidence-qualified drug-signature reversal
+- [ ] Target-specific QSAR (only if the activity-data gate passes)
 
-Spatial transcriptomics is exploratory because the verified public transplant spatial datasets are
-small or TCMR-focused. Docking and molecular dynamics are outside the primary study: they would be
-considered only after a replicated, directionally interpretable, structurally tractable target exists.
+The new single-cell branch is restricted to human NovaSeq 6000 data and builds a canonical Scanpy
+`AnnData` object with optional MuData export. Stable allograft, non-rejection injury and native healthy
+kidney are separate reference domains. Spatial transcriptomics remains exploratory. Drug reversal,
+QSAR, docking and molecular dynamics are downstream gates—not assumed deliverables.
 
 ## Start here
 
@@ -47,6 +53,8 @@ considered only after a replicated, directionally interpretable, structurally tr
 3. [`docs/ANALYSIS_SPECIFICATION.md`](docs/ANALYSIS_SPECIFICATION.md) — frozen contrasts and statistics
 4. [`docs/RESULTS_SNAPSHOT.md`](docs/RESULTS_SNAPSHOT.md) — verified results and null findings
 5. [`docs/LIMITATIONS.md`](docs/LIMITATIONS.md) — claims the data cannot support
+6. [`docs/TRANSLATIONAL_EXTENSION.md`](docs/TRANSLATIONAL_EXTENSION.md) — single-cell, ML and drug gates
+7. [`docs/DRUG_QSAR_PROTOCOL.md`](docs/DRUG_QSAR_PROTOCOL.md) — chemical-data and QSAR requirements
 
 ## Reproduce verified analyses
 
@@ -66,6 +74,11 @@ Rscript scripts/06_published_score_trajectories.R data/processed/GSE275824/sampl
 
 python3 -m unittest discover -s tests -v
 ```
+
+Generic single-cell entry points (after downloading an eligible study and preparing barcode-level
+metadata) are `scripts/10_build_scanpy_object.py`, `scripts/11_sc_qc_cluster.py`, and
+`scripts/12_patient_pseudobulk.py`. `scripts/13_grouped_nested_ml.py` accepts only frozen,
+patient-level features and keeps patients together during nested validation.
 
 Required R packages are listed in [`environment.yml`](environment.yml). Raw and derived assay files
 are gitignored and rebuilt from their public sources. The code is research software, not a medical
