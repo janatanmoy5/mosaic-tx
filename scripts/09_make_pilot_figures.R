@@ -62,8 +62,8 @@ treatment[, week := factor(ifelse(grepl("W24$", contrast), "Week 24", "Week 52")
                            levels = c("Week 24", "Week 52"))]
 p_treatment <- ggplot(treatment, aes(logFC, module_label, color = week)) +
   geom_vline(xintercept = 0, color = "grey70", linewidth = 0.5) +
-  geom_errorbarh(aes(xmin = logFC - 1.96 * SE, xmax = logFC + 1.96 * SE),
-                 height = 0.15, position = position_dodge(width = 0.5)) +
+  geom_errorbar(aes(xmin = logFC - 1.96 * abs(logFC / t), xmax = logFC + 1.96 * abs(logFC / t)),
+                width = 0.15, orientation = "y", position = position_dodge(width = 0.5)) +
   geom_point(aes(shape = significance), size = 3, position = position_dodge(width = 0.5)) +
   scale_color_manual(values = c("Week 24" = "#007C83", "Week 52" = "#A44A3F")) +
   labs(title = "B  Placebo-adjusted longitudinal module effects", x = "Treatment difference-in-differences",
@@ -75,7 +75,7 @@ p_treatment <- ggplot(treatment, aes(logFC, module_label, color = week)) +
 # Combine panels into a single journal-width figure and save both vector and raster formats.
 combined <- p_atlas / p_treatment + plot_layout(heights = c(1.35, 1))
 ggsave(file.path(figure_dir, "pilot_signature_robustness_atlas.pdf"), combined,
-       width = 14, height = 12, device = cairo_pdf)
+       width = 14, height = 12, device = "pdf")
 ggsave(file.path(figure_dir, "pilot_signature_robustness_atlas.png"), combined,
        width = 14, height = 12, dpi = 300, bg = "white")
 
